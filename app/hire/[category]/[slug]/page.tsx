@@ -8,6 +8,7 @@ export default async function Page({
     return (
         <main style={{ padding: 24, fontFamily: "system-ui" }}>
             <h1>/hire base page</h1>
+            <h2 style={{ color: "red" }}>VERSION: 2026-02-04 v2</h2>
             <p>
                 category: <b>{category}</b>
             </p>
