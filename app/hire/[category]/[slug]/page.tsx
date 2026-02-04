@@ -1,3 +1,6 @@
+import { getLandingPage } from "@/lib/airtable";
+import { notFound } from "next/navigation";
+
 export default async function Page({
                                        params,
                                    }: {
@@ -5,21 +8,20 @@ export default async function Page({
 }) {
     const { category, slug } = await params;
 
+    const page = await getLandingPage(category, slug);
+    if (!page) notFound();
+
     return (
         <main style={{ padding: 24, fontFamily: "system-ui" }}>
-            <h1>/hire base page</h1>
-            <h2 style={{ color: "red" }}>VERSION: 2026-02-04 v2</h2>
+            <h1>{page.title}</h1>
             <p>
-                category: <b>{category}</b>
+                category: <b>{page.category}</b>
             </p>
             <p>
-                slug: <b>{slug}</b>
+                slug: <b>{page.slug}</b>
             </p>
-
             <hr />
-            <pre style={{ whiteSpace: "pre-wrap" }}>
-        {JSON.stringify({ category, slug }, null, 2)}
-      </pre>
+            <div>{page.content}</div>
         </main>
     );
 }
