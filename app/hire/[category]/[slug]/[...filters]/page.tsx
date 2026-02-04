@@ -1,14 +1,22 @@
 export default async function Page({
                                        params,
                                    }: {
-    params: { category: string; slug: string; filters: string[] };
+    params: Promise<{ category: string; slug: string; filters: string[] }>;
 }) {
+    const { category, slug, filters } = await params;
+
     return (
         <main style={{ padding: 24, fontFamily: "system-ui" }}>
             <h1>/hire with filters</h1>
-            <p>category: <b>{params.category}</b></p>
-            <p>slug: <b>{params.slug}</b></p>
-            <p>filters: <b>{params.filters.join(" / ")}</b></p>
+            <p>
+                category: <b>{category}</b>
+            </p>
+            <p>
+                slug: <b>{slug}</b>
+            </p>
+            <p>
+                filters: <b>{filters.join(" / ")}</b>
+            </p>
         </main>
     );
 }
