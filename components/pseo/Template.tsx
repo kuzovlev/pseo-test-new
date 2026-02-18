@@ -13,20 +13,20 @@ import { FooterSection } from "./sections/FooterSection";
 
 export function PseoTemplate({ data }: { data: PseoPageData }) {
   return (
-    <div className="page-wrapper">
-      <div className="main-wrapper">
-        <Navbar data={data} />
-        <HeroSection data={data} />
-        <SectionGray1 data={data} />
-        <HowItWorksSection data={data} />
-        <SectionGray2 data={data} />
-        <SectionWhite1 data={data} />
-        <CtaSection data={data} />
-        <SectionWhite2 data={data} />
-        <SectionGray3 data={data} />
-        <SectionWhite3 data={data} />
-        <FooterSection data={data} />
+      <div className="page-wrapper">
+        <div className="main-wrapper">
+          <Navbar data={data} />
+          <HeroSection data={data} />
+          <SectionGray1 data={data} />
+          <HowItWorksSection data={data} />
+          <SectionGray2 data={data} />
+          <SectionWhite1 data={data} />
+          <CtaSection data={data} />
+          <SectionWhite2 data={data} />
+          <SectionGray3 data={data} />
+          <SectionWhite3 data={data} />
+          <FooterSection data={data} />
+        </div>
       </div>
-    </div>
   );
 }
