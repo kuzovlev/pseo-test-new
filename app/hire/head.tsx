@@ -25,8 +25,6 @@ export default function Head() {
       <link href="/webflow/css/webflow.css" rel="stylesheet" type="text/css" />
       <link href="/webflow/css/awesomic-2025-new.webflow.css" rel="stylesheet" type="text/css" />
       <link href="https://www.awesomic.com/pseo-template" rel="canonical" />
-      <link rel="preload" as="style" href="https://assets.calendly.com/assets/external/widget.css" onload="this.onload=null;this.rel='stylesheet'" />
-      <link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css" />
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
       <link rel="shortcut icon" href={favicon} type="image/x-icon" />
       <link rel="apple-touch-icon" href={webclip} />
