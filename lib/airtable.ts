@@ -44,3 +44,28 @@ export async function getLandingPage(category: string, slug: string): Promise<La
         indexable: Boolean(f.indexable),
     };
 }
+
+export async function getLandingPageBySlug(slug: string) {
+    const formula = `{slug}="${slug}"`;
+
+    const records = await base(tableName)
+        .select({
+            maxRecords: 1,
+            filterByFormula: formula,
+        })
+        .firstPage();
+
+    const r = records[0];
+    if (!r) return null;
+
+    const f: any = r.fields;
+
+    return {
+        id: r.id,
+        title: String(f.title ?? ""),
+        category: String(f.category ?? ""),
+        slug: String(f.slug ?? ""),
+        content: f.content ? String(f.content) : "",
+        indexable: Boolean(f.indexable),
+    };
+}
