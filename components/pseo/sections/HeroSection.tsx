@@ -1,14 +1,37 @@
 import { withAssetBase } from "@/lib/pseo-assets";
 import type { PseoPageData } from "@/lib/pseo-types";
 
-const HTML = "<section>\n<div class=\"spacer-96 tablet_spacer-64\"></div>\n<div class=\"padding-global\">\n<div class=\"container-1280\">\n<div class=\"w-embed\">\n<style>\n\t@media (min-width: 1180px){\n  \t.pseo-hero_numbers{\n    \tflex-direction: row;\n    }\n  }\n  .pseo-hero-button-wrapper .button[calendly-link=\"https://calendly.com/awesomic/demo?hide_gdpr_banner=1\"]{\n  \tdisplay: none;\n  }\n  @media (min-width: 992px) and (max-width: 1038px){\n  \t.pseo-hero-button-wrapper .button[calendly-link=\"https://calendly.com/awesomic/demo?hide_gdpr_banner=1\"]{\n    \tdisplay: inline-block;\n    }\n    .pseo-hero-button-wrapper .features_form.pseo-mod{\n    \tdisplay: none;\n    }\n  }\n</style>\n</div>\n<div class=\"homepage_hero-block pseo-mod\">\n<div class=\"pseo_hero-left\">\n<div class=\"homepage_hero-tags\">\n<div class=\"text-tag gap-8\"><img alt=\"YC small logo\" loading=\"lazy\" src=\"__ASSET_BASE__/images/YC-small-badge.svg\"/>\n<div>Backed by Y Combinator</div>\n</div>\n<div class=\"text-tag gap-8 mobile_hide\">\n<div class=\"w-layout-hflex flex-h_center-center gap-4\"><img alt=\"Goole Play logo\" height=\"16\" loading=\"lazy\" src=\"__ASSET_BASE__/images/google_symbol.svg_1.svg\"/>\n<div>4.9</div>\n</div>\n<div class=\"w-layout-hflex flex-h_center-center gap-4\"><img alt=\"Trustpilot logo\" height=\"16\" loading=\"lazy\" src=\"__ASSET_BASE__/images/google_symbol.svg.svg\"/>\n<div>4.9</div>\n</div>\n</div>\n</div>\n<div class=\"spacer-20\"></div>\n<div class=\"tablet_max-width-600 align-center\">\n<h1 class=\"pseo_h1\">Hire <span class=\"hero_faces\">\u00a0</span> product designer for clear product flows</h1>\n</div>\n</div>\n<div class=\"pseo_cta-block\" id=\"w-node-_7d67ae3d-ea84-e2bc-dd27-47e5c7e20372-dba9761c\">\n<div class=\"pseo-hero-text\">Get a vetted product designer who improves usability, designs production-ready, and helps your team ship faster \u2014 matched to your product stage, priorities, and workflow.</div>\n<div class=\"pseo-hero-button-wrapper\">\n<div class=\"spacer-32\"></div>\n<a button-black=\"\" calendly-link=\"https://calendly.com/awesomic/demo?hide_gdpr_banner=1\" class=\"button w-inline-block\" data-wf--button-black-m--variant=\"base\" href=\"#\">\n<div class=\"z-index-1\">Book demo</div><img alt=\"\" class=\"button-icon\" height=\"20\" loading=\"lazy\" src=\"__ASSET_BASE__/images/faq_two-faces.avif\"/>\n<div class=\"button-background\"></div>\n</a>\n<div class=\"features_form-block pseo-mod w-form\">\n<form action=\"https://#\" class=\"features_form pseo-mod\" data-name=\"features-form\" data-wf-element-id=\"c703438f-48f1-1c69-5d5d-3350a631ecd8\" data-wf-page-id=\"697b4beefe76cf9edba9761c\" id=\"wf-form-features-form\" method=\"get\" name=\"wf-form-features-form\"><input class=\"input cta_input w-input\" data-name=\"email\" id=\"features-email\" maxlength=\"256\" name=\"email\" placeholder=\"Email address\" required=\"\" type=\"email\"/>\n<div class=\"submit-button_wrapper\"><input class=\"submit-button w-button\" data-wait=\"Please wait...\" type=\"submit\" value=\"Submit\"/>\n<a button-black=\"\" calendly-link=\"\" class=\"button is-large w-inline-block\" data-wf--button-black-l--variant=\"base\" href=\"#\">\n<div class=\"z-index-1\">Get started</div>\n<div class=\"button-background\"></div><img alt=\"\" class=\"button-icon\" height=\"20\" loading=\"lazy\" src=\"__ASSET_BASE__/images/login-icon-white.svg\"/>\n</a>\n</div>\n</form>\n<div class=\"w-form-done\">\n<div>Thank you! Your submission has been received!</div>\n</div>\n<div class=\"w-form-fail\">\n<div>Oops! Something went wrong while submitting the form.</div>\n</div>\n</div>\n</div>\n</div>\n<div class=\"pseo-hero_numbers\">\n<div class=\"hero_numbers-item\">\n<div class=\"heading-style-h4 mod-numbers\">3 500+</div>\n<div class=\"text-13 weight-medium lh-135\">completed <span class=\"break-line mobile_hide\"> </span>product projects</div>\n</div>\n<div class=\"hero_numbers-item\">\n<div class=\"heading-style-h4 mod-numbers\">4 000+</div>\n<div class=\"text-13 weight-medium lh-135\">customers <span class=\"break-line mobile_hide\"> </span>worldwide</div>\n</div>\n</div>\n<div class=\"pseo-logos-wrapper\" id=\"w-node-_6ab224c0-2334-a9de-be3b-cd4c0d0cce36-dba9761c\">\n<div class=\"carousel-component\">\n<div class=\"carousel\">\n<div class=\"logo-carousel-overlay_white\"></div>\n<div class=\"logo-carousel-wrap\" style=\"-webkit-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)\">\n<ul class=\"logo-carousel\" role=\"list\">\n<li class=\"logo-carousel_item\"><img alt=\"YC logo\" class=\"logo-image small\" height=\"24\" loading=\"lazy\" src=\"__ASSET_BASE__/images/yc-new-png.png\"/></li>\n<li class=\"logo-carousel_item\"><img alt=\"Coca-Cola logo\" class=\"logo-image small\" loading=\"lazy\" src=\"__ASSET_BASE__/images/coca-cola-new-png.png\"/></li>\n<li class=\"logo-carousel_item\"><img alt=\"Disney Logo\" class=\"logo-image small\" loading=\"lazy\" src=\"__ASSET_BASE__/images/disney-new-png.png\"/></li>\n<li class=\"logo-carousel_item\"><img alt=\"Genesis Logo\" class=\"logo-image small\" loading=\"lazy\" src=\"__ASSET_BASE__/images/genesis.avif\" width=\"58\"/></li>\n<li class=\"logo-carousel_item\"><img alt=\"udemy logo\" class=\"logo-image small\" loading=\"lazy\" src=\"__ASSET_BASE__/images/udemy-new-png.png\"/></li>\n<li class=\"logo-carousel_item\"><img alt=\"EY logo\" class=\"logo-image small\" loading=\"lazy\" src=\"__ASSET_BASE__/images/ey-new-png_1ey-new-png.png\"/></li>\n<li class=\"logo-carousel_item\"><img alt=\"Pandadoc logo\" class=\"logo-image small\" loading=\"lazy\" src=\"__ASSET_BASE__/images/panda-doc-new-png.png\"/></li>\n</ul>\n<div class=\"logo-carousel-clone\">\n<ul class=\"logo-carousel\" role=\"list\">\n<li class=\"logo-carousel_item\"><img alt=\"YC logo\" class=\"logo-image small\" height=\"24\" loading=\"lazy\" src=\"__ASSET_BASE__/images/yc-new-png.png\"/></li>\n<li class=\"logo-carousel_item\"><img alt=\"Coca-Cola logo\" class=\"logo-image small\" loading=\"lazy\" src=\"__ASSET_BASE__/images/coca-cola-new-png.png\"/></li>\n<li class=\"logo-carousel_item\"><img alt=\"Disney Logo\" class=\"logo-image small\" loading=\"lazy\" src=\"__ASSET_BASE__/images/disney-new-png.png\"/></li>\n<li class=\"logo-carousel_item\"><img alt=\"Genesis Logo\" class=\"logo-image small\" loading=\"lazy\" src=\"__ASSET_BASE__/images/genesis.avif\" width=\"58\"/></li>\n<li class=\"logo-carousel_item\"><img alt=\"udemy logo\" class=\"logo-image small\" loading=\"lazy\" src=\"__ASSET_BASE__/images/udemy-new-png.png\"/></li>\n<li class=\"logo-carousel_item\"><img alt=\"EY logo\" class=\"logo-image small\" loading=\"lazy\" src=\"__ASSET_BASE__/images/ey-new-png_1ey-new-png.png\"/></li>\n<li class=\"logo-carousel_item\"><img alt=\"Pandadoc logo\" class=\"logo-image small\" loading=\"lazy\" src=\"__ASSET_BASE__/images/panda-doc-new-png.png\"/></li>\n</ul>\n</div>\n</div>\n<div class=\"logo-carousel-overlay_white is-right\"></div>\n</div>\n</div>\n</div>\n<div class=\"hide w-embed w-script\">\n<script>\n  document.querySelectorAll('.hero_dynamic-checkbox').forEach(label => {\n    const uncheckedImage = label.getAttribute('data-bg');\n    if (uncheckedImage) {\n      label.querySelector('.dynamic-checkbox_label').style.setProperty('--unchecked-bg', `url('${uncheckedImage}')`);\n    }\n  });\n</script>\n</div>\n</div>\n<div class=\"spacer-64\"></div>\n<div>place for iframe</div>\n</div>\n</div>\n<div class=\"spacer-144 tablet_spacer-128\"></div>\n</section>";
+const HTML = `
+<section>
+  ...
+  <div class="tablet_max-width-600 align-center">
+    <h1 class="pseo_h1">__HERO_H1__</h1>
+  </div>
+  ...
+  <div class="pseo-hero-text">__HERO_SUBTITLE__</div>
+  ...
+</section>
+`;
 
-/**
- * Airtable mapping notes:
- * - Keep text static for now.
- * - When ready, replace specific static nodes with {data?.fieldName ?? "Default"}.
- * - Suggested fields live in lib/pseo-types.ts
- */
-export function HeroSection(_props: { data?: PseoPageData }) {
-  return <div dangerouslySetInnerHTML={ { __html: withAssetBase(HTML) } } />;
+function escapeHtml(input: string) {
+  return input
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#039;");
+}
+
+export function HeroSection(props: { data?: PseoPageData }) {
+  const h1 = escapeHtml(props.data?.hero_h1 ?? "Hire product designer for clear product flows");
+  const subtitle = escapeHtml(
+      props.data?.hero_subtitle ??
+      "Get a vetted product designer who improves usability, designs production-ready, and helps your team ship faster — matched to your product stage, priorities, and workflow."
+  );
+
+  const html = withAssetBase(HTML)
+      .replace("__HERO_H1__", h1)
+      .replace("__HERO_SUBTITLE__", subtitle);
+
+  return <div dangerouslySetInnerHTML={{ __html: html }} />;
 }
