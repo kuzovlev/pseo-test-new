@@ -3,7 +3,7 @@ import { Navbar } from "./sections/Navbar";
 import HeroSection from "./sections/HeroSection";
 import { SectionGray1 } from "./sections/SectionGray1";
 import { HowItWorksSection } from "./sections/HowItWorksSection";
-import { SectionGray2 } from "./sections/SectionGray2";
+import { SectionTestimonials } from "./sections/SectionTestimonials";
 import { SectionWhite1 } from "./sections/SectionWhite1";
 import { CtaSection } from "./sections/CtaSection";
 import { SectionWhite2 } from "./sections/SectionWhite2";
@@ -19,7 +19,7 @@ export function PseoTemplate({ data }: { data: PseoPageData }) {
           <HeroSection data={data} />
           <SectionGray1 data={data} />
           <HowItWorksSection data={data} />
-          <SectionGray2 data={data} />
+          <SectionTestimonials data={data} />
           <SectionWhite1 data={data} />
           <CtaSection data={data} />
           <SectionWhite2 data={data} />

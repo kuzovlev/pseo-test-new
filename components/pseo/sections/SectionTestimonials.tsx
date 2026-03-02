@@ -6,7 +6,7 @@ import type {PseoPageData} from "@/lib/pseo-types";
 const ASSET_BASE = process.env.NEXT_PUBLIC_ASSET_BASE ?? "";
 const asset = (src: string) => `${ASSET_BASE}${src.startsWith("/") ? src : `/${src}`}`;
 
-export function SectionGray2(_props: { data?: PseoPageData }) {
+export function SectionTestimonials(_props: { data?: PseoPageData }) {
     useEffect(() => {
         (function () {
             document.addEventListener('click', function (e) {
@@ -59,31 +59,18 @@ export function SectionGray2(_props: { data?: PseoPageData }) {
                 true
             );
         })();
-        document.addEventListener("DOMContentLoaded", function () {
-            const moreReviewsBlock = document.querySelector(".more-reviews_block");
-            const buttonWhiteS = moreReviewsBlock?.querySelector(".button.is-white");
-            const reviewsComponent = document.querySelector(".reviews-component");
-            if (buttonWhiteS && reviewsComponent) {
-                const isSmallScreen = window.innerWidth <= 478;
-                const initialMaxHeight = isSmallScreen ? "2000px" : "1460px";
-                reviewsComponent.style.maxHeight = initialMaxHeight;
-                reviewsComponent.style.overflow = "hidden";
-                reviewsComponent.style.transition = "max-height 0.5s ease";
-                /*buttonWhiteS.addEventListener("click", function () {
-                  moreReviewsBlock.style.transition = "opacity 0.5s";
-                  moreReviewsBlock.style.opacity = "0";
-                  setTimeout(() => {
-                    moreReviewsBlock.style.display = "none";
-                    const fullHeight = reviewsComponent.scrollHeight;
-                    reviewsComponent.style.maxHeight = `${fullHeight}px`;
-                    setTimeout(() => {
-                      reviewsComponent.style.transition = "max-height 0.5s ease"; 
-                      reviewsComponent.style.maxHeight = "9999px"; 
-                    }, 50); 
-                  }, 0); 
-                });*/
-            }
-        });
+        const moreReviewsBlock = document.querySelector(".more-reviews_block");
+        console.log('read more component')
+        const buttonWhiteS = moreReviewsBlock?.querySelector(".button.is-white");
+        const reviewsComponent = document.querySelector(".reviews-component");
+        if (buttonWhiteS && reviewsComponent) {
+            const isSmallScreen = window.innerWidth <= 478;
+            const initialMaxHeight = isSmallScreen ? "2000px" : "1460px";
+            reviewsComponent.style.maxHeight = initialMaxHeight;
+            reviewsComponent.style.overflow = "hidden";
+            reviewsComponent.style.transition = "max-height 0.5s ease";
+        }
+
         (function () {
             const previewVideos = document.querySelectorAll(
                 '.w-background-video video'
@@ -148,7 +135,13 @@ export function SectionGray2(_props: { data?: PseoPageData }) {
                         </div>
                     </div>
                     <div className="spacer-28"></div>
-                    <h2 className="heading-style-h3 text-align-center">Trusted by 4,000+ companies</h2>
+                    <h2 className="heading-style-h3 text-align-center">
+                        {_props.data.testimonials_title}
+                    </h2>
+                    <div className="spacer-12"></div>
+                    <div className="text-16 weight-regular lh-150 text-align-center">
+                        {_props.data.testimonials_description}
+                    </div>
                     <div className="spacer-40"></div>
                     <div className="carousel-component">
                         <div className="carousel">
@@ -264,7 +257,7 @@ export function SectionGray2(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt=""
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/Rakesh-Goyal-photo_1Rakesh-Goyal-photo.avif")}/>
+                                                                                      src={asset("/images/Rakesh-Goyal-photo_1Rakesh Goyal photo.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Rakesh Goyal</div>
@@ -384,7 +377,7 @@ export function SectionGray2(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt=""
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/Ben-Warren-photo_1Ben-Warren-photo.avif")}/>
+                                                                                      src={asset("/images/Ben-Warren-photo_1Ben Warren photo.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Ben Warren</div>
@@ -437,7 +430,7 @@ export function SectionGray2(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt=""
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/Erick-Enriquez-photo_1Erick-Enriquez-photo.avif")}/>
+                                                                                      src={asset("/images/Erick-Enriquez-photo_1Erick Enriquez photo.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Erick Enriquez</div>
@@ -493,7 +486,7 @@ export function SectionGray2(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt=""
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/Ivan-Tsybaev-photo_1Ivan-Tsybaev-photo.avif")}/>
+                                                                                      src={asset("/images/Ivan-Tsybaev-photo_1Ivan Tsybaev photo.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Ivan Tsybaev</div>
@@ -547,7 +540,7 @@ export function SectionGray2(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt="Photo of Sander Andersen"
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/Sander-Andersen_1Sander-Andersen.avif")}/>
+                                                                                      src={asset("/images/Sander-Andersen_1Sander Andersen.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Sander Andersen</div>
@@ -603,7 +596,7 @@ export function SectionGray2(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt="Photo of Jack Solomon"
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/Jack-Solomon---photo_1Jack-Solomon---photo.avif")}/>
+                                                                                      src={asset("/images/Jack-Solomon---photo_1Jack Solomon - photo.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Jack Solomon</div>
@@ -658,7 +651,7 @@ export function SectionGray2(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt="Photo of Charles Bai"
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/Charles-Bai_1Charles-Bai.avif")}/>
+                                                                                      src={asset("/images/Charles-Bai_1Charles Bai.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Charles Bai</div>
@@ -713,7 +706,7 @@ export function SectionGray2(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt="Photo of Lyn Chen"
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/Lyn-Chen_1Lyn-Chen.avif")}/>
+                                                                                      src={asset("/images/Lyn-Chen_1Lyn Chen.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Lyn Chen</div>
@@ -766,7 +759,7 @@ export function SectionGray2(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt="Photo of Nathan Shinder"
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/Nathan-Shinder_1Nathan-Shinder.avif")}/>
+                                                                                      src={asset("/images/Nathan-Shinder_1Nathan Shinder.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Nathan Shinder</div>
@@ -824,7 +817,7 @@ export function SectionGray2(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt="Photo of Giorgi Tsurtsumia"
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/Giorgi-Tsurtsumia_1Giorgi-Tsurtsumia.avif")}/>
+                                                                                      src={asset("/images/Giorgi-Tsurtsumia_1Giorgi Tsurtsumia.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Giorgi Tsurtsumia
@@ -880,7 +873,7 @@ export function SectionGray2(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt="Photo of Rajiv Bhat"
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/Rajiv-Bhat-photo_1Rajiv-Bhat-photo.avif")}/>
+                                                                                      src={asset("/images/Rajiv-Bhat-photo_1Rajiv Bhat photo.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Rajiv Bhat</div>
@@ -936,7 +929,7 @@ export function SectionGray2(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt=""
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/Ng-Yi-Ying-photo_1Ng-Yi-Ying-photo.avif")}/>
+                                                                                      src={asset("/images/Ng-Yi-Ying-photo_1Ng Yi Ying photo.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Ng Yi Ying</div>
@@ -992,7 +985,7 @@ export function SectionGray2(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt="Maxime Allouch Photo"
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/Maxime-Allouch_1Maxime-Allouch.png")}/>
+                                                                                      src={asset("/images/Maxime-Allouch_1Maxime Allouch.png")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Maxime Allouch</div>
@@ -1052,7 +1045,7 @@ export function SectionGray2(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt=""
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/Max-Ahrens-photo_1Max-Ahrens-photo.avif")}/>
+                                                                                      src={asset("/images/Max-Ahrens-photo_1Max Ahrens photo.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Max Ahrens</div>
@@ -1107,7 +1100,7 @@ export function SectionGray2(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt="Shaunak Turaga photo"
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/Shaunak-Turaga-photo_1Shaunak-Turaga-photo.avif")}/>
+                                                                                      src={asset("/images/Shaunak-Turaga-photo_1Shaunak Turaga photo.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Shaunak Turaga</div>
@@ -1160,7 +1153,7 @@ export function SectionGray2(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt=""
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/David-J.-Phillips-phtoto_1David-J.-Phillips-phtoto.avif")}/>
+                                                                                      src={asset("/images/David-J.-Phillips-phtoto_1David J. Phillips phtoto.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">David J. Phillips
@@ -1216,7 +1209,7 @@ export function SectionGray2(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt="Photo of John Banner"
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/john-banner-photo_1john-banner-photo.avif")}/>
+                                                                                      src={asset("/images/john-banner-photo_1john banner photo.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">John Banner</div>
@@ -1277,7 +1270,7 @@ export function SectionGray2(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt="Photo of Jean Carlos"
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/jean-carlos-photo_1jean-carlos-photo.avif")}/>
+                                                                                      src={asset("/images/jean-carlos-photo_1jean carlos photo.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Jeane Carlos</div>
@@ -1334,7 +1327,7 @@ export function SectionGray2(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt=""
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/Nik-Kotov-photo_1Nik-Kotov-photo.avif")}/>
+                                                                                      src={asset("/images/Nik-Kotov-photo_1Nik Kotov photo.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Nik Kotov</div>
@@ -1389,7 +1382,7 @@ export function SectionGray2(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt=""
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/Tal-Feld-photo_1Tal-Feld-photo.avif")}/>
+                                                                                      src={asset("/images/Tal-Feld-photo_1Tal Feld photo.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Tal Feld</div>
@@ -1442,7 +1435,7 @@ export function SectionGray2(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt=""
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/David-Head-photo_1David-Head-photo.avif")}/>
+                                                                                      src={asset("/images/David-Head-photo_1David Head photo.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">David Head</div>
@@ -1497,7 +1490,7 @@ export function SectionGray2(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt="Photo of Miles Penn"
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/Miles-Penn_1Miles-Penn.avif")}/>
+                                                                                      src={asset("/images/Miles-Penn_1Miles Penn.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Miles Penn</div>
@@ -1551,7 +1544,7 @@ export function SectionGray2(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt="Photo of Graham Doig"
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/Graham-Doig_1Graham-Doig.avif")}/>
+                                                                                      src={asset("/images/Graham-Doig_1Graham Doig.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Graham Doig</div>
@@ -1608,7 +1601,7 @@ export function SectionGray2(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt="Photo of Miles Penn"
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/Miles-Penn_1Miles-Penn.avif")}/>
+                                                                                      src={asset("/images/Miles-Penn_1Miles Penn.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Miles Penn</div>
@@ -1662,7 +1655,7 @@ export function SectionGray2(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt="Photo of Daniel Osvath"
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/Daniel-Osvath_1Daniel-Osvath.avif")}/>
+                                                                                      src={asset("/images/Daniel-Osvath_1Daniel Osvath.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Daniel Osvath</div>
@@ -1718,7 +1711,7 @@ export function SectionGray2(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt="Photo of Anahi Sosa"
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/Anahi-Sosa-photo_1Anahi-Sosa-photo.avif")}/>
+                                                                                      src={asset("/images/Anahi-Sosa-photo_1Anahi Sosa photo.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Anahi Sosa</div>
@@ -1773,7 +1766,7 @@ export function SectionGray2(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt="Photo of Chris Horne"
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/Chris-Horne_photo_1Chris-Horne_photo.avif")}/>
+                                                                                      src={asset("/images/Chris-Horne_photo_1Chris Horne_photo.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Chris Horne</div>
@@ -1849,7 +1842,7 @@ export function SectionGray2(_props: { data?: PseoPageData }) {
                         <div className="more-reviews_block" id="w-node-_8efc79c4-f9aa-9972-7604-482e7d1bad16-dba9761c">
                             <a calendly-link=""
                                className="button is-white w-variant-9aff5deb-9bed-fb3a-6140-c699312d49d7 w-inline-block"
-                               data-wf--button-white--variant="white-icon-right" href="wall-of-love.html"
+                               data-wf--button-white--variant="white-icon-right" href="https://awesomic.com/wall-of-love"
                                target="_blank">
                                 <div>Read more</div>
                                 <img alt="" className="button-icon w-variant-9aff5deb-9bed-fb3a-6140-c699312d49d7"
