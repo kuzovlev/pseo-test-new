@@ -9,7 +9,7 @@ interface sectionProps {
 }
 const asset = (src: string) => `${ASSET_BASE}${src.startsWith("/") ? src : `/${src}`}`;
 
-export function SectionWhite1({data}: sectionProps) {
+export function WhyAwesomic({data}: sectionProps) {
     useEffect(() => {
         const showTabsTrigger = document.querySelector('.how-choose-pro-button');
         const whyAnimationContainer = document.querySelector('.why-steps-animated-wrapper');
@@ -77,6 +77,7 @@ export function SectionWhite1({data}: sectionProps) {
         showTabsTrigger.addEventListener('click', function () {
             console.log('clicked');
             clearTimeout(whyTimeout);
+            whyAnimationContainer.style.display = '';
             const firstTab = document.querySelector('.why-step');
             if (firstTab) {
                 firstTab.removeAttribute("href");
@@ -115,7 +116,7 @@ export function SectionWhite1({data}: sectionProps) {
             <div className="spacer-80"></div>
             <div className="padding-global">
                 <div className="container-1280">
-                    <h2 className="heading-style-h3 text-align-center">{data?.how_title}</h2>
+                    <h2 className="heading-style-h3 text-align-center">Why awesomic</h2>
                     <div className="spacer-48"></div>
                     <div className="why-awesomic-complex">
                         <div className="why-awesomic-even-blocks"
@@ -224,7 +225,7 @@ export function SectionWhite1({data}: sectionProps) {
                                     monthly fee
                                 </div>
                                 <img alt="" className="why-rock-image" height="182" loading="lazy"
-                                     src={asset("/images/logo-on-rock_1logo-on-rock.avif")} width="190.5"/>
+                                     src={asset("/images/logo-on-rock_1logo on rock.avif")} width="190.5"/>
                             </div>
                         </div>
                         <div className="why-awesomic_big" id="w-node-a488271d-2586-c5f6-c1af-585df5446862-dba9761c">
@@ -360,19 +361,13 @@ export function SectionWhite1({data}: sectionProps) {
                                 </div>
                             </div>
                             <div className="why_second-small">
-                                <div className="why-awesomic_block _w-face"
-                                     data-w-id="a488271d-2586-c5f6-c1af-585df544690d"><img alt=""
+                                <div className="why-awesomic_block _w-face">
+                                    <img alt=""
                                                                                            className="face-banner-image"
                                                                                            loading="lazy"
                                                                                            sizes="(max-width: 479px) 100vw, 440px"
-                                                                                           src={asset("/images/background-bigger-for-card_1background-bigger-for-card.avif")}
-                                                                                           srcset="__ASSET_BASE__/images/background-bigger-for-card_1background-bigger-for-card.avif 500w, images/background-bigger-for-card_1background-bigger-for-card.avif 880w"
-                                                                                           style={{
-                                                                                               WebkitTransform: 'translate3d(0, 90px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)',
-                                                                                               MozTransform: 'translate3d(0, 90px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)',
-                                                                                               MsTransform: 'translate3d(0, 90px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)',
-                                                                                               transform: 'translate3d(0, 90px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)'
-                                                                                           }} width="440"/>
+                                                                                           src={asset("/images/background-bigger-for-card_1background-bigger-for card.avif")}
+                                                                                           width="440"/>
                                     <div className="max-width-151 z-index-1 align-center">
                                         <div
                                             className="text-20 weight-semibold lh-156 text-align-center text-gray-900">Vetted<br/>0.82%
@@ -382,24 +377,23 @@ export function SectionWhite1({data}: sectionProps) {
                                     <img alt="" className="bg-light-blur" loading="lazy"
                                          src={asset("/images/-cards-comlex-bg-light_1-cards-comlex-bg-light.avif")}/>
                                     <div className="spacer-32"></div>
-                                    <div className="face-mask-wrapper"><img alt="" className="face-image" height="138"
-                                                                            loading="lazy"
-                                                                            src={asset("/images/face-for-mask.avif")}
-                                                                            width="138"/>
-                                        <svg className="mask-figure" viewbox="0 0 138 138"
-                                             xmlns="http://www.w3.org/2000/svg">
+                                    <div className="face-mask-wrapper"><img
+                                        src="https://cdn.prod.website-files.com/68c2a33d71ce477bc4cfa871/68c2a33d71ce477bc4cfb02c_face-for-mask.avif"
+                                        loading="lazy" width="138" height="138" alt="" className="face-image"/>
+                                        <svg viewBox="0 0 138 138" xmlns="http://www.w3.org/2000/svg"
+                                             className="mask-figure">
                                             <defs>
-                                                <clippath clippathunits="userSpaceOnUse" id="shapeClip">
+                                                <clipPath id="shapeClip" clipPathUnits="userSpaceOnUse">
                                                     <path
                                                         d="M61.5195 0.393555C66.4842 -0.131279 71.4747 -0.131279 76.4395 0.393555C77.0159 0.468597 77.5673 0.743739 77.9434 1.19336C78.3445 1.64315 78.5449 2.21823 78.5449 2.79297V45.8545L109.011 15.4141C109.412 14.9893 109.989 14.7398 110.565 14.7148C111.142 14.6899 111.743 14.8646 112.194 15.2393C114.15 16.8138 116.007 18.4879 117.762 20.2373C119.517 21.9867 121.196 23.8613 122.751 25.8105C123.127 26.2854 123.302 26.8607 123.277 27.4355C123.227 28.0103 123.001 28.5605 122.575 28.9854L92.1104 59.4502H135.188C135.764 59.4502 136.341 59.675 136.768 60.0498C137.194 60.4247 137.47 60.975 137.545 61.5498L137.62 61.5742C138.147 66.5726 138.122 71.5963 137.57 76.5947C137.52 77.1695 137.219 77.7198 136.793 78.0947C136.367 78.4946 135.79 78.6943 135.213 78.6943H92.1348L122.601 109.135C123.002 109.56 123.252 110.134 123.277 110.709C123.302 111.284 123.127 111.883 122.751 112.333C119.667 116.207 116.131 119.731 112.27 122.83C111.818 123.205 111.241 123.38 110.64 123.355C110.063 123.33 109.511 123.08 109.085 122.655L78.6201 92.2148V135.227C78.62 135.801 78.4197 136.351 78.0186 136.801C77.6174 137.251 77.0903 137.526 76.5137 137.601C74.0314 137.875 71.5239 138 69.0166 138C66.5343 138 64.0516 137.875 61.5693 137.601C60.9928 137.526 60.4414 137.226 60.0654 136.801C59.6894 136.376 59.464 135.801 59.4639 135.227V92.165L28.998 122.605C28.5718 123.03 28.02 123.28 27.4434 123.305C26.8417 123.33 26.2647 123.155 25.8135 122.78C23.8579 121.206 22.0028 119.556 20.2227 117.782C18.4675 116.033 16.787 114.158 15.2324 112.209C14.8563 111.759 14.681 111.159 14.7061 110.584C14.7311 109.984 14.9817 109.435 15.3828 109.01L45.8486 78.5693H2.77051C2.19404 78.5693 1.61758 78.3444 1.19141 77.9697C0.765143 77.5948 0.488309 77.0445 0.413086 76.4697C-0.138518 71.5214 -0.138511 66.5231 0.413086 61.5498C0.463235 60.975 0.765143 60.4497 1.19141 60.0498C1.61759 59.6502 2.19402 59.4502 2.77051 59.4502H45.8486L15.3828 28.9854C14.9566 28.5855 14.7058 28.0103 14.6807 27.4355C14.6556 26.8357 14.8309 26.2604 15.207 25.8105C16.7616 23.8612 18.4421 22.0117 20.1973 20.2373C21.9775 18.4629 23.833 16.8137 25.7637 15.2393C26.215 14.8644 26.8169 14.6899 27.3936 14.7148C27.9702 14.7398 28.522 14.9892 28.9482 15.4141L59.4131 45.8545V2.79297C59.4131 2.19325 59.6396 1.64316 60.0156 1.19336C60.3917 0.743754 60.943 0.468509 61.5195 0.393555Z"
-                                                        id="clipPath" transform="rotate(45 69 69)"></path>
-                                                </clippath>
+                                                        transform="rotate(45 69 69)" id="clipPath"></path>
+                                                </clipPath>
                                             </defs>
                                         </svg>
                                     </div>
                                     <img alt="how we choose a pro clickable element" className="how-choose-pro-button"
                                          loading="lazy" src={asset("/images/how-we-choose-a-pro-button.png")}
-                                         style={{opacity: '0'}} width="226"/>
+                                         width="226"/>
                                     <div className="why-steps-animated-wrapper" style={{display: 'none'}}>
                                         <div className="why-animated-tabs w-tabs" data-current="Tab 1"
                                              data-duration-in="300" data-duration-out="100" data-easing="ease">
@@ -421,9 +415,11 @@ export function SectionWhite1({data}: sectionProps) {
                                             <div className="why-animated-content w-tab-content">
                                                 <div className="why-animated-pane w-tab-pane w--tab-active"
                                                      data-w-tab="Tab 1">
-                                                    <div className="why-animated_pane-content">
+                                                    <div style={{display: 'flex', height: '100%'}}>
+                                                        <div className="why-animated_pane-content">
                                                         <div
-                                                            className="text-20 weight-semibold lh-156 text-gray-900">Portfolio &amp; interview
+                                                            className="text-20 weight-semibold lh-156 text-gray-900">
+                                                            Portfolio &amp; interview
                                                         </div>
                                                         <div>
                                                             <div className="heading-style-h3">55%</div>
@@ -472,8 +468,10 @@ export function SectionWhite1({data}: sectionProps) {
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    </div>
                                                 </div>
                                                 <div className="why-animated-pane w-tab-pane" data-w-tab="Tab 2">
+                                                    <div style={{display: 'flex', height: '100%'}}>
                                                     <div className="why-animated_pane-content">
                                                         <div
                                                             className="text-20 weight-semibold lh-156 text-gray-900">Awesomic
@@ -525,8 +523,10 @@ export function SectionWhite1({data}: sectionProps) {
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    </div>
                                                 </div>
                                                 <div className="why-animated-pane w-tab-pane" data-w-tab="Tab 3">
+                                                    <div style={{display: 'flex', height: '100%'}}>
                                                     <div className="why-animated_pane-content">
                                                         <div
                                                             className="text-20 weight-semibold lh-156 text-gray-900">Community
@@ -555,8 +555,10 @@ export function SectionWhite1({data}: sectionProps) {
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    </div>
                                                 </div>
                                                 <div className="why-animated-pane w-tab-pane" data-w-tab="Tab 4">
+                                                    <div style={{display: 'flex', height: '100%'}}>
                                                     <div className="why-animated_pane-content">
                                                         <div
                                                             className="text-20 weight-semibold lh-156 text-gray-900">Final
@@ -584,6 +586,7 @@ export function SectionWhite1({data}: sectionProps) {
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -594,8 +597,8 @@ export function SectionWhite1({data}: sectionProps) {
                                 <div className="why-awesomic_block _w-hills">
                                     <div
                                         className="text-20 weight-semibold lh-150 text-white text-align-center">Pause <span
-                                        className="accelerator_text-icon is-pause">\u00a0</span>\u00a0or scale <span
-                                        className="accelerator_text-icon is-scale">\u00a0</span>\u00a0your subscription
+                                        className="accelerator_text-icon is-pause">&nbsp;</span> or scale <span
+                                        className="accelerator_text-icon is-scale">&nbsp;</span> your subscription
                                         anytime
                                     </div>
                                 </div>
@@ -625,18 +628,6 @@ export function SectionWhite1({data}: sectionProps) {
         }
         100% {
           transform: translateX(0%);
-        }
-      }
-      #clipPath {
-        animation: rotateClip 12s linear infinite;
-        transform-origin: 69px 69px;
-      }
-      @keyframes rotateClip {
-        from {
-          transform: rotate(45deg);
-        }
-        to {
-          transform: rotate(405deg); /* 45deg + 360deg */
         }
       }
     `

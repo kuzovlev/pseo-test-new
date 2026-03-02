@@ -9731,8 +9731,8 @@ figure {
 }
 
 .face-image {
-  -webkit-clip-path: url('../images/');
-  clip-path: url('../images/');
+  -webkit-clip-path: url(#shapeClip);
+  clip-path: url(#shapeClip);
 }
 
 .accelerator_text-icon {

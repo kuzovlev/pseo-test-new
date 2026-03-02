@@ -236,3 +236,43 @@
 .how-tabs_content {
     background-image: url("https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/Home%20page%20images/How%20it%20work%20img.jpg");
 }
+
+#clipPath {
+    animation: rotateClip 12s linear infinite;
+    transform-origin: 69px 69px;
+}
+@keyframes rotateClip {
+    from {
+        transform: rotate(45deg);
+    }
+    to {
+        transform: rotate(405deg); /* 45deg + 360deg */
+    }
+}
+.why-awesomic_block._w-face .face-banner-image{
+    transition: all .25s ease-in-out;
+    transform: translateY(90px);
+}
+.why-awesomic_block._w-face:hover .face-banner-image{
+    transform: translateY(20px);
+}
+.how-choose-pro-button{
+    transition: all .25s ease-in-out;
+    opacity: 0;
+}
+.why-awesomic_block._w-face:hover .how-choose-pro-button{
+    opacity: 1;
+}
+.why-animated-tabs::after, .why-animated-tabs::before {
+    display: none;
+}
+.why-animated-tabs, .why-animated-content, .why-animated-pane{
+    height: 100%;
+}
+.why-animated-content .why-animated-pane .w--tab-active{
+    display: contents!important;
+    flex-direction: column;
+}
+.why-animated-content .why-animated-pane .why-animated_pane-content{
+    flex-grow: 1;
+}
