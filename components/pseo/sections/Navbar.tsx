@@ -1,8 +1,240 @@
-import { withAssetBase } from "@/lib/pseo-assets";
 import type { PseoPageData } from "@/lib/pseo-types";
 
-const HTML = "<div class=\"navbar_component w-nav\" data-animation=\"default\" data-collapse=\"medium\" data-duration=\"400\" data-easing=\"ease\" data-easing2=\"ease\" data-w-id=\"07cb5ef4-0384-fb78-8b8e-242a2068d912\" data-wf--navbar--variant=\"base\" fs-scrolldisable-element=\"smart-nav\" role=\"banner\">\n<div class=\"booking-popup\"><iframe class=\"chili-frame\"></iframe>\n<div class=\"chili-popup_close\"></div>\n</div>\n<div class=\"navbar_container\">\n<a class=\"navbar_logo-link w-nav-brand\" href=\"index.html\"><img alt=\"Awesomic Logo\" class=\"navbar_logo wide\" loading=\"lazy\" src=\"__ASSET_BASE__/images/awesomic-logo.svg\"/><img alt=\"\" class=\"navbar_logo small\" loading=\"lazy\" src=\"__ASSET_BASE__/images/awesomic-smile-menu.svg\"/></a>\n<nav class=\"navbar_menu is-page-height-tablet w-nav-menu\" role=\"navigation\">\n<div class=\"navbar_menu navigation-list\">\n<a class=\"navbar-link\" href=\"pricing.html\">Pricing</a>\n<a class=\"navbar-link\" href=\"case-study.html\">Case studies</a>\n<div class=\"navbar-dropdown w-dropdown\" data-delay=\"0\" data-hover=\"true\">\n<div class=\"navbar-link is-dropdown w-dropdown-toggle\">\n<div>Services &amp; solutions</div><img alt=\"\" class=\"dropdown-chevron\" loading=\"lazy\" src=\"__ASSET_BASE__/images/dropdown-chevron.svg\"/>\n</div>\n<nav class=\"dropdown-navigation w-dropdown-list\">\n<div class=\"dropdown-navigation inner\">\n<div class=\"dropdown-column\">\n<div class=\"dropdown-section\">\n<div class=\"dropdown_section-name\">Services:</div>\n<a class=\"dropdown-link w-inline-block\" href=\"/?tab=design#services-block\">\n<div class=\"dropdown_inner-container\"><img alt=\"\" class=\"dropdown-icon\" loading=\"lazy\" src=\"__ASSET_BASE__/images/magic-wand-16-n.svg\"/>\n<div class=\"text-13 weight-medium lh-125 text-gray-900\">Design services</div>\n</div><img alt=\"\" class=\"dropdown-hover-icon\" loading=\"lazy\" src=\"__ASSET_BASE__/images/new-page-black.svg\"/>\n</a>\n<a class=\"dropdown-link w-inline-block\" href=\"video.html\">\n<div class=\"dropdown_inner-container\"><img alt=\"\" class=\"dropdown-icon\" loading=\"lazy\" src=\"__ASSET_BASE__/images/video-production-icon.svg\"/>\n<div class=\"text-13 weight-medium lh-125 text-gray-900\">Video production</div>\n</div><img alt=\"\" class=\"dropdown-hover-icon\" loading=\"lazy\" src=\"__ASSET_BASE__/images/new-page-black.svg\"/>\n</a>\n<a class=\"dropdown-link w-inline-block\" href=\"web-design.html\">\n<div class=\"dropdown_inner-container\"><img alt=\"\" class=\"dropdown-icon\" loading=\"lazy\" src=\"__ASSET_BASE__/images/web-dis-icon.svg\"/>\n<div class=\"text-13 weight-medium lh-125 text-gray-900\">Web design</div>\n<div class=\"nav_new-badge\">new</div>\n</div><img alt=\"\" class=\"dropdown-hover-icon\" loading=\"lazy\" src=\"__ASSET_BASE__/images/new-page-black.svg\"/>\n</a>\n<a class=\"dropdown-link w-inline-block\" href=\"branding.html\">\n<div class=\"dropdown_inner-container\"><img alt=\"\" class=\"dropdown-icon\" loading=\"lazy\" src=\"__ASSET_BASE__/images/branding-icon.svg\"/>\n<div class=\"text-13 weight-medium lh-125 text-gray-900\">Branding</div>\n</div><img alt=\"\" class=\"dropdown-hover-icon\" loading=\"lazy\" src=\"__ASSET_BASE__/images/new-page-black.svg\"/>\n</a>\n<a class=\"dropdown-link w-inline-block\" href=\"graphic.html\">\n<div class=\"dropdown_inner-container\"><img alt=\"\" class=\"dropdown-icon\" loading=\"lazy\" src=\"__ASSET_BASE__/images/graph-des-icon-nav.svg\"/>\n<div class=\"text-13 weight-medium lh-125 text-gray-900\">Graphic design</div>\n<div class=\"nav_new-badge\">new</div>\n</div><img alt=\"\" class=\"dropdown-hover-icon\" loading=\"lazy\" src=\"__ASSET_BASE__/images/new-page-black.svg\"/>\n</a>\n<a class=\"dropdown-link w-inline-block\" href=\"/?tab=nocode#services-block\">\n<div class=\"dropdown_inner-container\"><img alt=\"\" class=\"dropdown-icon\" loading=\"lazy\" src=\"__ASSET_BASE__/images/brick-icon-dark.svg\" width=\"Auto\"/>\n<div class=\"text-13 weight-medium lh-125 text-gray-900\">No-code development</div>\n</div><img alt=\"\" class=\"dropdown-hover-icon\" loading=\"lazy\" src=\"__ASSET_BASE__/images/new-page-black.svg\"/>\n</a>\n<a class=\"dropdown-link w-inline-block\" href=\"/?tab=marketing#services-block\">\n<div class=\"dropdown_inner-container\"><img alt=\"\" class=\"dropdown-icon\" loading=\"lazy\" src=\"__ASSET_BASE__/images/stats-icon-dark.svg\"/>\n<div class=\"text-13 weight-medium lh-125 text-gray-900\">Marketing services</div>\n</div><img alt=\"\" class=\"dropdown-hover-icon\" loading=\"lazy\" src=\"__ASSET_BASE__/images/new-page-black.svg\"/>\n</a>\n<a class=\"dropdown-link w-inline-block\" href=\"/?tab=software#services-block\">\n<div class=\"dropdown_inner-container\"><img alt=\"\" class=\"dropdown-icon\" loading=\"lazy\" src=\"__ASSET_BASE__/images/settings-icon-dark.svg\"/>\n<div class=\"text-13 weight-medium lh-125 text-gray-900\">Software development</div>\n</div><img alt=\"\" class=\"dropdown-hover-icon\" loading=\"lazy\" src=\"__ASSET_BASE__/images/new-page-black.svg\"/>\n</a>\n</div>\n</div>\n<div class=\"dropdown-column\">\n<div class=\"dropdown-section\">\n<div class=\"dropdown_section-name\">Solutions:</div>\n<a class=\"dropdown-link w-inline-block\" href=\"webflow.html\">\n<div class=\"dropdown_inner-container\"><img alt=\"\" class=\"dropdown-icon\" loading=\"lazy\" src=\"__ASSET_BASE__/images/webflow-menu-icon.svg\"/>\n<div class=\"text-13 weight-medium lh-125 text-gray-900\">Webflow</div>\n</div><img alt=\"\" class=\"dropdown-hover-icon\" loading=\"lazy\" src=\"__ASSET_BASE__/images/new-page-black.svg\"/>\n</a>\n<a class=\"dropdown-link w-inline-block\" href=\"framer.html\">\n<div class=\"dropdown_inner-container\"><img alt=\"\" class=\"dropdown-icon\" loading=\"lazy\" src=\"__ASSET_BASE__/images/framer-menu-icon.svg\"/>\n<div class=\"text-13 weight-medium lh-125 text-gray-900\">Framer</div>\n</div><img alt=\"\" class=\"dropdown-hover-icon\" loading=\"lazy\" src=\"__ASSET_BASE__/images/new-page-black.svg\"/>\n</a>\n<a class=\"dropdown-link w-inline-block\" href=\"wordpress.html\">\n<div class=\"dropdown_inner-container\"><img alt=\"\" class=\"dropdown-icon\" loading=\"lazy\" src=\"__ASSET_BASE__/images/wp-menu-icon.svg\" width=\"Auto\"/>\n<div class=\"text-13 weight-medium lh-125 text-gray-900\">Wordpress</div>\n</div><img alt=\"\" class=\"dropdown-hover-icon\" loading=\"lazy\" src=\"__ASSET_BASE__/images/new-page-black.svg\"/>\n</a>\n</div>\n<div class=\"dropdown-section\">\n<div class=\"dropdown_section-name\">Industry:</div>\n<a class=\"dropdown-link w-inline-block\" href=\"agencies.html\">\n<div class=\"dropdown_inner-container\"><img alt=\"\" class=\"dropdown-icon\" loading=\"lazy\" src=\"__ASSET_BASE__/images/agencies-menu-icon.svg\"/>\n<div class=\"text-13 weight-medium lh-125 text-gray-900\">Agencies</div>\n<div class=\"nav_new-badge\">new</div>\n</div><img alt=\"\" class=\"dropdown-hover-icon\" loading=\"lazy\" src=\"__ASSET_BASE__/images/new-page-black.svg\"/>\n</a>\n</div>\n</div>\n</div>\n</nav>\n</div>\n<a class=\"navbar-link\" href=\"about.html\">About us</a>\n<a class=\"navbar-link\" href=\"blog.html\">Blog</a>\n<a class=\"navbar-link _w-icon w-inline-block\" href=\"wall-of-love.html\"><img alt=\"\" class=\"tablet_hide\" loading=\"lazy\" src=\"__ASSET_BASE__/images/heart-icon.svg\"/>\n<div>Love</div>\n</a>\n<a class=\"navbar-link\" href=\"talent.html\">Apply<span class=\"medium_show inline\"> \u00a0as a talent</span></a>\n</div>\n<div class=\"mobile-nabar-cta tablet_show\">\n<a class=\"button is-white w-inline-block\" href=\"https://app.awesomic.com/\" target=\"_blank\"><img alt=\"\" class=\"button-icon_navbar\" loading=\"lazy\" src=\"__ASSET_BASE__/images/login-icon-black.svg\"/>\n<div>Log in</div>\n</a>\n<div class=\"main-navbar-button-wrapper\">\n<a button-black=\"\" calendly-link=\"https://calendly.com/awesomic/demo?hide_gdpr_banner=1\" class=\"button w-variant-d66e8b99-9512-4f1b-0527-c00e632abd95 w-inline-block\" data-wf--button-black-m--variant=\"base-full-width\" href=\"#\">\n<div class=\"z-index-1\">Book demo</div><img alt=\"\" class=\"button-icon\" height=\"20\" loading=\"lazy\" src=\"__ASSET_BASE__/images/login-icon-white.svg\"/>\n<div class=\"button-background w-variant-d66e8b99-9512-4f1b-0527-c00e632abd95\"></div>\n</a>\n</div>\n<div class=\"hiring-page-navbar-main-button max-width-full\">\n<a button-black=\"\" calendly-link=\"\" class=\"button w-variant-d66e8b99-9512-4f1b-0527-c00e632abd95 w-inline-block\" data-wf--button-black-m--variant=\"base-full-width\" href=\"https://careers.awesomic.com/jobs\" target=\"_blank\">\n<div class=\"z-index-1\">Apply now</div><img alt=\"\" class=\"button-icon\" height=\"20\" loading=\"lazy\" src=\"__ASSET_BASE__/images/login-icon-white.svg\"/>\n<div class=\"button-background w-variant-d66e8b99-9512-4f1b-0527-c00e632abd95\"></div>\n</a>\n</div>\n</div>\n</nav>\n<div class=\"navbar_button-wrapper\" id=\"w-node-_07cb5ef4-0384-fb78-8b8e-242a2068d928-2068d912\">\n<div class=\"navbar_button-wrapper tablet_hide\">\n<a calendly-link=\"\" class=\"button is-white w-variant-2c9bf72f-8ee3-90cf-f1f6-7d7020c93aef w-inline-block\" data-wf--button-white--variant=\"login-button\" href=\"https://app.awesomic.com\" target=\"_blank\">\n<div>Log in</div><img alt=\"\" class=\"button-icon w-variant-2c9bf72f-8ee3-90cf-f1f6-7d7020c93aef\" loading=\"lazy\" src=\"__ASSET_BASE__/images/login-icon-black.svg\"/>\n</a>\n<div class=\"main-navbar-button-wrapper\">\n<a button-black=\"\" calendly-link=\"https://calendly.com/awesomic/demo?hide_gdpr_banner=1\" class=\"button w-inline-block\" data-wf--button-black-m--variant=\"base\" href=\"#\">\n<div class=\"z-index-1\">Book demo</div><img alt=\"\" class=\"button-icon\" height=\"20\" loading=\"lazy\" src=\"__ASSET_BASE__/images/faq_two-faces.avif\"/>\n<div class=\"button-background\"></div>\n</a>\n</div>\n<div class=\"hiring-page-navbar-main-button\">\n<a button-black=\"\" calendly-link=\"\" class=\"button w-inline-block\" data-wf--button-black-m--variant=\"base\" href=\"https://careers.awesomic.com/jobs\" target=\"_blank\">\n<div class=\"z-index-1\">Apply now</div><img alt=\"\" class=\"button-icon\" height=\"20\" loading=\"lazy\" src=\"__ASSET_BASE__/images/faq_two-faces.avif\"/>\n<div class=\"button-background\"></div>\n</a>\n</div>\n</div>\n<div class=\"navbar_menu-button w-nav-button\">\n<div class=\"menu-icon\">\n<div class=\"menu-icon2_line-top\"></div>\n<div class=\"menu-icon2_line-middle\">\n<div class=\"menu-icon2_line-middle-inner\"></div>\n</div>\n<div class=\"menu-icon2_line-bottom\"></div>\n</div>\n</div>\n</div>\n</div>\n<div class=\"navbar-overlay\"></div>\n</div>";
+const ASSET_BASE = process.env.NEXT_PUBLIC_ASSET_BASE ?? "";
+
+const img = (src: string, alt = "", className = "", props: Record<string, string> = {}) => (
+    <img src={`${ASSET_BASE}${src}`} alt={alt} className={className} loading="lazy" {...props} />
+);
 
 export function Navbar(_props: { data?: PseoPageData }) {
-  return <div dangerouslySetInnerHTML={ { __html: withAssetBase(HTML) } } />;
+  return (
+      <div
+          className="navbar_component w-nav"
+          data-animation="default"
+          data-collapse="medium"
+          data-duration="400"
+          data-easing="ease"
+          data-easing2="ease"
+          data-w-id="07cb5ef4-0384-fb78-8b8e-242a2068d912"
+          data-wf--navbar--variant="base"
+          fs-scrolldisable-element="smart-nav"
+          role="banner"
+      >
+        {/* ChiliPiper booking popup */}
+        <div className="booking-popup">
+          <iframe className="chili-frame" />
+          <div className="chili-popup_close" />
+        </div>
+
+        <div className="navbar_container">
+          {/* Logo */}
+          <a className="navbar_logo-link w-nav-brand" href="index.html">
+            {img("/images/awesomic-logo.svg", "Awesomic Logo", "navbar_logo wide")}
+            {img("/images/awesomic-smile-menu.svg", "", "navbar_logo small")}
+          </a>
+
+          {/* Main nav */}
+          <nav className="navbar_menu is-page-height-tablet w-nav-menu" role="navigation">
+            <div className="navbar_menu navigation-list">
+
+              <a className="navbar-link" href="pricing.html">Pricing</a>
+
+              {/* Our work dropdown */}
+              <div className="navbar-dropdown w-dropdown" data-delay="0" data-hover="true">
+                <div className="navbar-link is-dropdown w-dropdown-toggle">
+                  <div>Our work</div>
+                  {img("/images/dropdown-chevron.svg", "", "dropdown-chevron")}
+                </div>
+                <nav className="dropdown-navigation w-dropdown-list">
+                  <div className="dropdown-navigation inner single-col">
+                    <div className="dropdown-column">
+                      <div className="dropdown-section">
+                        <DropdownLink href="case-study.html" icon="/images/case-study-icon.svg" label="Case studies" />
+                        <DropdownLink href="design-menu/web.html" icon="/images/design-menu-icon.svg" label="Design menu" isNew />
+                      </div>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+
+              {/* Services & solutions dropdown */}
+              <div className="navbar-dropdown w-dropdown" data-delay="0" data-hover="true">
+                <div className="navbar-link is-dropdown w-dropdown-toggle">
+                  <div>Services &amp; solutions</div>
+                  {img("/images/dropdown-chevron.svg", "", "dropdown-chevron")}
+                </div>
+                <nav className="dropdown-navigation w-dropdown-list">
+                  <div className="dropdown-navigation inner">
+
+                    {/* Left column — services */}
+                    <div className="dropdown-column">
+                      <div className="dropdown-section">
+                        <div className="dropdown_section-name">Services:</div>
+                        <DropdownLink href="/?tab=design#services-block"   icon="/images/magic-wand-16-n.svg"       label="Design services" />
+                        <DropdownLink href="video.html"                    icon="/images/video-production-icon.svg" label="Video production" />
+                        <DropdownLink href="web-design.html"               icon="/images/web-dis-icon.svg"          label="Web design" isNew />
+                        <DropdownLink href="branding.html"                 icon="/images/branding-icon.svg"         label="Branding" />
+                        <DropdownLink href="graphic.html"                  icon="/images/graph-des-icon-nav.svg"    label="Graphic design" isNew />
+                        <DropdownLink href="/?tab=nocode#services-block"   icon="/images/brick-icon-dark.svg"       label="No-code development" />
+                        <DropdownLink href="/?tab=marketing#services-block" icon="/images/stats-icon-dark.svg"      label="Marketing services" />
+                        <DropdownLink href="/?tab=software#services-block" icon="/images/settings-icon-dark.svg"   label="Software development" />
+                      </div>
+                    </div>
+
+                    {/* Right column — solutions + industry */}
+                    <div className="dropdown-column">
+                      <div className="dropdown-section">
+                        <div className="dropdown_section-name">Solutions:</div>
+                        <DropdownLink href="webflow.html"   icon="/images/webflow-menu-icon.svg" label="Webflow" />
+                        <DropdownLink href="framer.html"    icon="/images/framer-menu-icon.svg"  label="Framer" />
+                        <DropdownLink href="wordpress.html" icon="/images/wp-menu-icon.svg"      label="Wordpress" />
+                      </div>
+                      <div className="dropdown-section">
+                        <div className="dropdown_section-name">Industry:</div>
+                        <DropdownLink href="agencies.html" icon="/images/agencies-menu-icon.svg" label="Agencies" />
+                      </div>
+                    </div>
+
+                  </div>
+                </nav>
+              </div>
+
+              <a className="navbar-link" href="about.html">About us</a>
+              <a className="navbar-link" href="blog.html">Blog</a>
+              <a className="navbar-link _w-icon w-inline-block" href="wall-of-love.html">
+                {img("/images/heart-icon.svg", "", "tablet_hide")}
+                <div>Love</div>
+              </a>
+              <a className="navbar-link" href="talent.html">
+                Apply<span className="medium_show inline">&nbsp;&nbsp;as a talent</span>
+              </a>
+            </div>
+
+            {/* Mobile CTA (visible on tablet and below) */}
+            <div className="mobile-nabar-cta tablet_show">
+              <a className="button is-white w-inline-block" href="https://app.awesomic.com/" target="_blank">
+                {img("/images/login-icon-black.svg", "", "button-icon_navbar")}
+                <div>Log in</div>
+              </a>
+              <div className="main-navbar-button-wrapper">
+                <a
+                    className="button w-variant-d66e8b99-9512-4f1b-0527-c00e632abd95 w-inline-block"
+                    button-black=""
+                    calendly-link="https://calendly.com/awesomic/demo?hide_gdpr_banner=1"
+                    data-wf--button-black-m--variant="base-full-width"
+                    href="#"
+                >
+                  <div className="z-index-1">Book demo</div>
+                  {img("/images/login-icon-white.svg", "", "button-icon", { height: "20" })}
+                  <div className="button-background w-variant-d66e8b99-9512-4f1b-0527-c00e632abd95" />
+                </a>
+              </div>
+              <div className="hiring-page-navbar-main-button max-width-full">
+                <a
+                    className="button w-variant-d66e8b99-9512-4f1b-0527-c00e632abd95 w-inline-block"
+                    button-black=""
+                    calendly-link=""
+                    data-wf--button-black-m--variant="base-full-width"
+                    href="https://careers.awesomic.com/jobs"
+                    target="_blank"
+                >
+                  <div className="z-index-1">Apply now</div>
+                  {img("/images/login-icon-white.svg", "", "button-icon", { height: "20" })}
+                  <div className="button-background w-variant-d66e8b99-9512-4f1b-0527-c00e632abd95" />
+                </a>
+              </div>
+            </div>
+          </nav>
+
+          {/* Desktop CTA buttons */}
+          <div className="navbar_button-wrapper" id="w-node-_07cb5ef4-0384-fb78-8b8e-242a2068d928-2068d912">
+            <div className="navbar_button-wrapper tablet_hide">
+              <a
+                  className="button is-white w-variant-2c9bf72f-8ee3-90cf-f1f6-7d7020c93aef w-inline-block"
+                  calendly-link=""
+                  data-wf--button-white--variant="login-button"
+                  href="https://app.awesomic.com"
+                  target="_blank"
+              >
+                <div>Log in</div>
+                {img("/images/login-icon-black.svg", "", "button-icon w-variant-2c9bf72f-8ee3-90cf-f1f6-7d7020c93aef")}
+              </a>
+              <div className="main-navbar-button-wrapper">
+                <a
+                    className="button w-inline-block"
+                    button-black=""
+                    calendly-link="https://calendly.com/awesomic/demo?hide_gdpr_banner=1"
+                    data-wf--button-black-m--variant="base"
+                    href="#"
+                >
+                  <div className="z-index-1">Book demo</div>
+                  {img("/images/faq_two-faces.avif", "", "button-icon", { height: "20" })}
+                  <div className="button-background" />
+                </a>
+              </div>
+              <div className="hiring-page-navbar-main-button">
+                <a
+                    className="button w-inline-block"
+                    button-black=""
+                    calendly-link=""
+                    data-wf--button-black-m--variant="base"
+                    href="https://careers.awesomic.com/jobs"
+                    target="_blank"
+                >
+                  <div className="z-index-1">Apply now</div>
+                  {img("/images/faq_two-faces.avif", "", "button-icon", { height: "20" })}
+                  <div className="button-background" />
+                </a>
+              </div>
+            </div>
+
+            {/* Hamburger */}
+            <div className="navbar_menu-button w-nav-button">
+              <div className="menu-icon">
+                <div className="menu-icon2_line-top" />
+                <div className="menu-icon2_line-middle">
+                  <div className="menu-icon2_line-middle-inner" />
+                </div>
+                <div className="menu-icon2_line-bottom" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="navbar-overlay" />
+      </div>
+  );
+}
+
+// ---------------------------------------------------------------------------
+// Sub-component — keeps the dropdown link markup DRY
+// ---------------------------------------------------------------------------
+interface DropdownLinkProps {
+  href: string;
+  icon: string;
+  label: string;
+  isNew?: boolean;
+}
+
+function DropdownLink({ href, icon, label, isNew }: DropdownLinkProps) {
+  return (
+      <a className="dropdown-link w-inline-block" href={href}>
+        <div className="dropdown_inner-container">
+          <img
+              src={`${ASSET_BASE}${icon}`}
+              alt=""
+              className="dropdown-icon"
+              loading="lazy"
+          />
+          <div className="text-13 weight-medium lh-125 text-gray-900">{label}</div>
+          {isNew && <div className="nav_new-badge">new</div>}
+        </div>
+        <img
+            src={`${ASSET_BASE}/images/new-page-black.svg`}
+            alt=""
+            className="dropdown-hover-icon"
+            loading="lazy"
+        />
+      </a>
+  );
 }

@@ -24,6 +24,7 @@ export default function Head() {
       <link href="/webflow/css/normalize.css" rel="stylesheet" type="text/css" />
       <link href="/webflow/css/webflow.css" rel="stylesheet" type="text/css" />
       <link href="/webflow/css/awesomic-2025-new.webflow.css" rel="stylesheet" type="text/css" />
+      <link href="/webflow/css/global-styles.css" rel="stylesheet" type="text/css" />
       <link href="https://www.awesomic.com/pseo-template" rel="canonical" />
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
       <link rel="shortcut icon" href={favicon} type="image/x-icon" />

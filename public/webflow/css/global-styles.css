@@ -1,0 +1,234 @@
+/* ===========================
+   FONTS
+============================ */
+@font-face {
+    font-family: Cosmic;
+    src: url(https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/Font/Cosmica-Bold.woff2) format("woff2");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: Cosmic;
+    src: url(https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/Font/Cosmica-Medium.woff2) format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: Cosmic;
+    src: url(https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/Font/Cosmica-MediumItalic.woff2) format("woff2");
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: Cosmic;
+    src: url(https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/Font/Cosmica-RegularItalic.woff2) format("woff2");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: Cosmic;
+    src: url(https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/Font/Cosmica-Book.woff2) format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: Cosmic;
+    src: url(https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/Font/Cosmica-BookItalic.woff2) format("woff2");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: Cosmic;
+    src: url(https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/Font/Cosmica-LightItalic.woff2) format("woff2");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: Cosmic;
+    src: url(https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/Font/Cosmica-Light.woff2) format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ===========================
+   MOBILE NAV
+============================ */
+@media screen and (max-width: 991px) {
+    [data-nav-menu-open] {
+        display: flex !important;
+    }
+}
+
+/* ===========================
+   KEYFRAME ANIMATIONS
+============================ */
+@keyframes buttonBg {
+    0%   { left: 0%;    transform: translateX(0%);    }
+    100% { left: 100%;  transform: translateX(-100%); }
+}
+@keyframes animatedButtonFirst {
+    0%   { opacity: 60%; }
+    33%  { opacity: 20%; }
+    66%  { opacity: 40%; }
+    100% { opacity: 60%; }
+}
+@keyframes animatedButtonSecond {
+    0%   { opacity: 40%; }
+    33%  { opacity: 60%; }
+    66%  { opacity: 20%; }
+    100% { opacity: 40%; }
+}
+@keyframes animatedButtonThird {
+    0%   { opacity: 20%; }
+    33%  { opacity: 40%; }
+    66%  { opacity: 60%; }
+    100% { opacity: 20%; }
+}
+
+/* ===========================
+   TEXT CLAMP
+============================ */
+.text-style-4lines,
+.text-style-3lines,
+.text-style-2lines,
+.text-style-1line {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+}
+.text-style-4lines { -webkit-line-clamp: 4; }
+.text-style-3lines { -webkit-line-clamp: 3; }
+.text-style-2lines { -webkit-line-clamp: 2; }
+.text-style-1line  { -webkit-line-clamp: 1; }
+
+/* ===========================
+   BUTTON STYLES
+============================ */
+.button[button-black]:hover .button-background,
+.button.is-icon:not(.is-white):hover .button-background,
+.submit-button_wrapper:hover .button .button-background {
+    opacity: 1;
+}
+.button[button-black]:not([data-wf--button-black-m--variant="base-full-width"]):not([data-wf--button-black-m--variant="full-width-with-icon"]):not(.is-animated):hover .button-background,
+.button.is-icon:not(.is-white):hover .button-background,
+.submit-button_wrapper:hover
+.button[button-black]:not([data-wf--button-black-m--variant="base-full-width"]):not([data-wf--button-black-m--variant="full-width-with-icon"]):not(.is-animated)
+.button-background {
+    animation: buttonBg 1.5s ease-in-out forwards;
+}
+.submit-button_wrapper:hover .button:not(.is-animated) .button-background {
+    opacity: 1;
+}
+.submit-button_wrapper:hover .button[button-black] {
+    background-color: #09090b00;
+    box-shadow:
+            inset 0 0.5px #ffffff80,
+            inset 0 9px 14px -5px #ffffff80,
+            0 0 0 1.5px #9896d21a;
+}
+
+/* ===========================
+   SECTION OFFSET DECORATION
+============================ */
+.section-offset:not(.section_move-top)::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    background: #F4F4F5;
+    z-index: -1;
+}
+.section-offset.offset-to-gray50:not(.section_move-top)::before {
+    background: #FAFAFA;
+}
+
+/* ===========================
+   NAVBAR DROPDOWN
+============================ */
+@media (width > 991px) {
+    .navbar-link.is-dropdown.w--open {
+        background-color: var(--_colors---gray--gray-50);
+    }
+    .dropdown-hover-icon,
+    .dropdown-icon {
+        transition: all 0.25s ease-out;
+    }
+    .dropdown-link:not(.inactive) .dropdown-hover-icon {
+        width: 0;
+        padding: 0;
+    }
+    .dropdown-link:not(.inactive):hover .dropdown-hover-icon {
+        width: 24px;
+        padding-left: 8px;
+    }
+    .dropdown-link:not(.inactive) .dropdown-icon {
+        width: 24px;
+        padding-right: 8px;
+    }
+    .dropdown-link:not(.inactive):hover .dropdown-icon {
+        width: 0;
+        padding-right: 0;
+    }
+    .dropdown-link:not(.inactive) {
+        transition: all 0.25s linear;
+    }
+    .dropdown-link:not(.inactive):hover {
+        background-color: var(--_colors---gray--gray-50);
+    }
+}
+
+/* ===========================
+   MISC
+============================ */
+@media screen and (min-width: 992px) {
+    .calendly-overlay .calendly-popup {
+        max-width: 90vw !important;
+    }
+}
+.toc_link.w--current .toc_link-image {
+    width: 16px;
+    margin-right: 10px;
+}
+.toc_link .toc_link-image {
+    width: 0;
+    margin-right: 0;
+}
+.swiper-wrapper {
+    z-index: 0 !important;
+}
+.hero_faces::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    background-image: url("https://cdn.prod.website-files.com/68c2a33d71ce477bc4cfa871/68c2a33d71ce477bc4cfab0f_hero-faces-span.avif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    pointer-events: none;
+}
+.legal_richtext > :first-child {
+    margin-top: unset;
+}
+.hero_numbers-item .heading-style-h4.mod-numbers {
+    flex-shrink: 0;
+}
+@media screen and (min-width: 479px) {
+    .features_cta {
+        background-image: url(https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/features-cta-hills-bg.avif);
+    }
+}

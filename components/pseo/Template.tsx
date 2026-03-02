@@ -1,6 +1,6 @@
 import type { PseoPageData } from "@/lib/pseo-types";
 import { Navbar } from "./sections/Navbar";
-import { HeroSection } from "./sections/HeroSection";
+import HeroSection from "./sections/HeroSection";
 import { SectionGray1 } from "./sections/SectionGray1";
 import { HowItWorksSection } from "./sections/HowItWorksSection";
 import { SectionGray2 } from "./sections/SectionGray2";

@@ -1919,7 +1919,7 @@ figure {
 .button-background {
   opacity: 0;
   pointer-events: none;
-  background-image: url('../images/button_Shapes-blur.svg');
+  background-image: url('../../images/button_Shapes-blur.svg');
   background-position: 0 0;
   background-size: cover;
   width: 415px;
@@ -2232,7 +2232,7 @@ figure {
 }
 
 .cta_faces {
-  background-image: url('../images/cta-faces_1cta-faces.avif');
+  background-image: url('../../images/cta-faces_1cta-faces.avif');
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -2243,7 +2243,7 @@ figure {
 }
 
 .cta_faces.upd-faces {
-  background-image: url('../images/cta-faces-new.avif');
+  background-image: url('../../images/cta-faces-new.avif');
 }
 
 .spacer-96 {
@@ -2960,7 +2960,7 @@ figure {
 
 .features_cta {
   background-color: var(--_colors---gray--gray-100);
-  background-image: url('../images/features-cta-hills-bg_1features-cta-hills-bg.avif');
+  background-image: url('../../images/features-cta-hills-bg_1features-cta-hills-bg.avif');
   background-position: 130%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -2972,7 +2972,7 @@ figure {
 }
 
 .features_cta.mod-summer-deal {
-  background-image: url('../images/summer-deal-cta_1summer-deal-cta.avif');
+  background-image: url('../../images/summer-deal-cta_1summer-deal-cta.avif');
 }
 
 .features_cta.webflow {
@@ -9570,7 +9570,7 @@ figure {
 }
 
 .why-awesomic_block._w-hills {
-  background-image: url('../images/small-banner-hills-decoration_1small banner hills decoration.avif');
+  background-image: url('../../images/small-banner-hills-decoration_1small banner hills decoration.avif');
   background-position: 50%;
   background-size: auto;
   justify-content: center;
@@ -9741,14 +9741,14 @@ figure {
 }
 
 .accelerator_text-icon.is-scale {
-  background-image: url('../images/scale-icon.svg');
+  background-image: url('../../images/scale-icon.svg');
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: auto;
 }
 
 .accelerator_text-icon.is-pause {
-  background-image: url('../images/pause-icon.svg');
+  background-image: url('../../images/pause-icon.svg');
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: auto;
