@@ -30,6 +30,7 @@ export default function RootLayout({
       >
         {children}
         <WebflowBodyScripts />
+        <link rel="stylesheet" href="/webflow/css/global-styles.css"/>
       </body>
     </html>
   );

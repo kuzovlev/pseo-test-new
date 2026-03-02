@@ -1,14 +1,398 @@
-import { withAssetBase } from "@/lib/pseo-assets";
-import type { PseoPageData } from "@/lib/pseo-types";
+"use client";
 
-const HTML = "<section class=\"section-radius section-offset background-white\" id=\"how-it-wroks\">\n<div class=\"spacer-80\"></div>\n<div class=\"padding-global\">\n<div class=\"container-1280\">\n<h2 class=\"heading-style-h3 text-align-center\">How it works?</h2>\n<div class=\"spacer-20\"></div>\n<div class=\"mobile_max-width-250 align-center\">\n<div class=\"text-16 weight-regular lh-150 text-align-center\">Skip the hiring pain and freelancer headaches.</div>\n</div>\n<div class=\"spacer-48\"></div>\n<div class=\"how-tabs_component w-tabs\" data-current=\"Tab 1\" data-duration-in=\"300\" data-duration-out=\"100\" data-easing=\"ease\">\n<div class=\"how-tabs_menu w-tab-menu\">\n<a class=\"how-tab_link w-inline-block w-tab-link w--current\" data-link=\"/pricing\" data-w-tab=\"Tab 1\" tab=\"_self\">\n<div class=\"how-tab_link-content\">\n<div class=\"how-tab_header\">\n<div class=\"w-layout-hflex flex-h_left-center gap-16\">\n<div class=\"tab-number-wrapper\">\n<div class=\"text-13 weight-regular lh-150\">01</div>\n</div>\n<div class=\"text-20 weight-semibold lh-150\">Join Awesomic</div>\n</div><img alt=\"\" loading=\"lazy\" src=\"__ASSET_BASE__/images/chevron-down-gray.svg\"/>\n</div>\n<div class=\"how-tabs_content tablet_show\"><img alt=\"Join Awesomic Tab Image\" loading=\"lazy\" src=\"__ASSET_BASE__/images/how-tab-1_1how-tab-1.avif\" width=\"553\"/></div>\n<div class=\"how-tab_details\">\n<div class=\"max-width-313\">\n<div class=\"text-15 weight-regular lh-145\">Start by booking a call or subscribing. Whatever works best for you.</div>\n</div>\n<div class=\"how-tab_footer\">\n<div button-black=\"\" class=\"button tab_button-imitation\" tab-link=\"/pricing\">\n<div class=\"z-index-1\">View plans</div><img alt=\"\" class=\"z-index-1\" loading=\"lazy\" src=\"__ASSET_BASE__/images/open-link-icon.svg\"/>\n<div class=\"button-background\"></div>\n</div>\n<div class=\"how-tab_progress-wrapper\">\n<div class=\"how-tab_progress-status\"></div>\n</div>\n</div>\n</div>\n</div>\n</a>\n<a class=\"how-tab_link w-inline-block w-tab-link\" data-link=\"https://app.awesomic.com\" data-w-tab=\"Tab 2\" tab=\"_blank\">\n<div class=\"how-tab_link-content\">\n<div class=\"how-tab_header\">\n<div class=\"w-layout-hflex flex-h_left-center gap-16\">\n<div class=\"tab-number-wrapper\">\n<div class=\"text-13 weight-regular lh-150\">02</div>\n</div>\n<div class=\"text-20 weight-semibold lh-150\">Submit tasks</div>\n</div><img alt=\"\" loading=\"lazy\" src=\"__ASSET_BASE__/images/chevron-down-gray.svg\"/>\n</div>\n<div class=\"how-tabs_content tablet_show\"><img alt=\"Submit tasks Tab image\" loading=\"lazy\" src=\"__ASSET_BASE__/images/how-tab-2_1how-tab-2.avif\" width=\"553\"/></div>\n<div class=\"how-tab_details\">\n<div class=\"max-width-313\">\n<div class=\"text-15 weight-regular lh-145\">Send in any request \u2014 text, video, or files. It takes just minutes to get started</div>\n</div>\n<div class=\"how-tab_footer\">\n<div button-black=\"\" class=\"button tab_button-imitation\">\n<div class=\"z-index-1\">Submit now</div><img alt=\"\" class=\"z-index-1\" loading=\"lazy\" src=\"__ASSET_BASE__/images/open-link-icon.svg\"/>\n<div class=\"button-background\"></div>\n</div>\n<div class=\"how-tab_progress-wrapper\">\n<div class=\"how-tab_progress-status\"></div>\n</div>\n</div>\n</div>\n</div>\n</a>\n<a class=\"how-tab_link w-inline-block w-tab-link\" data-link=\"https://app.awesomic.com/database/talents\" data-w-tab=\"Tab 3\" tab=\"_blank\">\n<div class=\"how-tab_link-content\">\n<div class=\"how-tab_header\">\n<div class=\"w-layout-hflex flex-h_left-center gap-16\">\n<div class=\"tab-number-wrapper\">\n<div class=\"text-13 weight-regular lh-150\">03</div>\n</div>\n<div class=\"text-20 weight-semibold lh-150\">Get matched</div>\n</div><img alt=\"\" loading=\"lazy\" src=\"__ASSET_BASE__/images/chevron-down-gray.svg\"/>\n</div>\n<div class=\"how-tabs_content tablet_show\"><img alt=\"Get matched Tab image\" loading=\"lazy\" src=\"__ASSET_BASE__/images/how-tab-3_1how-tab-3.avif\" width=\"553\"/></div>\n<div class=\"how-tab_details\">\n<div class=\"max-width-313\">\n<div class=\"text-15 weight-regular lh-145\">Tasks are assigned to vetted experts based on the project scope and skillset required.</div>\n</div>\n<div class=\"how-tab_footer\">\n<div button-black=\"\" class=\"button tab_button-imitation\">\n<div class=\"z-index-1\">View all talents</div><img alt=\"\" class=\"z-index-1\" loading=\"lazy\" src=\"__ASSET_BASE__/images/open-link-icon.svg\"/>\n<div class=\"button-background\"></div>\n</div>\n<div class=\"how-tab_progress-wrapper\">\n<div class=\"how-tab_progress-status\"></div>\n</div>\n</div>\n</div>\n</div>\n</a>\n<a class=\"how-tab_link w-inline-block w-tab-link\" data-w-tab=\"Tab 4\">\n<div class=\"how-tab_link-content\">\n<div class=\"how-tab_header\">\n<div class=\"w-layout-hflex flex-h_left-center gap-16\">\n<div class=\"tab-number-wrapper\">\n<div class=\"text-13 weight-regular lh-150\">04</div>\n</div>\n<div class=\"text-20 weight-semibold lh-150\">Refine until perfect</div>\n</div><img alt=\"\" loading=\"lazy\" src=\"__ASSET_BASE__/images/chevron-down-gray.svg\"/>\n</div>\n<div class=\"how-tabs_content tablet_show\"><img alt=\"'Refine until perfect' Tab image\" loading=\"lazy\" src=\"__ASSET_BASE__/images/how-tabs-4_1how-tabs-4.avif\" width=\"553\"/></div>\n<div class=\"how-tab_details\">\n<div class=\"max-width-343\">\n<div class=\"text-15 weight-regular lh-145\">Receive updates every business day. Refine with unlimited revisions until everything clicks.</div>\n</div>\n<div class=\"how-tab_footer\">\n<div button-black=\"\" calendly-link=\"https://calendly.com/awesomic/demo?hide_gdpr_banner=1\" class=\"button tab_button-imitation\">\n<div class=\"z-index-1\">Get started</div><img alt=\"\" class=\"z-index-1\" loading=\"lazy\" src=\"__ASSET_BASE__/images/open-link-icon.svg\"/>\n<div class=\"button-background\"></div>\n</div>\n<div class=\"how-tab_progress-wrapper\">\n<div class=\"how-tab_progress-status\"></div>\n</div>\n</div>\n</div>\n</div>\n</a>\n</div>\n<div class=\"how-tabs_content w-tab-content\">\n<div class=\"how-tab-pane_wrapper w-tab-pane w--tab-active\" data-w-tab=\"Tab 1\"><img alt=\"Join Awesomic Tab Image\" loading=\"lazy\" src=\"__ASSET_BASE__/images/how-tab-1_1how-tab-1.avif\" width=\"553\"/></div>\n<div class=\"how-tab-pane_wrapper w-tab-pane\" data-w-tab=\"Tab 2\"><img alt=\"Submit tasks Tab image\" loading=\"lazy\" src=\"__ASSET_BASE__/images/how-tab-2_1how-tab-2.avif\" width=\"553\"/></div>\n<div class=\"how-tab-pane_wrapper w-tab-pane\" data-w-tab=\"Tab 3\"><img alt=\"Get matched Tab image\" loading=\"lazy\" src=\"__ASSET_BASE__/images/how-tab-3_1how-tab-3.avif\" width=\"553\"/></div>\n<div class=\"how-tab-pane_wrapper w-tab-pane\" data-w-tab=\"Tab 4\"><img alt=\"'Refine until perfect' Tab image\" loading=\"lazy\" src=\"__ASSET_BASE__/images/how-tabs-4_1how-tabs-4.avif\" width=\"553\"/></div>\n</div>\n</div>\n<div class=\"w-embed\">\n<style>\n  .how-tabs_content{\n    background-position: 50%;\n    background-repeat: no-repeat;\n    background-size: cover;\n  }\n  .how-tabs_component::before, .how-tabs_component::after{\n    display: none;\n  }\n  .how-tab_link .how-tab_link-content .how-tab_details{\n    height: 0;\n    background: rgba(255,255,255,0);\n    /*transition: all .25s;*/\n    opacity: 0;\n  }\n  .how-tab_link.w--current .how-tab_link-content .how-tab_details{\n    height: auto;\n    background: rgba(255,255,255,1);\n    opacity: 1;\n  }\n  .how-tab_link .how-tab_link-content .how-tab_header img{\n    transition: all .25s;\n  }\n  .how-tab_link.w--current .how-tab_link-content .how-tab_header img{\n    transform: rotate(-90deg);\n  }\n  .how-tab_link .how-tab_link-content {\n    background: rgba(255,255,255,0);\n    transition: all .25s;\n  }\n  .how-tab_link.w--current .how-tab_link-content{\n    background: rgba(255,255,255,1);\n    border-color: var(--_colors---gray--gray-150);\n    box-shadow: 0 4px 12px #0000000a;\n    height: 264px;\n  }\n  @media screen and (max-width: 991px){\n    .how-tab_link.w--current .how-tab_link-content{\n      height: auto;\n    }\n    .how-tab_link .how-tabs_content{\n    \tdisplay: none;\n    }\n    .how-tab_link .how-tabs_content img{\n    \tbackdrop-filter: blur(8px);\n    }\n    .how-tab_link.w--current .how-tabs_content{\n    \tdisplay: flex;\n    }\n  }\n</style>\n</div>\n<div class=\"hide w-embed w-script\">\n<script>\n  var tabTimeout;\n  var isInView = false;\n  var isPaused = false;\n  // Intersection Observer to detect when component is in view\n  const processObserver = new IntersectionObserver((entries) => {\n    entries.forEach(entry => {\n      if (entry.isIntersecting) {\n        isInView = true;\n        if (!isPaused) {\n          clearTimeout(tabTimeout);\n          // Start from first tab\n          const firstTab = document.querySelector('.how-tab_link');\n          if (firstTab) {\n            firstTab.removeAttribute(\"href\");\n            firstTab.click();\n            startAnimation();\n            tabLoop();\n          }\n        }\n      } else {\n        isInView = false;\n        clearTimeout(tabTimeout);\n      }\n    });\n  }, {\n    threshold: 0.1 // Adjust this value as needed (0.1 = 10% visible)\n  });\n  // Start observing the component\n  const tabsComponent = document.querySelector('.how-tabs_component');\n  if (tabsComponent) {\n    processObserver.observe(tabsComponent);\n  }\n  function tabLoop() {\n    if (!isInView) return; // Don't continue if not in view\n    tabTimeout = setTimeout(function () {\n      if (isPaused || !isInView) {\n        tabLoop(); // Restart the timer without proceeding\n        return;\n      }\n      var current = document.querySelector('.how-tabs_menu .w--current');\n      var next = current ? current.nextElementSibling : null;\n      if (next) {\n        if (document.querySelector(\".how-tabs_menu\").classList.contains(\"w--open\")) {\n          tabLoop();\n        } else {\n          next.removeAttribute(\"href\");\n          next.click();\n          startAnimation();\n        }\n      } else {\n        if (document.querySelector(\".how-tabs_menu\").classList.contains(\"w--open\")) {\n          tabLoop();\n        } else {\n          var firstTab = document.querySelector('.how-tab_link');\n          if (firstTab) {\n            firstTab.removeAttribute(\"href\");\n            firstTab.click();\n            startAnimation();\n          }\n        }\n      }\n    }, 5000);\n  }\n  function startAnimation() {\n    const currentTab = document.querySelector('.how-tab_link.w--current');\n    if (!currentTab) return;\n    const progressBarWrapper = currentTab.querySelector('.how-tab_progress-wrapper');\n    if (!progressBarWrapper) return;\n    const progressStatus = progressBarWrapper.querySelector('.how-tab_progress-status');\n    if (!progressStatus) return;\n    const animation = progressStatus.animate([\n      { width: '0%' },\n      { width: '100%' }\n    ], {\n      duration: 5000,\n      easing: 'ease-in-out',\n      fill: 'forwards'\n    });\n    currentTab.addEventListener('mouseenter', () => {\n      animation.pause();\n      isPaused = true; // Pause the tab loop as well\n    });\n    currentTab.addEventListener('mouseleave', () => {\n      animation.play();\n      isPaused = false; // Resume the tab loop\n    });\n  }\n  // Add hover listeners to all tabs for pausing the loop\n  document.querySelectorAll('.how-tab_link').forEach(function(tabLink) {\n    tabLink.addEventListener('mouseenter', function() {\n      isPaused = true;\n    });\n    tabLink.addEventListener('mouseleave', function() {\n      isPaused = false;\n    });\n    tabLink.addEventListener('click', function() {\n      clearTimeout(tabTimeout);\n      startAnimation();\n      tabLoop();\n    });\n    tabLink.querySelector('.tab_button-imitation').addEventListener('click', function(){\n      if (tabLink.classList.contains('w--current')){\n        if(tabLink.getAttribute('data-link')){\n          window.open(\n            tabLink.getAttribute('data-link'),\n            tabLink.getAttribute('tab')\n          );\n        }\n      }\n    })\n  });\n  document.addEventListener(\"DOMContentLoaded\", () => {\n    const bgTarget = document.getElementById('how-it-wroks');\n    let styleAdded = false;\n    const lazyBackground = (entries, observer) => {\n      entries.forEach(entry => {\n        if (entry.isIntersecting && !styleAdded) {\n          const style = document.createElement('style');\n          style.innerHTML = `\n        .how-tabs_content {\n          background-image: url(\"https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/Home%20page%20images/How%20it%20work%20img.jpg\");\n        }\n      `;\n          document.head.appendChild(style);\n          styleAdded = true;\n          observer.disconnect();\n        }\n      });\n    };\n    const bgObserver = new IntersectionObserver(lazyBackground);\n    bgObserver.observe(bgTarget);\n  });\n</script>\n</div>\n</div>\n</div>\n<div class=\"spacer-144\"></div>\n</section>";
+import {useEffect} from "react";
+import type {PseoPageData} from "@/lib/pseo-types";
 
-/**
- * Airtable mapping notes:
- * - Keep text static for now.
- * - When ready, replace specific static nodes with {data?.fieldName ?? "Default"}.
- * - Suggested fields live in lib/pseo-types.ts
- */
+const ASSET_BASE = process.env.NEXT_PUBLIC_ASSET_BASE ?? "";
+const asset = (src: string) => `${ASSET_BASE}${src.startsWith("/") ? src : `/${src}`}`;
+
 export function HowItWorksSection(_props: { data?: PseoPageData }) {
-  return <div dangerouslySetInnerHTML={ { __html: withAssetBase(HTML) } } />;
+    useEffect(() => {
+        console.log(_props);
+
+        var tabTimeout;
+        var isInView = false;
+        var isPaused = false;
+        // Intersection Observer to detect when component is in view
+        const processObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    isInView = true;
+                    if (!isPaused) {
+                        clearTimeout(tabTimeout);
+                        // Start from first tab
+                        const firstTab = document.querySelector('.how-tab_link');
+                        if (firstTab) {
+                            firstTab.removeAttribute("href");
+                            firstTab.click();
+                            startAnimation();
+                            tabLoop();
+                        }
+                    }
+                } else {
+                    isInView = false;
+                    clearTimeout(tabTimeout);
+                }
+            });
+        }, {
+            threshold: 0.1 // Adjust this value as needed (0.1 = 10% visible)
+        });
+        // Start observing the component
+        const tabsComponent = document.querySelector('.how-tabs_component');
+        if (tabsComponent) {
+            processObserver.observe(tabsComponent);
+        }
+
+        function tabLoop() {
+            if (!isInView) return; // Don't continue if not in view
+            tabTimeout = setTimeout(function () {
+                if (isPaused || !isInView) {
+                    tabLoop(); // Restart the timer without proceeding
+                    return;
+                }
+                var current = document.querySelector('.how-tabs_menu .w--current');
+                var next = current ? current.nextElementSibling : null;
+                if (next) {
+                    if (document.querySelector(".how-tabs_menu").classList.contains("w--open")) {
+                        tabLoop();
+                    } else {
+                        next.removeAttribute("href");
+                        next.click();
+                        startAnimation();
+                    }
+                } else {
+                    if (document.querySelector(".how-tabs_menu").classList.contains("w--open")) {
+                        tabLoop();
+                    } else {
+                        var firstTab = document.querySelector('.how-tab_link');
+                        if (firstTab) {
+                            firstTab.removeAttribute("href");
+                            firstTab.click();
+                            startAnimation();
+                        }
+                    }
+                }
+            }, 5000);
+        }
+
+        function startAnimation() {
+            const currentTab = document.querySelector('.how-tab_link.w--current');
+            if (!currentTab) return;
+            const progressBarWrapper = currentTab.querySelector('.how-tab_progress-wrapper');
+            if (!progressBarWrapper) return;
+            const progressStatus = progressBarWrapper.querySelector('.how-tab_progress-status');
+            if (!progressStatus) return;
+            const animation = progressStatus.animate([
+                {width: '0%'},
+                {width: '100%'}
+            ], {
+                duration: 5000,
+                easing: 'ease-in-out',
+                fill: 'forwards'
+            });
+            currentTab.addEventListener('mouseenter', () => {
+                animation.pause();
+                isPaused = true; // Pause the tab loop as well
+            });
+            currentTab.addEventListener('mouseleave', () => {
+                animation.play();
+                isPaused = false; // Resume the tab loop
+            });
+        }
+
+        // Add hover listeners to all tabs for pausing the loop
+        document.querySelectorAll('.how-tab_link').forEach(function (tabLink) {
+            tabLink.addEventListener('mouseenter', function () {
+                isPaused = true;
+            });
+            tabLink.addEventListener('mouseleave', function () {
+                isPaused = false;
+            });
+            tabLink.addEventListener('click', function () {
+                clearTimeout(tabTimeout);
+                startAnimation();
+                tabLoop();
+            });
+            tabLink.querySelector('.tab_button-imitation').addEventListener('click', function () {
+                if (tabLink.classList.contains('w--current')) {
+                    if (tabLink.getAttribute('data-link')) {
+                        window.open(
+                            tabLink.getAttribute('data-link'),
+                            tabLink.getAttribute('tab')
+                        );
+                    }
+                }
+            })
+        });
+        document.addEventListener("DOMContentLoaded", () => {
+            const bgTarget = document.getElementById('how-it-wroks');
+            let styleAdded = false;
+            const lazyBackground = (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !styleAdded) {
+                        const style = document.createElement('style');
+                        style.innerHTML = `
+            .how-tabs_content {
+              background-image: url("https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/Home%20page%20images/How%20it%20work%20img.jpg");
+            }
+          `;
+                        document.head.appendChild(style);
+                        styleAdded = true;
+                        observer.disconnect();
+                    }
+                });
+            };
+            const bgObserver = new IntersectionObserver(lazyBackground);
+            bgObserver.observe(bgTarget);
+        });
+    }, []);
+
+    return (
+        <section className="section-radius section-offset background-white" id="how-it-wroks">
+            <div className="spacer-80"></div>
+            <div className="padding-global">
+                <div className="container-1280">
+                    <h2 className="heading-style-h3 text-align-center">
+                        {_props.data.how_title}
+                    </h2>
+                    <div className="spacer-20"></div>
+                    <div className="mobile_max-width-250 align-center">
+                        <div className="text-16 weight-regular lh-150 text-align-center">
+                            {_props.data.how_description}
+                        </div>
+                    </div>
+                    <div className="spacer-48"></div>
+                    <div className="how-tabs_component w-tabs" data-current="Tab 1" data-duration-in="300"
+                         data-duration-out="100" data-easing="ease">
+                        <div className="how-tabs_menu w-tab-menu">
+                            <a className="how-tab_link w-inline-block w-tab-link w--current" data-link="/pricing"
+                               data-w-tab="Tab 1" tab="_self">
+                                <div className="how-tab_link-content">
+                                    <div className="how-tab_header">
+                                        <div className="w-layout-hflex flex-h_left-center gap-16">
+                                            <div className="tab-number-wrapper">
+                                                <div className="text-13 weight-regular lh-150">01</div>
+                                            </div>
+                                            <div className="text-20 weight-semibold lh-150">
+                                                {_props.data.how_step_1_name}
+                                            </div>
+                                        </div>
+                                        <img alt="" loading="lazy" src={asset("/images/chevron-down-gray.svg")}/>
+                                    </div>
+                                    <div className="how-tabs_content tablet_show"><img alt="Join Awesomic Tab Image"
+                                                                                       loading="lazy"
+                                                                                       src={asset("/images/how-tab-1_1how-tab-1.avif")}
+                                                                                       width="553"/></div>
+                                    <div className="how-tab_details">
+                                        <div className="max-width-313">
+                                            <div className="text-15 weight-regular lh-145">
+                                                {_props.data.how_step_1_text}
+                                            </div>
+                                        </div>
+                                        <div className="how-tab_footer">
+                                            <div button-black="" className="button tab_button-imitation"
+                                                 tab-link="/pricing">
+                                                <div className="z-index-1">View plans</div>
+                                                <img alt="" className="z-index-1" loading="lazy"
+                                                     src={asset("/images/open-link-icon.svg")}/>
+                                                <div className="button-background"></div>
+                                            </div>
+                                            <div className="how-tab_progress-wrapper">
+                                                <div className="how-tab_progress-status"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a className="how-tab_link w-inline-block w-tab-link" data-link="https://app.awesomic.com"
+                               data-w-tab="Tab 2" tab="_blank">
+                                <div className="how-tab_link-content">
+                                    <div className="how-tab_header">
+                                        <div className="w-layout-hflex flex-h_left-center gap-16">
+                                            <div className="tab-number-wrapper">
+                                                <div className="text-13 weight-regular lh-150">02</div>
+                                            </div>
+                                            <div className="text-20 weight-semibold lh-150">
+                                                {_props.data.how_step_2_name}
+                                            </div>
+                                        </div>
+                                        <img alt="" loading="lazy" src={asset("/images/chevron-down-gray.svg")}/>
+                                    </div>
+                                    <div className="how-tabs_content tablet_show"><img alt="Submit tasks Tab image"
+                                                                                       loading="lazy"
+                                                                                       src={asset("/images/how-tab-2_1how-tab-2.avif")}
+                                                                                       width="553"/></div>
+                                    <div className="how-tab_details">
+                                        <div className="max-width-313">
+                                            <div className="text-15 weight-regular lh-145">
+                                                {_props.data.how_step_2_text}
+                                            </div>
+                                        </div>
+                                        <div className="how-tab_footer">
+                                            <div button-black="" className="button tab_button-imitation">
+                                                <div className="z-index-1">Submit now</div>
+                                                <img alt="" className="z-index-1" loading="lazy"
+                                                     src={asset("/images/open-link-icon.svg")}/>
+                                                <div className="button-background"></div>
+                                            </div>
+                                            <div className="how-tab_progress-wrapper">
+                                                <div className="how-tab_progress-status"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a className="how-tab_link w-inline-block w-tab-link"
+                               data-link="https://app.awesomic.com/database/talents" data-w-tab="Tab 3" tab="_blank">
+                                <div className="how-tab_link-content">
+                                    <div className="how-tab_header">
+                                        <div className="w-layout-hflex flex-h_left-center gap-16">
+                                            <div className="tab-number-wrapper">
+                                                <div className="text-13 weight-regular lh-150">03</div>
+                                            </div>
+                                            <div className="text-20 weight-semibold lh-150">
+                                                {_props.data.how_step_3_name}
+                                            </div>
+                                        </div>
+                                        <img alt="" loading="lazy" src={asset("/images/chevron-down-gray.svg")}/>
+                                    </div>
+                                    <div className="how-tabs_content tablet_show"><img alt="Get matched Tab image"
+                                                                                       loading="lazy"
+                                                                                       src={asset("/images/how-tab-3_1how-tab-3.avif")}
+                                                                                       width="553"/></div>
+                                    <div className="how-tab_details">
+                                        <div className="max-width-313">
+                                            <div className="text-15 weight-regular lh-145">
+                                                {_props.data.how_step_3_text}
+                                            </div>
+                                        </div>
+                                        <div className="how-tab_footer">
+                                            <div button-black="" className="button tab_button-imitation">
+                                                <div className="z-index-1">View all talents</div>
+                                                <img alt="" className="z-index-1" loading="lazy"
+                                                     src={asset("/images/open-link-icon.svg")}/>
+                                                <div className="button-background"></div>
+                                            </div>
+                                            <div className="how-tab_progress-wrapper">
+                                                <div className="how-tab_progress-status"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a className="how-tab_link w-inline-block w-tab-link" data-w-tab="Tab 4">
+                                <div className="how-tab_link-content">
+                                    <div className="how-tab_header">
+                                        <div className="w-layout-hflex flex-h_left-center gap-16">
+                                            <div className="tab-number-wrapper">
+                                                <div className="text-13 weight-regular lh-150">04</div>
+                                            </div>
+                                            <div className="text-20 weight-semibold lh-150">
+                                                {_props.data.how_step_4_name}
+                                            </div>
+                                        </div>
+                                        <img alt="" loading="lazy" src={asset("/images/chevron-down-gray.svg")}/>
+                                    </div>
+                                    <div className="how-tabs_content tablet_show"><img
+                                        alt="'Refine until perfect' Tab image" loading="lazy"
+                                        src={asset("/images/how-tabs-4_1how-tabs-4.avif")} width="553"/></div>
+                                    <div className="how-tab_details">
+                                        <div className="max-width-343">
+                                            <div className="text-15 weight-regular lh-145">
+                                                {_props.data.how_step_4_text}
+                                            </div>
+                                        </div>
+                                        <div className="how-tab_footer">
+                                            <div button-black=""
+                                                 calendly-link="https://calendly.com/awesomic/demo?hide_gdpr_banner=1"
+                                                 className="button tab_button-imitation">
+                                                <div className="z-index-1">Get started</div>
+                                                <img alt="" className="z-index-1" loading="lazy"
+                                                     src={asset("/images/open-link-icon.svg")}/>
+                                                <div className="button-background"></div>
+                                            </div>
+                                            <div className="how-tab_progress-wrapper">
+                                                <div className="how-tab_progress-status"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div className="how-tabs_content w-tab-content">
+                            <div className="how-tab-pane_wrapper w-tab-pane w--tab-active" data-w-tab="Tab 1"><img
+                                alt="Join Awesomic Tab Image" loading="lazy"
+                                src={asset("/images/how-tab-1_1how-tab-1.avif")} width="553"/></div>
+                            <div className="how-tab-pane_wrapper w-tab-pane" data-w-tab="Tab 2"><img
+                                alt="Submit tasks Tab image" loading="lazy"
+                                src={asset("/images/how-tab-2_1how-tab-2.avif")} width="553"/></div>
+                            <div className="how-tab-pane_wrapper w-tab-pane" data-w-tab="Tab 3"><img
+                                alt="Get matched Tab image" loading="lazy"
+                                src={asset("/images/how-tab-3_1how-tab-3.avif")} width="553"/></div>
+                            <div className="how-tab-pane_wrapper w-tab-pane" data-w-tab="Tab 4"><img
+                                alt="'Refine until perfect' Tab image" loading="lazy"
+                                src={asset("/images/how-tabs-4_1how-tabs-4.avif")} width="553"/></div>
+                        </div>
+                    </div>
+                    <div className="w-embed">
+                        <style dangerouslySetInnerHTML={{
+                            __html: `
+      .how-tabs_content{
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .how-tabs_component::before, .how-tabs_component::after{
+        display: none;
+      }
+      .how-tab_link .how-tab_link-content .how-tab_details{
+        height: 0;
+        background: rgba(255,255,255,0);
+        /*transition: all .25s;*/
+        opacity: 0;
+      }
+      .how-tab_link.w--current .how-tab_link-content .how-tab_details{
+        height: auto;
+        background: rgba(255,255,255,1);
+        opacity: 1;
+      }
+      .how-tab_link .how-tab_link-content .how-tab_header img{
+        transition: all .25s;
+      }
+      .how-tab_link.w--current .how-tab_link-content .how-tab_header img{
+        transform: rotate(-90deg);
+      }
+      .how-tab_link .how-tab_link-content {
+        background: rgba(255,255,255,0);
+        transition: all .25s;
+      }
+      .how-tab_link.w--current .how-tab_link-content{
+        background: rgba(255,255,255,1);
+        border-color: var(--_colors---gray--gray-150);
+        box-shadow: 0 4px 12px #0000000a;
+        height: 264px;
+      }
+      @media screen and (max-width: 991px){
+        .how-tab_link.w--current .how-tab_link-content{
+          height: auto;
+        }
+        .how-tab_link .how-tabs_content{
+        	display: none;
+        }
+        .how-tab_link .how-tabs_content img{
+        	backdrop-filter: blur(8px);
+        }
+        .how-tab_link.w--current .how-tabs_content{
+        	display: flex;
+        }
+      }
+    `
+                        }}/>
+                    </div>
+                    {/* script → useEffect */}
+                </div>
+            </div>
+            <div className="spacer-144"></div>
+        </section>
+    );
 }

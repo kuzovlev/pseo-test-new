@@ -1,14 +1,314 @@
-import { withAssetBase } from "@/lib/pseo-assets";
-import type { PseoPageData } from "@/lib/pseo-types";
+"use client";
 
-const HTML = "<section class=\"background-gray-100 section-radius section-footer\" data-wf--footer-full--variant=\"base\">\n<div class=\"spacer-48 landscape_spacer-16\"></div>\n<div class=\"padding-global\">\n<div class=\"container-1344\">\n<div class=\"footer-blog-container\">\n<div>\n<div class=\"footer_blog-video-wrapper\">\n<div class=\"w-video w-embed\" style=\"padding-top:56.17021276595745%\" youtube-id=\"CNUeWqBJPwI\"><iframe allowfullscreen=\"\" class=\"embedly-embed\" height=\"528\" scrolling=\"no\" src=\"https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FCNUeWqBJPwI%3Ffeature%3Doembed&amp;display_name=YouTube&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DCNUeWqBJPwI&amp;image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FCNUeWqBJPwI%2Fhqdefault.jpg&amp;type=text%2Fhtml&amp;schema=youtube\" title=\"YC Hated Our Idea - Then We Grew 5.75x &amp; Raised $51M with Marty Kausas, Pylon CEO\" width=\"940\"></iframe></div>\n</div>\n<div class=\"spacer-48\"></div>\n</div>\n<div class=\"footer_blog-column\">\n<div class=\"footer_blog-collection w-dyn-list\">\n<div class=\"footer_blog-list w-dyn-items\" role=\"list\">\n<div class=\"w-dyn-item\" role=\"listitem\">\n<a class=\"footer_blog-post-item w-inline-block\" href=\"#\">\n<div class=\"category-tag text-gray-900\">Blog</div>\n<div class=\"spacer-12\"></div>\n<div class=\"text-20 weight-semibold lh-150 text-gray-900 w-dyn-bind-empty\"></div>\n</a>\n</div>\n</div>\n<div class=\"w-dyn-empty\">\n<div>No items found.</div>\n</div>\n</div>\n<div class=\"w-embed\">\n<style>\n  .footer_blog-column::before{\n    content: \"\";\n    position: absolute;\n    bottom: 0;\n    width: 100%;\n    height: 120px;\n    left: 0;\n    z-index: 99;\n    background: linear-gradient(180deg, rgba(244, 244, 245, 0) 0%, rgba(244, 244, 245, 0.676426) 20%, #F4F4F5 45.07%);\n  }\n</style>\n</div>\n</div>\n</div>\n</div>\n</div>\n<div class=\"tablet_show\">\n<div class=\"w-dyn-list\">\n<div class=\"footer_mobile-blog w-dyn-items\" role=\"list\">\n<div class=\"footer_mobile-blog-item w-dyn-item\" role=\"listitem\">\n<a class=\"footer_blog-post-item w-inline-block\" href=\"#\">\n<div class=\"category-tag text-gray-900\">Blog</div>\n<div class=\"spacer-12\"></div>\n<div class=\"text-16 weight-semibold lh-150 text-gray-900 text-style-2lines w-dyn-bind-empty\"></div>\n</a>\n</div>\n</div>\n<div class=\"w-dyn-empty\">\n<div>No items found.</div>\n</div>\n</div>\n<div class=\"spacer-48\"></div>\n</div>\n<div class=\"padding-global\">\n<div class=\"container-1344\">\n<div class=\"footer-divider margin-0\"></div>\n<div class=\"spacer-48\"></div>\n<div class=\"footer-menu_wrapper\">\n<div class=\"footer-contacts_wrapper\">\n<div class=\"footer-contacts\">\n<div class=\"text-20 weight-semibold lh-156 text-gray-900\">Get in touch</div>\n<div class=\"spacer-12\"></div>\n<div class=\"text-15 weight-regular lh-145\">\ud83c\udf0e \u00a0156 2nd St, Office 416 San Francisco, CA 94105, US</div>\n<div class=\"spacer-64 landscape_spacer-40\"></div>\n<div class=\"footer-contacts_bottom\">\n<div class=\"w-layout-vflex gap-4\">\n<a class=\"text-15 weight-semibold lh-145 text-gray-900\" href=\"tel:4157072976\">\ud83d\udcde \u00a0(415) 707-2976</a>\n<a class=\"text-15 weight-semibold lh-145 text-gray-900\" href=\"mailto:help@awesomic.io\">\ud83d\udce8 \u00a0help@awesomic.io</a>\n</div>\n<div class=\"w-layout-hflex gap-8 mobile_x-space-between mobile_max-width-full\">\n<a class=\"footer-social-button w-inline-block\" href=\"https://www.linkedin.com/company/awesomic/\" target=\"_blank\"><img alt=\"LinkedIn Link Image\" loading=\"lazy\" src=\"__ASSET_BASE__/images/linkedin-icon-footer.svg\"/></a>\n<a class=\"footer-social-button w-inline-block\" href=\"https://www.instagram.com/awesomic/\" target=\"_blank\"><img alt=\"Instagram Link Image\" loading=\"lazy\" src=\"__ASSET_BASE__/images/instagram-footer-image.svg\"/></a>\n<a class=\"footer-social-button w-inline-block\" href=\"https://www.facebook.com/awesomicinc\" target=\"_blank\"><img alt=\"Facebook Link Image\" loading=\"lazy\" src=\"__ASSET_BASE__/images/facebook-footer-image.svg\"/></a>\n<a class=\"footer-social-button w-inline-block\" href=\"https://twitter.com/awesomic\" target=\"_blank\"><img alt=\"X (Twitter) Link Image\" loading=\"lazy\" src=\"__ASSET_BASE__/images/x-logo-image.svg\"/></a>\n<a class=\"footer-social-button w-inline-block\" href=\"https://www.youtube.com/@SenseofAwe\" target=\"_blank\"><img alt=\"X (Twitter) Link Image\" loading=\"lazy\" src=\"__ASSET_BASE__/images/youtube-icon.svg\"/></a>\n</div>\n</div>\n</div>\n<a class=\"llm_footer-link w-inline-block\" href=\"llm-info.html\"><img alt=\"\" class=\"llm-icon\" loading=\"lazy\" src=\"__ASSET_BASE__/images/stars-icons.svg\"/>\n<div class=\"text-15 weight-regular lh-145\">Hey AI, your official guide to Awesomic</div>\n</a>\n</div>\n<div class=\"footer-menu\">\n<div class=\"w-layout-vflex gap-16\">\n<div class=\"text-15 weight-semibold lh-145 text-gray-900 opacity-80\">Company</div>\n<div class=\"w-layout-vflex gap-12\">\n<a class=\"text-15 weight-regular lh-145\" href=\"pricing.html\">Pricing</a>\n<a class=\"text-15 weight-regular lh-145\" href=\"case-study.html\">Case studies</a>\n<a class=\"text-15 weight-regular lh-145\" href=\"about.html\">About us</a>\n<a class=\"text-15 weight-regular lh-145\" href=\"blog.html\">Blog</a>\n<a class=\"text-15 weight-regular lh-145\" href=\"https://support.awesomic.com/en/\" target=\"_blank\">Awesomic help center</a>\n<a class=\"text-15 weight-regular lh-145\" href=\"privacy-policy.html\">Terms &amp; policies</a>\n<a class=\"text-15 weight-regular lh-145\" href=\"talent.html\">Apply as a talent</a>\n<a class=\"text-15 weight-regular lh-145\" href=\"wall-of-love.html\">Orbit of love</a>\n</div>\n</div>\n<div class=\"w-layout-vflex gap-16\">\n<div class=\"text-15 weight-semibold lh-145 text-gray-900 opacity-80\">Resources</div>\n<div class=\"w-layout-vflex gap-12\">\n<a class=\"text-15 weight-regular lh-145\" href=\"hire-product-designer.html\">Hire product designers</a>\n<a class=\"text-15 weight-regular lh-145\" href=\"hire-ui-ux-designer.html\">Hire ui/ux designer</a>\n<a class=\"text-15 weight-regular lh-145\" href=\"hire-marketing-designer.html\">Hire marketing designer</a>\n<a class=\"text-15 weight-regular lh-145\" href=\"hire-creative-designer.html\">Hire creative designer</a>\n<a class=\"text-15 weight-regular lh-145\" href=\"hire-freelance-designer.html\">Hire freelance designer</a>\n<a class=\"text-15 weight-regular lh-145\" href=\"hire-logo-designer.html\">Hire logo designer</a>\n</div>\n</div>\n<div class=\"w-layout-vflex gap-16\">\n<div class=\"text-15 weight-semibold lh-145 text-gray-900 opacity-80\">Services</div>\n<div class=\"w-layout-vflex gap-12\">\n<a class=\"text-15 weight-regular lh-145\" footer-link=\"\" href=\"/?tab=design#services-block\">Design services</a>\n<a class=\"text-15 weight-regular lh-145\" footer-link=\"\" href=\"video.html\">Video production</a>\n<a class=\"text-15 weight-regular lh-145\" footer-link=\"\" href=\"web-design.html\">Web design</a>\n<a class=\"text-15 weight-regular lh-145\" footer-link=\"\" href=\"/?tab=nocode#services-block\">No-code development</a>\n<a class=\"text-15 weight-regular lh-145\" footer-link=\"\" href=\"/?tab=marketing#services-block\">Marketing services</a>\n<a class=\"text-15 weight-regular lh-145\" footer-link=\"\" href=\"/?tab=software#services-block\">Software development</a>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n<div class=\"spacer-96 landscape_spacer-80\"></div>\n<div class=\"padding-global mod-footer\">\n<div class=\"container-1344\">\n<div class=\"footer-subsctract_wrapper\"><img alt=\"footer decorative Awesomic logo\" class=\"z-index-1\" src=\"https://cdn.prod.website-files.com/6818a97ae905afeb08eff668/684870d153cf3a37baf98e64_Subtract_png-footer.avif\"/>\n<div class=\"footer_substract-bg w-embed\"><img alt=\"decorative image\" loading=\"lazy\" src=\"https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/Home%20page%20images/Footer%20image.jpg\"/></div>\n</div>\n</div>\n</div>\n<div class=\"popup-banner\" id=\"booking-popup\">\n<div class=\"heading-style-h4 weight-semibold\">Still hesitating?</div>\n<div class=\"spacer-12\"></div>\n<div class=\"text-15 weight-regular lh-145\">Schedule a free 30-minute personalized demo. We\u2019ll answer all your questions and show you how companies use Awesomic to boost growth, get funding, and complete more projects. </div>\n<div class=\"spacer-28\"></div>\n<a button-black=\"\" calendly-link=\"https://calendly.com/awesomic/demo?utm_source=website&amp;utm_medium=pop-up&amp;hide_gdpr_banner=1\" class=\"button is-large w-variant-91645085-d821-3204-c720-eb08b13aeb97 w-node-_58fe0e1a-6bae-3e07-a5d6-55c04204c63a-4204c63a w-inline-block\" data-wf--button-black-l--variant=\"icon-right\" href=\"#\" id=\"popup-calendly-btn\">\n<div class=\"z-index-1\">Book a call</div>\n<div class=\"button-background\"></div><img alt=\"\" class=\"button-icon w-variant-91645085-d821-3204-c720-eb08b13aeb97\" height=\"20\" loading=\"lazy\" src=\"__ASSET_BASE__/images/faq_two-faces.avif\"/>\n</a>\n<div class=\"hide w-embed w-script\">\n<script>\n  function fadeOut(el) {\n    el.style.opacity = 1;\n    (function fade() {\n      if ((el.style.opacity -= .1) < 0) {\n        el.style.display = \"none\";\n      } else {\n        requestAnimationFrame(fade);\n      }\n    })();\n  };\n  function fadeIn(el, display) {\n    el.style.opacity = 0;\n    el.style.display = display || \"block\";\n    (function fade() {\n      var val = parseFloat(el.style.opacity);\n      if (!((val += .1) > 1)) {\n        el.style.opacity = val;\n        requestAnimationFrame(fade);\n      }\n    })();\n  };\n  document.addEventListener('DOMContentLoaded', function() {\n    const bookingPopup = document.getElementById('booking-popup');\n    const closePopupButton = document.querySelector('.popup-banner-close');\n    const lastShown = localStorage.getItem('popupLastShown');\n    const now = new Date().getTime();\n    if (!lastShown || now - lastShown > 24 * 60 * 60 * 1000) {\n      setTimeout(() => {\n        fadeIn(bookingPopup);\n        localStorage.setItem('popupLastShown', now);\n      }, 40000);\n    }\n    closePopupButton.addEventListener('click', function() {\n      fadeOut(bookingPopup);\n    });\n  });\n  document.addEventListener(\"DOMContentLoaded\", () => {\n    const calendlyBtn = document.querySelector(\"#popup-calendly-btn\");\n    if (calendlyBtn) {\n      calendlyBtn.addEventListener(\"click\", () => {\n        posthog.capture(\"Popup Calendly Button Clicked\", {\n          location: window.location.pathname,\n        });\n      });\n    }\n    const closeBtn = document.querySelector(\".popup-banner-close\");\n    if (closeBtn) {\n      closeBtn.addEventListener(\"click\", () => {\n        posthog.capture(\"Popup Banner Closed\", {\n          location: window.location.pathname,\n        });\n      });\n    }\n  });\n  /*document.querySelectorAll('a[href=\"/demo?popup\"]').forEach(function (link) {\n    link.addEventListener('click', function (e) {\n      e.preventDefault();\n      posthog.capture('popup_demo_link_clicked', {\n        source: window.location.pathname\n      });\n      setTimeout(function () {\n        window.location.href = link.href;\n      }, 100);\n    });\n  });*/\n  /*window.addEventListener(\"message\", function (e) {\n    if (!e.data.event) return;\n    if (e.data.event === \"calendly.event_scheduled\") {\n      const payload = e.data.payload;\n      console.log(window.__calendlySource);\n      if (window.__calendlySource === \"pop-up\") {\n        console.log(\"\u2705 Booking from special pop-up detected\", payload);\n        fetch(\"https://hook.us1.make.com/0imnr75wg6uygn696xe5asclmt1dwdx5\", {\n          method: \"POST\",\n          headers: { \"Content-Type\": \"application/json\" },\n          body: JSON.stringify(e.data) // send raw payload first\n        }).then(res => {\n          console.log(\"Webhook response:\", res.status);\n        }).catch(err => {\n          console.error(\"Webhook error:\", err);\n        });\n        window.__calendlySource = null;\n      }\n      console.log(window.__calendlySource);\n    }\n  });*/\n</script>\n</div><img alt=\"Close icon\" class=\"popup-banner-close\" loading=\"lazy\" src=\"__ASSET_BASE__/images/close-gray-400.svg\"/>\n</div>\n</section>";
+import {useEffect} from "react";
+import type {PseoPageData} from "@/lib/pseo-types";
 
-/**
- * Airtable mapping notes:
- * - Keep text static for now.
- * - When ready, replace specific static nodes with {data?.fieldName ?? "Default"}.
- * - Suggested fields live in lib/pseo-types.ts
- */
+const ASSET_BASE = process.env.NEXT_PUBLIC_ASSET_BASE ?? "";
+const asset = (src: string) => `${ASSET_BASE}${src.startsWith("/") ? src : `/${src}`}`;
+
 export function FooterSection(_props: { data?: PseoPageData }) {
-  return <div dangerouslySetInnerHTML={ { __html: withAssetBase(HTML) } } />;
+    useEffect(() => {
+        function fadeOut(el) {
+            el.style.opacity = 1;
+            (function fade() {
+                if ((el.style.opacity -= .1) < 0) {
+                    el.style.display = "none";
+                } else {
+                    requestAnimationFrame(fade);
+                }
+            })();
+        };
+
+        function fadeIn(el, display) {
+            el.style.opacity = 0;
+            el.style.display = display || "block";
+            (function fade() {
+                var val = parseFloat(el.style.opacity);
+                if (!((val += .1) > 1)) {
+                    el.style.opacity = val;
+                    requestAnimationFrame(fade);
+                }
+            })();
+        };
+        document.addEventListener('DOMContentLoaded', function () {
+            const bookingPopup = document.getElementById('booking-popup');
+            const closePopupButton = document.querySelector('.popup-banner-close');
+            const lastShown = localStorage.getItem('popupLastShown');
+            const now = new Date().getTime();
+            if (!lastShown || now - lastShown > 24 * 60 * 60 * 1000) {
+                setTimeout(() => {
+                    fadeIn(bookingPopup);
+                    localStorage.setItem('popupLastShown', now);
+                }, 40000);
+            }
+            closePopupButton.addEventListener('click', function () {
+                fadeOut(bookingPopup);
+            });
+        });
+        document.addEventListener("DOMContentLoaded", () => {
+            const calendlyBtn = document.querySelector("#popup-calendly-btn");
+            if (calendlyBtn) {
+                calendlyBtn.addEventListener("click", () => {
+                    posthog.capture("Popup Calendly Button Clicked", {
+                        location: window.location.pathname,
+                    });
+                });
+            }
+            const closeBtn = document.querySelector(".popup-banner-close");
+            if (closeBtn) {
+                closeBtn.addEventListener("click", () => {
+                    posthog.capture("Popup Banner Closed", {
+                        location: window.location.pathname,
+                    });
+                });
+            }
+        });
+        /*document.querySelectorAll('a[href="/demo?popup"]').forEach(function (link) {
+          link.addEventListener('click', function (e) {
+            e.preventDefault();
+            posthog.capture('popup_demo_link_clicked', {
+              source: window.location.pathname
+            });
+            setTimeout(function () {
+              window.location.href = link.href;
+            }, 100);
+          });
+        });*/
+        /*window.addEventListener("message", function (e) {
+          if (!e.data.event) return;
+          if (e.data.event === "calendly.event_scheduled") {
+            const payload = e.data.payload;
+            console.log(window.__calendlySource);
+            if (window.__calendlySource === "pop-up") {
+              console.log("\u2705 Booking from special pop-up detected", payload);
+              fetch("https://hook.us1.make.com/0imnr75wg6uygn696xe5asclmt1dwdx5", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(e.data) // send raw payload first
+              }).then(res => {
+                console.log("Webhook response:", res.status);
+              }).catch(err => {
+                console.error("Webhook error:", err);
+              });
+              window.__calendlySource = null;
+            }
+            console.log(window.__calendlySource);
+          }
+        });*/
+    }, []);
+
+    return (
+        <section className="background-gray-100 section-radius section-footer" data-wf--footer-full--variant="base">
+            <div className="spacer-48 landscape_spacer-16"></div>
+            <div className="padding-global">
+                <div className="container-1344">
+                    <div className="footer-blog-container">
+                        <div>
+                            <div className="footer_blog-video-wrapper">
+                                <div className="w-video w-embed" style={{paddingTop: '56.17021276595745%'}}
+                                     youtube-id="CNUeWqBJPwI">
+                                    <iframe allowFullScreen className="embedly-embed" height="528" scrolling="no"
+                                            src="https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FCNUeWqBJPwI%3Ffeature%3Doembed&amp;display_name=YouTube&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DCNUeWqBJPwI&amp;image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FCNUeWqBJPwI%2Fhqdefault.jpg&amp;type=text%2Fhtml&amp;schema=youtube"
+                                            title="YC Hated Our Idea - Then We Grew 5.75x &amp; Raised $51M with Marty Kausas, Pylon CEO"
+                                            width="940"></iframe>
+                                </div>
+                            </div>
+                            <div className="spacer-48"></div>
+                        </div>
+                        <div className="footer_blog-column">
+                            <div className="footer_blog-collection w-dyn-list">
+                                <div className="footer_blog-list w-dyn-items" role="list">
+                                    <div className="w-dyn-item" role="listitem">
+                                        <a className="footer_blog-post-item w-inline-block" href="#">
+                                            <div className="category-tag text-gray-900">Blog</div>
+                                            <div className="spacer-12"></div>
+                                            <div
+                                                className="text-20 weight-semibold lh-150 text-gray-900 w-dyn-bind-empty"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div className="w-dyn-empty">
+                                    <div>No items found.</div>
+                                </div>
+                            </div>
+                            <div className="w-embed">
+                                <style dangerouslySetInnerHTML={{
+                                    __html: `
+      .footer_blog-column::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 120px;
+        left: 0;
+        z-index: 99;
+        background: linear-gradient(180deg, rgba(244, 244, 245, 0) 0%, rgba(244, 244, 245, 0.676426) 20%, #F4F4F5 45.07%);
+      }
+    `
+                                }}/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="tablet_show">
+                <div className="w-dyn-list">
+                    <div className="footer_mobile-blog w-dyn-items" role="list">
+                        <div className="footer_mobile-blog-item w-dyn-item" role="listitem">
+                            <a className="footer_blog-post-item w-inline-block" href="#">
+                                <div className="category-tag text-gray-900">Blog</div>
+                                <div className="spacer-12"></div>
+                                <div
+                                    className="text-16 weight-semibold lh-150 text-gray-900 text-style-2lines w-dyn-bind-empty"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div className="w-dyn-empty">
+                        <div>No items found.</div>
+                    </div>
+                </div>
+                <div className="spacer-48"></div>
+            </div>
+            <div className="padding-global">
+                <div className="container-1344">
+                    <div className="footer-divider margin-0"></div>
+                    <div className="spacer-48"></div>
+                    <div className="footer-menu_wrapper">
+                        <div className="footer-contacts_wrapper">
+                            <div className="footer-contacts">
+                                <div className="text-20 weight-semibold lh-156 text-gray-900">Get in touch</div>
+                                <div className="spacer-12"></div>
+                                <div className="text-15 weight-regular lh-145">🌍 156 2nd St, Office 416
+                                    San Francisco, CA 94105, US
+                                </div>
+                                <div className="spacer-64 landscape_spacer-40"></div>
+                                <div className="footer-contacts_bottom">
+                                    <div className="w-layout-vflex gap-4">
+                                        <a className="text-15 weight-semibold lh-145 text-gray-900"
+                                           href="tel:4157072976">📞 (415) 707-2976</a>
+                                        <a className="text-15 weight-semibold lh-145 text-gray-900"
+                                           href="mailto:help@awesomic.io">📨 help@awesomic.io</a>
+                                    </div>
+                                    <div className="w-layout-hflex gap-8 mobile_x-space-between mobile_max-width-full">
+                                        <a className="footer-social-button w-inline-block"
+                                           href="https://www.linkedin.com/company/awesomic/" target="_blank"><img
+                                            alt="LinkedIn Link Image" loading="lazy"
+                                            src={asset("/images/linkedin-icon-footer.svg")}/></a>
+                                        <a className="footer-social-button w-inline-block"
+                                           href="https://www.instagram.com/awesomic/" target="_blank"><img
+                                            alt="Instagram Link Image" loading="lazy"
+                                            src={asset("/images/instagram-footer-image.svg")}/></a>
+                                        <a className="footer-social-button w-inline-block"
+                                           href="https://www.facebook.com/awesomicinc" target="_blank"><img
+                                            alt="Facebook Link Image" loading="lazy"
+                                            src={asset("/images/facebook-footer-image.svg")}/></a>
+                                        <a className="footer-social-button w-inline-block"
+                                           href="https://twitter.com/awesomic" target="_blank"><img
+                                            alt="X (Twitter) Link Image" loading="lazy"
+                                            src={asset("/images/x-logo-image.svg")}/></a>
+                                        <a className="footer-social-button w-inline-block"
+                                           href="https://www.youtube.com/@SenseofAwe" target="_blank"><img
+                                            alt="X (Twitter) Link Image" loading="lazy"
+                                            src={asset("/images/youtube-icon.svg")}/></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a className="llm_footer-link w-inline-block" href="llm-info.html"><img alt=""
+                                                                                                    className="llm-icon"
+                                                                                                    loading="lazy"
+                                                                                                    src={asset("/images/stars-icons.svg")}/>
+                                <div className="text-15 weight-regular lh-145">Hey AI, your official guide to Awesomic
+                                </div>
+                            </a>
+                        </div>
+                        <div className="footer-menu">
+                            <div className="w-layout-vflex gap-16">
+                                <div className="text-15 weight-semibold lh-145 text-gray-900 opacity-80">Company</div>
+                                <div className="w-layout-vflex gap-12">
+                                    <a className="text-15 weight-regular lh-145" href="pricing.html">Pricing</a>
+                                    <a className="text-15 weight-regular lh-145" href="case-study.html">Case studies</a>
+                                    <a className="text-15 weight-regular lh-145" href="about.html">About us</a>
+                                    <a className="text-15 weight-regular lh-145" href="blog.html">Blog</a>
+                                    <a className="text-15 weight-regular lh-145" href="https://support.awesomic.com/en/"
+                                       target="_blank">Awesomic help center</a>
+                                    <a className="text-15 weight-regular lh-145"
+                                       href="privacy-policy.html">Terms &amp; policies</a>
+                                    <a className="text-15 weight-regular lh-145" href="talent.html">Apply as a
+                                        talent</a>
+                                    <a className="text-15 weight-regular lh-145" href="wall-of-love.html">Orbit of
+                                        love</a>
+                                </div>
+                            </div>
+                            <div className="w-layout-vflex gap-16">
+                                <div className="text-15 weight-semibold lh-145 text-gray-900 opacity-80">Resources</div>
+                                <div className="w-layout-vflex gap-12">
+                                    <a className="text-15 weight-regular lh-145" href="hire-product-designer.html">Hire
+                                        product designers</a>
+                                    <a className="text-15 weight-regular lh-145" href="hire-ui-ux-designer.html">Hire
+                                        ui/ux designer</a>
+                                    <a className="text-15 weight-regular lh-145" href="hire-marketing-designer.html">Hire
+                                        marketing designer</a>
+                                    <a className="text-15 weight-regular lh-145" href="hire-creative-designer.html">Hire
+                                        creative designer</a>
+                                    <a className="text-15 weight-regular lh-145" href="hire-freelance-designer.html">Hire
+                                        freelance designer</a>
+                                    <a className="text-15 weight-regular lh-145" href="hire-logo-designer.html">Hire
+                                        logo designer</a>
+                                </div>
+                            </div>
+                            <div className="w-layout-vflex gap-16">
+                                <div className="text-15 weight-semibold lh-145 text-gray-900 opacity-80">Services</div>
+                                <div className="w-layout-vflex gap-12">
+                                    <a className="text-15 weight-regular lh-145" footer-link=""
+                                       href="/?tab=design#services-block">Design services</a>
+                                    <a className="text-15 weight-regular lh-145" footer-link="" href="video.html">Video
+                                        production</a>
+                                    <a className="text-15 weight-regular lh-145" footer-link="" href="web-design.html">Web
+                                        design</a>
+                                    <a className="text-15 weight-regular lh-145" footer-link=""
+                                       href="/?tab=nocode#services-block">No-code development</a>
+                                    <a className="text-15 weight-regular lh-145" footer-link=""
+                                       href="/?tab=marketing#services-block">Marketing services</a>
+                                    <a className="text-15 weight-regular lh-145" footer-link=""
+                                       href="/?tab=software#services-block">Software development</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="spacer-96 landscape_spacer-80"></div>
+            <div className="padding-global mod-footer">
+                <div className="container-1344">
+                    <div className="footer-subsctract_wrapper"><img alt="footer decorative Awesomic logo"
+                                                                    className="z-index-1"
+                                                                    src="https://cdn.prod.website-files.com/6818a97ae905afeb08eff668/684870d153cf3a37baf98e64_Subtract_png-footer.avif"/>
+                        <div className="footer_substract-bg w-embed"><img alt="decorative image" loading="lazy"
+                                                                          src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/Home%20page%20images/Footer%20image.jpg"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="popup-banner" id="booking-popup">
+                <div className="heading-style-h4 weight-semibold">Still hesitating?</div>
+                <div className="spacer-12"></div>
+                <div className="text-15 weight-regular lh-145">Schedule a free 30-minute personalized demo. We\u2019ll
+                    answer all your questions and show you how companies use Awesomic to boost growth, get funding, and
+                    complete more projects.
+                </div>
+                <div className="spacer-28"></div>
+                <a button-black=""
+                   calendly-link="https://calendly.com/awesomic/demo?utm_source=website&amp;utm_medium=pop-up&amp;hide_gdpr_banner=1"
+                   className="button is-large w-variant-91645085-d821-3204-c720-eb08b13aeb97 w-node-_58fe0e1a-6bae-3e07-a5d6-55c04204c63a-4204c63a w-inline-block"
+                   data-wf--button-black-l--variant="icon-right" href="#" id="popup-calendly-btn">
+                    <div className="z-index-1">Book a call</div>
+                    <div className="button-background"></div>
+                    <img alt="" className="button-icon w-variant-91645085-d821-3204-c720-eb08b13aeb97" height="20"
+                         loading="lazy" src={asset("/images/faq_two-faces.avif")}/>
+                </a>
+                {/* script → useEffect */}<img alt="Close icon" className="popup-banner-close" loading="lazy"
+                                               src={asset("/images/close-gray-400.svg")}/>
+            </div>
+        </section>
+    );
 }
