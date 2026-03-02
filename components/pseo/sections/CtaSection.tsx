@@ -82,7 +82,7 @@ export function CtaSection(_props: { data?: PseoPageData }) {
                     <div className="cta-heading_wrapper">
                         <div className="max-width-828 align-center">
                             <h2 className="text-align-center">One subscription and your hiring problems <span
-                                className="cta_faces"> </span>\u00a0solved</h2>
+                                className="cta_faces"> </span>solved</h2>
                         </div>
                     </div>
                     <div className="spacer-40"></div>

@@ -6,7 +6,7 @@ import { HowItWorksSection } from "./sections/HowItWorksSection";
 import { SectionTestimonials } from "./sections/SectionTestimonials";
 import { WhyAwesomic } from "./sections/WhyAwesomic";
 import { CtaSection } from "./sections/CtaSection";
-import { SectionWhite2 } from "./sections/SectionWhite2";
+import { FaqSection } from "./sections/FaqSection";
 import { SectionGray3 } from "./sections/SectionGray3";
 import { SectionWhite3 } from "./sections/SectionWhite3";
 import { FooterSection } from "./sections/FooterSection";
@@ -22,7 +22,7 @@ export function PseoTemplate({ data }: { data: PseoPageData }) {
           <SectionTestimonials data={data} />
           <WhyAwesomic data={data} />
           <CtaSection data={data} />
-          <SectionWhite2 data={data} />
+          <FaqSection data={data} />
           <SectionGray3 data={data} />
           <SectionWhite3 data={data} />
           <FooterSection data={data} />
