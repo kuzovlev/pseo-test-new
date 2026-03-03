@@ -103,7 +103,7 @@ export function FaqSection(_props: { data?: PseoPageData }) {
                                         <div className="faq_item-inner">
                                             <div className="faq_question">
                                                 <div className="text-20 weight-semibold lh-150 mobile_text-16">{q}</div>
-                                                <img alt="" className="faq_chevron" loading="lazy" src={asset("/images/chevron-down-gray.svg")} />
+                                                <img alt="" className="faq_chevron" loading="lazy" src={asset("/images-static/chevron-down-gray.svg")} />
                                             </div>
                                             <div className="faq_answer">
                                                 <div className="spacer-12 landscape_spacer-8"></div>
@@ -130,7 +130,7 @@ export function FaqSection(_props: { data?: PseoPageData }) {
                                data-wf--button-black-m--variant="base-icon-right" href="#">
                                 <div className="z-index-1">Book a call</div>
                                 <img alt="" className="button-icon w-variant-66ab6bb1-c107-f4b0-d3ef-56571315e5f4"
-                                     width="39" loading="lazy" src={asset("/images/faq_two-faces.avif")}/>
+                                     width="39" loading="lazy" src={asset("/images-static/faq_two-faces.avif")}/>
                                 <div className="button-background"></div>
                             </a>
                         </div>

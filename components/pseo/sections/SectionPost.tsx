@@ -26,23 +26,23 @@ export function SectionPost(_props: { data?: PseoPageData }) {
                                         <div className="button-animation-wrapper"><img alt=""
                                                                                        className="animated-icon-first"
                                                                                        loading="lazy"
-                                                                                       src={asset("/images/animation-chevron.svg")}/><img
+                                                                                       src={asset("/images-static/animation-chevron.svg")}/><img
                                             alt="" className="animated-icon-second" loading="lazy"
-                                            src={asset("/images/animation-chevron.svg")}/><img alt=""
+                                            src={asset("/images-static/animation-chevron.svg")}/><img alt=""
                                                                                                  className="animated-icon-third"
                                                                                                  loading="lazy"
-                                                                                                 src={asset("/images/animation-chevron.svg")}/>
+                                                                                                 src={asset("/images-static/animation-chevron.svg")}/>
                                         </div>
                                         <div className="z-index-1">Get started</div>
                                         <div className="button-animation-wrapper"><img alt=""
                                                                                        className="animated-icon-third"
                                                                                        loading="lazy"
-                                                                                       src={asset("/images/animation-chevron-reverse.svg")}/><img
+                                                                                       src={asset("/images-static/animation-chevron-reverse.svg")}/><img
                                             alt="" className="animated-icon-second" loading="lazy"
-                                            src={asset("/images/animation-chevron-reverse.svg")}/><img alt=""
+                                            src={asset("/images-static/animation-chevron-reverse.svg")}/><img alt=""
                                                                                                          className="animated-icon-first"
                                                                                                          loading="lazy"
-                                                                                                         src={asset("/images/animation-chevron-reverse.svg")}/>
+                                                                                                         src={asset("/images-static/animation-chevron-reverse.svg")}/>
                                         </div>
                                         <div className="button-background"></div>
                                     </a>

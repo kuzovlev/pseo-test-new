@@ -1,8 +1,8 @@
 import { ASSET_BASE } from "@/lib/pseo-assets";
 
 export default function Head() {
-  const favicon = ASSET_BASE ? `${ASSET_BASE}/images/favicon.png` : "/images/favicon.png";
-  const webclip = ASSET_BASE ? `${ASSET_BASE}/images/webclip.png` : "/images/webclip.png";
+  const favicon = ASSET_BASE ? `${ASSET_BASE}/images/favicon.png` : "/images-static/favicon.png";
+  const webclip = ASSET_BASE ? `${ASSET_BASE}/images/webclip.png` : "/images-static/webclip.png";
 
   return (
     <>
@@ -21,10 +21,10 @@ export default function Head() {
       <meta content="z790Eh7WsNc3VPeFLSLyBq1OjJBH2QXtrdaDzfvqxfM" name="google-site-verification" />
       <meta name="facebook-domain-verification" content="kbqd4j0ykeixr7lahwx5mwtyh4bolk" />
       <meta name="format-detection" content="telephone=no" />
-      <link href="/webflow/css/normalize.css" rel="stylesheet" type="text/css" />
-      <link href="/webflow/css/webflow.css" rel="stylesheet" type="text/css" />
-      <link href="/webflow/css/awesomic-2025-new.webflow.css" rel="stylesheet" type="text/css" />
-      <link href="/webflow/css/global-styles.css" rel="stylesheet" type="text/css" />
+      <link href="/webflow-static/css/normalize.css" rel="stylesheet" type="text/css" />
+      <link href="/webflow-static/css/webflow.css" rel="stylesheet" type="text/css" />
+      <link href="/webflow-static/css/awesomic-2025-new.webflow.css" rel="stylesheet" type="text/css" />
+      <link href="/webflow-static/css/global-styles.css" rel="stylesheet" type="text/css" />
       <link href="https://www.awesomic.com/pseo-template" rel="canonical" />
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
       <link rel="shortcut icon" href={favicon} type="image/x-icon" />
