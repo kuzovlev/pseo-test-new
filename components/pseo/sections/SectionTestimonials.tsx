@@ -85,8 +85,8 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                 video.load();
                 video.muted = true;
                 video.playsInline = true;
-                video.setAttribute('playsinline', '');
-                video.setAttribute('webkit-playsinline', '');
+                video.setAttribute('playsInline', '');
+                video.setAttribute('webkit-playsInline', '');
                 const p = video.play();
                 if (p && p.catch) p.catch(() => {
                 });
@@ -278,7 +278,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
                                             src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcset="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
+                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
                                                                                    src={asset("/images/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
@@ -292,8 +292,8 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                                  left: '0',
                                                  zIndex: '1'
                                              }}>
-                                            <video autoplay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsinline="">
+                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
+                                                   playsInline="">
                                                 <source
                                                     data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
                                                     data-wf-ignore="true"/>
@@ -354,8 +354,8 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                                     left: '0',
                                                     zIndex: '1'
                                                 }}>
-                                                <video autoplay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                       playsinline="">
+                                                <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
+                                                       playsInline="">
                                                     <source
                                                         data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
                                                         data-wf-ignore="true"/>
@@ -397,7 +397,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
                                             src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcset="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
+                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
                                                                                    src={asset("/images/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
@@ -411,8 +411,8 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                                  left: '0',
                                                  zIndex: '1'
                                              }}>
-                                            <video autoplay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsinline="">
+                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
+                                                   playsInline="">
                                                 <source
                                                     data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
                                                     data-wf-ignore="true"/>
@@ -453,7 +453,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
                                             src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcset="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
+                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
                                                                                    src={asset("/images/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
@@ -467,8 +467,8 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                                  left: '0',
                                                  zIndex: '1'
                                              }}>
-                                            <video autoplay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsinline="">
+                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
+                                                   playsInline="">
                                                 <source
                                                     data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
                                                     data-wf-ignore="true"/>
@@ -507,7 +507,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
                                             src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcset="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
+                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
                                                                                    src={asset("/images/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
@@ -521,8 +521,8 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                                  left: '0',
                                                  zIndex: '1'
                                              }}>
-                                            <video autoplay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsinline="">
+                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
+                                                   playsInline="">
                                                 <source
                                                     data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
                                                     data-wf-ignore="true"/>
@@ -563,7 +563,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
                                             src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcset="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
+                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
                                                                                    src={asset("/images/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
@@ -577,8 +577,8 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                                  left: '0',
                                                  zIndex: '1'
                                              }}>
-                                            <video autoplay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsinline="">
+                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
+                                                   playsInline="">
                                                 <source
                                                     data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
                                                     data-wf-ignore="true"/>
@@ -618,7 +618,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
                                             src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcset="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
+                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
                                                                                    src={asset("/images/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
@@ -632,8 +632,8 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                                  left: '0',
                                                  zIndex: '1'
                                              }}>
-                                            <video autoplay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsinline="">
+                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
+                                                   playsInline="">
                                                 <source
                                                     data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
                                                     data-wf-ignore="true"/>
@@ -673,7 +673,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
                                             src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcset="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
+                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
                                                                                    src={asset("/images/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
@@ -687,8 +687,8 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                                  left: '0',
                                                  zIndex: '1'
                                              }}>
-                                            <video autoplay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsinline="">
+                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
+                                                   playsInline="">
                                                 <source
                                                     data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
                                                     data-wf-ignore="true"/>
@@ -726,7 +726,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
                                             src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcset="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
+                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
                                                                                    src={asset("/images/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
@@ -740,8 +740,8 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                                  left: '0',
                                                  zIndex: '1'
                                              }}>
-                                            <video autoplay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsinline="">
+                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
+                                                   playsInline="">
                                                 <source
                                                     data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
                                                     data-wf-ignore="true"/>
@@ -784,7 +784,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
                                             src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcset="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
+                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
                                                                                    src={asset("/images/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
@@ -798,8 +798,8 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                                  left: '0',
                                                  zIndex: '1'
                                              }}>
-                                            <video autoplay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsinline="">
+                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
+                                                   playsInline="">
                                                 <source
                                                     data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
                                                     data-wf-ignore="true"/>
@@ -840,7 +840,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
                                             src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcset="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
+                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
                                                                                    src={asset("/images/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
@@ -854,8 +854,8 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                                  left: '0',
                                                  zIndex: '1'
                                              }}>
-                                            <video autoplay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsinline="">
+                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
+                                                   playsInline="">
                                                 <source
                                                     data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
                                                     data-wf-ignore="true"/>
@@ -894,7 +894,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
                                             src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcset="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
+                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
                                                                                    src={asset("/images/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
@@ -908,8 +908,8 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                                  left: '0',
                                                  zIndex: '1'
                                              }}>
-                                            <video autoplay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsinline="">
+                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
+                                                   playsInline="">
                                                 <source
                                                     data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
                                                     data-wf-ignore="true"/>
@@ -951,7 +951,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
                                             src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcset="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
+                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
                                                                                    src={asset("/images/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
@@ -965,8 +965,8 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                                  left: '0',
                                                  zIndex: '1'
                                              }}>
-                                            <video autoplay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsinline="">
+                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
+                                                   playsInline="">
                                                 <source
                                                     data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
                                                     data-wf-ignore="true"/>
@@ -1024,8 +1024,8 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                                  left: '0',
                                                  zIndex: '1'
                                              }}>
-                                            <video autoplay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsinline="">
+                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
+                                                   playsInline="">
                                                 <source
                                                     data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
                                                     data-wf-ignore="true"/>
@@ -1067,7 +1067,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
                                             src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcset="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
+                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
                                                                                    src={asset("/images/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
@@ -1081,8 +1081,8 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                                  left: '0',
                                                  zIndex: '1'
                                              }}>
-                                            <video autoplay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsinline="">
+                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
+                                                   playsInline="">
                                                 <source
                                                     data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
                                                     data-wf-ignore="true"/>
@@ -1120,7 +1120,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
                                             src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcset="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
+                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
                                                                                    src={asset("/images/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
@@ -1134,8 +1134,8 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                                  left: '0',
                                                  zIndex: '1'
                                              }}>
-                                            <video autoplay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsinline="">
+                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
+                                                   playsInline="">
                                                 <source
                                                     data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
                                                     data-wf-ignore="true"/>
@@ -1175,7 +1175,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
                                             src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcset="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
+                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
                                                                                    src={asset("/images/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
@@ -1189,8 +1189,8 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                                  left: '0',
                                                  zIndex: '1'
                                              }}>
-                                            <video autoplay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsinline="">
+                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
+                                                   playsInline="">
                                                 <source
                                                     data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
                                                     data-wf-ignore="true"/>
@@ -1233,7 +1233,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                             className="max-width-full placeholder-image w-variant-6fce41fb-4bcb-0c9a-0e28-63b62bb4d75a"
                                             loading="lazy" sizes="100vw"
                                             src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcset="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
+                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div
                                                 className="review_play-icon w-variant-6fce41fb-4bcb-0c9a-0e28-63b62bb4d75a">
                                                 <img alt="" height="26" loading="lazy"
@@ -1249,8 +1249,8 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                                  left: '0',
                                                  zIndex: '1'
                                              }}>
-                                            <video autoplay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsinline="">
+                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
+                                                   playsInline="">
                                                 <source
                                                     data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
                                                     data-wf-ignore="true"/>
@@ -1291,7 +1291,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
                                             src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcset="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
+                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
                                                                                    src={asset("/images/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
@@ -1305,8 +1305,8 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                                  left: '0',
                                                  zIndex: '1'
                                              }}>
-                                            <video autoplay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsinline="">
+                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
+                                                   playsInline="">
                                                 <source
                                                     data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
                                                     data-wf-ignore="true"/>
@@ -1349,7 +1349,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
                                             src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcset="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
+                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
                                                                                    src={asset("/images/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
@@ -1363,8 +1363,8 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                                  left: '0',
                                                  zIndex: '1'
                                              }}>
-                                            <video autoplay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsinline="">
+                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
+                                                   playsInline="">
                                                 <source
                                                     data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
                                                     data-wf-ignore="true"/>
@@ -1402,7 +1402,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
                                             src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcset="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
+                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
                                                                                    src={asset("/images/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
@@ -1416,8 +1416,8 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                                  left: '0',
                                                  zIndex: '1'
                                              }}>
-                                            <video autoplay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsinline="">
+                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
+                                                   playsInline="">
                                                 <source
                                                     data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
                                                     data-wf-ignore="true"/>
@@ -1457,7 +1457,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
                                             src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcset="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
+                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
                                                                                    src={asset("/images/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
@@ -1471,8 +1471,8 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                                  left: '0',
                                                  zIndex: '1'
                                              }}>
-                                            <video autoplay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsinline="">
+                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
+                                                   playsInline="">
                                                 <source
                                                     data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
                                                     data-wf-ignore="true"/>
@@ -1511,7 +1511,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
                                             src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcset="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
+                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
                                                                                    src={asset("/images/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
@@ -1525,8 +1525,8 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                                  left: '0',
                                                  zIndex: '1'
                                              }}>
-                                            <video autoplay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsinline="">
+                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
+                                                   playsInline="">
                                                 <source
                                                     data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
                                                     data-wf-ignore="true"/>
@@ -1568,7 +1568,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
                                             src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcset="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
+                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
                                                                                    src={asset("/images/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
@@ -1582,8 +1582,8 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                                  left: '0',
                                                  zIndex: '1'
                                              }}>
-                                            <video autoplay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsinline="">
+                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
+                                                   playsInline="">
                                                 <source
                                                     data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
                                                     data-wf-ignore="true"/>
@@ -1622,7 +1622,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
                                             src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcset="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
+                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
                                                                                    src={asset("/images/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
@@ -1636,8 +1636,8 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                                  left: '0',
                                                  zIndex: '1'
                                              }}>
-                                            <video autoplay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsinline="">
+                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
+                                                   playsInline="">
                                                 <source
                                                     data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
                                                     data-wf-ignore="true"/>
@@ -1678,7 +1678,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
                                             src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcset="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
+                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
                                                                                    src={asset("/images/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
@@ -1692,8 +1692,8 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                                  left: '0',
                                                  zIndex: '1'
                                              }}>
-                                            <video autoplay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsinline="">
+                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
+                                                   playsInline="">
                                                 <source
                                                     data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
                                                     data-wf-ignore="true"/>
@@ -1733,7 +1733,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
                                             src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcset="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
+                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
                                                                                    src={asset("/images/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
@@ -1747,8 +1747,8 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                                  left: '0',
                                                  zIndex: '1'
                                              }}>
-                                            <video autoplay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsinline="">
+                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
+                                                   playsInline="">
                                                 <source
                                                     data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
                                                     data-wf-ignore="true"/>
@@ -1786,7 +1786,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
                                             src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcset="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
+                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
                                                                                    src={asset("/images/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
@@ -1800,8 +1800,8 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                                  left: '0',
                                                  zIndex: '1'
                                              }}>
-                                            <video autoplay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsinline="">
+                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
+                                                   playsInline="">
                                                 <source
                                                     data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
                                                     data-wf-ignore="true"/>
@@ -1826,7 +1826,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
       .video-placeholder {
         transition: opacity 0.35s ease;
       }
-      /* === HIDE BG VIDEO ON MOBILE (AUTOPLAY IS BLOCKED ANYWAY) === */
+      /* === HIDE BG VIDEO ON MOBILE (autoPlay IS BLOCKED ANYWAY) === */
       @media (max-width: 767px) {
         .w-background-video:not(.ai-service_bg-video) {
           display: none !important;

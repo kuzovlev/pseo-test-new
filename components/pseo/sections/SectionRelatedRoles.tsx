@@ -3,7 +3,7 @@ import type {PseoPageData} from "@/lib/pseo-types";
 const ASSET_BASE = process.env.NEXT_PUBLIC_ASSET_BASE ?? "";
 const asset = (src: string) => `${ASSET_BASE}${src.startsWith("/") ? src : `/${src}`}`;
 
-export function SectionGray3(_props: { data?: PseoPageData }) {
+export function SectionRelatedRoles(_props: { data?: PseoPageData }) {
     return (
         <section className="background-gray-100 section-radius">
             <div className="spacer-80 tablet_spacer-64"></div>
