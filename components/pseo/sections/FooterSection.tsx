@@ -193,30 +193,30 @@ export function FooterSection(_props: { data?: PseoPageData }) {
                                         <a className="footer-social-button w-inline-block"
                                            href="https://www.linkedin.com/company/awesomic/" target="_blank"><img
                                             alt="LinkedIn Link Image" loading="lazy"
-                                            src={asset("/images/linkedin-icon-footer.svg")}/></a>
+                                            src={asset("/images-static/linkedin-icon-footer.svg")}/></a>
                                         <a className="footer-social-button w-inline-block"
                                            href="https://www.instagram.com/awesomic/" target="_blank"><img
                                             alt="Instagram Link Image" loading="lazy"
-                                            src={asset("/images/instagram-footer-image.svg")}/></a>
+                                            src={asset("/images-static/instagram-footer-image.svg")}/></a>
                                         <a className="footer-social-button w-inline-block"
                                            href="https://www.facebook.com/awesomicinc" target="_blank"><img
                                             alt="Facebook Link Image" loading="lazy"
-                                            src={asset("/images/facebook-footer-image.svg")}/></a>
+                                            src={asset("/images-static/facebook-footer-image.svg")}/></a>
                                         <a className="footer-social-button w-inline-block"
                                            href="https://twitter.com/awesomic" target="_blank"><img
                                             alt="X (Twitter) Link Image" loading="lazy"
-                                            src={asset("/images/x-logo-image.svg")}/></a>
+                                            src={asset("/images-static/x-logo-image.svg")}/></a>
                                         <a className="footer-social-button w-inline-block"
                                            href="https://www.youtube.com/@SenseofAwe" target="_blank"><img
                                             alt="X (Twitter) Link Image" loading="lazy"
-                                            src={asset("/images/youtube-icon.svg")}/></a>
+                                            src={asset("/images-static/youtube-icon.svg")}/></a>
                                     </div>
                                 </div>
                             </div>
                             <a className="llm_footer-link w-inline-block" href="llm-info.html"><img alt=""
                                                                                                     className="llm-icon"
                                                                                                     loading="lazy"
-                                                                                                    src={asset("/images/stars-icons.svg")}/>
+                                                                                                    src={asset("/images-static/stars-icons.svg")}/>
                                 <div className="text-15 weight-regular lh-145">Hey AI, your official guide to Awesomic
                                 </div>
                             </a>
@@ -304,10 +304,10 @@ export function FooterSection(_props: { data?: PseoPageData }) {
                     <div className="z-index-1">Book a call</div>
                     <div className="button-background"></div>
                     <img alt="" className="button-icon w-variant-91645085-d821-3204-c720-eb08b13aeb97" height="20"
-                         loading="lazy" src={asset("/images/faq_two-faces.avif")}/>
+                         loading="lazy" src={asset("/images-static/faq_two-faces.avif")}/>
                 </a>
                 {/* script → useEffect */}<img alt="Close icon" className="popup-banner-close" loading="lazy"
-                                               src={asset("/images/close-gray-400.svg")}/>
+                                               src={asset("/images-static/close-gray-400.svg")}/>
             </div>
         </section>
     );

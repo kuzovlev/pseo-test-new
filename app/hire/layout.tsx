@@ -10,9 +10,9 @@ export default function HireLayout({
     return (
         <html lang="en">
         <head>
-            <link rel="stylesheet" href="/webflow/css/normalize.css" />
-            <link rel="stylesheet" href="/webflow/css/webflow.css" />
-            <link rel="stylesheet" href="/webflow/css/awesomic-2025-new.webflow.css" />
+            <link rel="stylesheet" href="/webflow-static/css/normalize.css" />
+            <link rel="stylesheet" href="/webflow-static/css/webflow.css" />
+            <link rel="stylesheet" href="/webflow-static/css/awesomic-2025-new.webflow.css" />
             <link
                 rel="stylesheet"
                 href="https://assets.calendly.com/assets/external/widget.css"
@@ -27,7 +27,7 @@ export default function HireLayout({
         />
 
         <Script
-            src="/webflow/js/webflow.js"
+            src="/webflow-static/js/webflow.js"
             strategy="afterInteractive"
         />
         </body>

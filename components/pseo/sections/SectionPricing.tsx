@@ -33,7 +33,7 @@ export function SectionPricing(_props: { data?: PseoPageData }) {
                                                     <div className="pricing-header">
                                                         <div className="pricing-name"><img alt="" height="32"
                                                                                            loading="lazy"
-                                                                                           src={asset("/images/rock-light_1rock-light.avif")}
+                                                                                           src={asset("/images-static/rock-light_1rock-light.avif")}
                                                                                            width="32px"/>
                                                             <div className="text-20 weight-semibold lh-156">Light</div>
                                                         </div>
@@ -66,27 +66,27 @@ export function SectionPricing(_props: { data?: PseoPageData }) {
                                                        href="https://app.awesomic.com/register" target="_blank">
                                                         <div className="z-index-1">Get started</div>
                                                         <img alt="" className="button-icon" height="20" loading="lazy"
-                                                             src={asset("/images/login-icon-white.svg")}/>
+                                                             src={asset("/images-static/login-icon-white.svg")}/>
                                                         <div
                                                             className="button-background w-variant-d66e8b99-9512-4f1b-0527-c00e632abd95"></div>
                                                     </a>
                                                     <div className="spacer-28"></div>
                                                     <div className="pricing_list">
                                                         <div className="pricing_list-item"><img alt="" loading="lazy"
-                                                                                                src={asset("/images/checkmark-circle-dark.svg")}/>
+                                                                                                src={asset("/images-static/checkmark-circle-dark.svg")}/>
                                                             <div
                                                                 className="text-15 weight-regular lh-145">Part\u2013time
                                                                 talents
                                                             </div>
                                                         </div>
                                                         <div className="pricing_list-item"><img alt="" loading="lazy"
-                                                                                                src={asset("/images/checkmark-circle-dark.svg")}/>
+                                                                                                src={asset("/images-static/checkmark-circle-dark.svg")}/>
                                                             <div className="text-15 weight-regular lh-145">Graphic
                                                                 design services
                                                             </div>
                                                         </div>
                                                         <div className="pricing_list-item"><img alt="" loading="lazy"
-                                                                                                src={asset("/images/slack-dark.svg")}/>
+                                                                                                src={asset("/images-static/slack-dark.svg")}/>
                                                             <div className="text-15 weight-regular lh-145">Slack
                                                                 integration
                                                             </div>
@@ -101,7 +101,7 @@ export function SectionPricing(_props: { data?: PseoPageData }) {
                                                     <div className="text-13 weight-medium lh-135">View all services
                                                     </div>
                                                     <img alt="" loading="lazy"
-                                                         src={asset("/images/circle-chevron-down.svg")}/>
+                                                         src={asset("/images-static/circle-chevron-down.svg")}/>
                                                 </a>
                                             </div>
                                         </div>
@@ -111,7 +111,7 @@ export function SectionPricing(_props: { data?: PseoPageData }) {
                                                     <div className="pricing-header">
                                                         <div className="pricing-name"><img alt="" height="32"
                                                                                            loading="lazy"
-                                                                                           src={asset("/images/rock-pro_1rock-pro.avif")}
+                                                                                           src={asset("/images-static/rock-pro_1rock-pro.avif")}
                                                                                            width="32px"/>
                                                             <div className="text-20 weight-semibold lh-156">Pro</div>
                                                         </div>
@@ -144,26 +144,26 @@ export function SectionPricing(_props: { data?: PseoPageData }) {
                                                        href="https://app.awesomic.com/register" target="_blank">
                                                         <div>Get started</div>
                                                         <img alt="" className="button-icon" loading="lazy"
-                                                             src={asset("/images/login-icon-black.svg")}/>
+                                                             src={asset("/images-static/login-icon-black.svg")}/>
                                                     </a>
                                                     <div className="spacer-28"></div>
                                                     <div className="pricing_list">
                                                         <div className="pricing_list-item"><img alt="" loading="lazy"
-                                                                                                src={asset("/images/checkmark-circle-white.svg")}/>
+                                                                                                src={asset("/images-static/checkmark-circle-white.svg")}/>
                                                             <div
                                                                 className="text-15 weight-regular lh-145">Part\u2013time
                                                                 talents
                                                             </div>
                                                         </div>
                                                         <div className="pricing_list-item"><img alt="" loading="lazy"
-                                                                                                src={asset("/images/checkmark-circle-white.svg")}/>
+                                                                                                src={asset("/images-static/checkmark-circle-white.svg")}/>
                                                             <div
                                                                 className="text-15 weight-regular lh-145 text-style-1line">All
                                                                 design &amp; no-code services
                                                             </div>
                                                         </div>
                                                         <div className="pricing_list-item"><img alt="" loading="lazy"
-                                                                                                src={asset("/images/slack-white.svg")}/>
+                                                                                                src={asset("/images-static/slack-white.svg")}/>
                                                             <div className="text-15 weight-regular lh-145">Slack
                                                                 integration
                                                             </div>
@@ -179,7 +179,7 @@ export function SectionPricing(_props: { data?: PseoPageData }) {
                                                         services
                                                     </div>
                                                     <img alt="" loading="lazy"
-                                                         src={asset("/images/chevron-down-white.svg")}/>
+                                                         src={asset("/images-static/chevron-down-white.svg")}/>
                                                 </a>
                                             </div>
                                         </div>
@@ -189,7 +189,7 @@ export function SectionPricing(_props: { data?: PseoPageData }) {
                                                     <div className="pricing-header">
                                                         <div className="pricing-name"><img alt="" height="32"
                                                                                            loading="lazy"
-                                                                                           src={asset("/images/rock-super_1rock-super.avif")}
+                                                                                           src={asset("/images-static/rock-super_1rock-super.avif")}
                                                                                            width="32px"/>
                                                             <div className="text-20 weight-semibold lh-156">Super</div>
                                                         </div>
@@ -221,27 +221,27 @@ export function SectionPricing(_props: { data?: PseoPageData }) {
                                                        href="https://app.awesomic.com/register" target="_blank">
                                                         <div className="z-index-1">Get started</div>
                                                         <img alt="" className="button-icon" height="20" loading="lazy"
-                                                             src={asset("/images/login-icon-white.svg")}/>
+                                                             src={asset("/images-static/login-icon-white.svg")}/>
                                                         <div
                                                             className="button-background w-variant-d66e8b99-9512-4f1b-0527-c00e632abd95"></div>
                                                     </a>
                                                     <div className="spacer-28"></div>
                                                     <div className="pricing_list">
                                                         <div className="pricing_list-item"><img alt="" loading="lazy"
-                                                                                                src={asset("/images/checkmark-circle-dark.svg")}/>
+                                                                                                src={asset("/images-static/checkmark-circle-dark.svg")}/>
                                                             <div
                                                                 className="text-15 weight-regular lh-145">Part\u2013time
                                                                 talents
                                                             </div>
                                                         </div>
                                                         <div className="pricing_list-item"><img alt="" loading="lazy"
-                                                                                                src={asset("/images/checkmark-circle-dark.svg")}/>
+                                                                                                src={asset("/images-static/checkmark-circle-dark.svg")}/>
                                                             <div className="text-15 weight-regular lh-145">All available
                                                                 services
                                                             </div>
                                                         </div>
                                                         <div className="pricing_list-item"><img alt="" loading="lazy"
-                                                                                                src={asset("/images/slack-dark.svg")}/>
+                                                                                                src={asset("/images-static/slack-dark.svg")}/>
                                                             <div className="text-15 weight-regular lh-145">Slack
                                                                 integration
                                                             </div>
@@ -256,7 +256,7 @@ export function SectionPricing(_props: { data?: PseoPageData }) {
                                                     <div className="text-13 weight-medium lh-135">View all services
                                                     </div>
                                                     <img alt="" loading="lazy"
-                                                         src={asset("/images/circle-chevron-down.svg")}/>
+                                                         src={asset("/images-static/circle-chevron-down.svg")}/>
                                                 </a>
                                             </div>
                                         </div>
@@ -266,7 +266,7 @@ export function SectionPricing(_props: { data?: PseoPageData }) {
                                                     <div className="pricing-header">
                                                         <div className="pricing-name"><img alt="" height="32"
                                                                                            loading="lazy"
-                                                                                           src={asset("/images/rock-1-1.avif")}
+                                                                                           src={asset("/images-static/rock-1-1.avif")}
                                                                                            width="32px"/>
                                                             <div className="text-20 weight-semibold lh-156">1 to 1</div>
                                                         </div>
@@ -282,13 +282,13 @@ export function SectionPricing(_props: { data?: PseoPageData }) {
                                                         <a className="pricing_to-details mod-talents w-inline-block"
                                                            href="https://app.awesomic.com/database/talents?tab=all"
                                                            target="_blank"><img alt="" loading="lazy"
-                                                                                src={asset("/images/pricing-1-1-faces_1pricing-1-1-faces.avif")}
+                                                                                src={asset("/images-static/pricing-1-1-faces_1pricing-1-1-faces.avif")}
                                                                                 width="49"/>
                                                             <div className="text-13 weight-medium lh-135">View all
                                                                 talents
                                                             </div>
                                                             <img alt="" loading="lazy"
-                                                                 src={asset("/images/new-page-black.svg")}/>
+                                                                 src={asset("/images-static/new-page-black.svg")}/>
                                                         </a>
                                                     </div>
                                                 </div>
@@ -313,7 +313,7 @@ export function SectionPricing(_props: { data?: PseoPageData }) {
                                                                     <div className="z-index-1">Book demo</div>
                                                                     <img alt="" className="button-icon" height="20"
                                                                          loading="lazy"
-                                                                         src={asset("/images/login-icon-white.svg")}/>
+                                                                         src={asset("/images-static/login-icon-white.svg")}/>
                                                                     <div
                                                                         className="button-background w-variant-d66e8b99-9512-4f1b-0527-c00e632abd95"></div>
                                                                 </a>
@@ -330,19 +330,19 @@ export function SectionPricing(_props: { data?: PseoPageData }) {
                                                     <div className="spacer-28"></div>
                                                     <div className="pricing_list">
                                                         <div className="pricing_list-item"><img alt="" loading="lazy"
-                                                                                                src={asset("/images/checkmark-circle-dark.svg")}/>
+                                                                                                src={asset("/images-static/checkmark-circle-dark.svg")}/>
                                                             <div className="text-15 weight-regular lh-145">Full-time
                                                                 dedicated talent
                                                             </div>
                                                         </div>
                                                         <div className="pricing_list-item"><img alt="" loading="lazy"
-                                                                                                src={asset("/images/checkmark-circle-dark.svg")}/>
+                                                                                                src={asset("/images-static/checkmark-circle-dark.svg")}/>
                                                             <div className="text-15 weight-regular lh-145">All available
                                                                 services
                                                             </div>
                                                         </div>
                                                         <div className="pricing_list-item"><img alt="" loading="lazy"
-                                                                                                src={asset("/images/checkmark-circle-dark.svg")}/>
+                                                                                                src={asset("/images-static/checkmark-circle-dark.svg")}/>
                                                             <div className="text-15 weight-regular lh-145">Choose your
                                                                 workspace
                                                             </div>
@@ -357,7 +357,7 @@ export function SectionPricing(_props: { data?: PseoPageData }) {
                                                     <div className="text-13 weight-medium lh-135">View all services
                                                     </div>
                                                     <img alt="" loading="lazy"
-                                                         src={asset("/images/circle-chevron-down.svg")}/>
+                                                         src={asset("/images-static/circle-chevron-down.svg")}/>
                                                 </a>
                                             </div>
                                         </div>
@@ -371,7 +371,7 @@ export function SectionPricing(_props: { data?: PseoPageData }) {
                                                     <div className="pricing-header">
                                                         <div className="pricing-name"><img alt="" height="32"
                                                                                            loading="lazy"
-                                                                                           src={asset("/images/rock-light_1rock-light.avif")}
+                                                                                           src={asset("/images-static/rock-light_1rock-light.avif")}
                                                                                            width="32px"/>
                                                             <div className="text-20 weight-semibold lh-156">Light</div>
                                                         </div>
@@ -409,27 +409,27 @@ export function SectionPricing(_props: { data?: PseoPageData }) {
                                                        href="https://app.awesomic.com/register" target="_blank">
                                                         <div className="z-index-1">Get started</div>
                                                         <img alt="" className="button-icon" height="20" loading="lazy"
-                                                             src={asset("/images/login-icon-white.svg")}/>
+                                                             src={asset("/images-static/login-icon-white.svg")}/>
                                                         <div
                                                             className="button-background w-variant-d66e8b99-9512-4f1b-0527-c00e632abd95"></div>
                                                     </a>
                                                     <div className="spacer-28"></div>
                                                     <div className="pricing_list">
                                                         <div className="pricing_list-item"><img alt="" loading="lazy"
-                                                                                                src={asset("/images/checkmark-circle-dark.svg")}/>
+                                                                                                src={asset("/images-static/checkmark-circle-dark.svg")}/>
                                                             <div
                                                                 className="text-15 weight-regular lh-145">Part\u2013time
                                                                 talents
                                                             </div>
                                                         </div>
                                                         <div className="pricing_list-item"><img alt="" loading="lazy"
-                                                                                                src={asset("/images/checkmark-circle-dark.svg")}/>
+                                                                                                src={asset("/images-static/checkmark-circle-dark.svg")}/>
                                                             <div className="text-15 weight-regular lh-145">Graphic
                                                                 design services
                                                             </div>
                                                         </div>
                                                         <div className="pricing_list-item"><img alt="" loading="lazy"
-                                                                                                src={asset("/images/slack-dark.svg")}/>
+                                                                                                src={asset("/images-static/slack-dark.svg")}/>
                                                             <div className="text-15 weight-regular lh-145">Slack
                                                                 integration
                                                             </div>
@@ -444,7 +444,7 @@ export function SectionPricing(_props: { data?: PseoPageData }) {
                                                     <div className="text-13 weight-medium lh-135">View all services
                                                     </div>
                                                     <img alt="" loading="lazy"
-                                                         src={asset("/images/circle-chevron-down.svg")}/>
+                                                         src={asset("/images-static/circle-chevron-down.svg")}/>
                                                 </a>
                                             </div>
                                         </div>
@@ -454,7 +454,7 @@ export function SectionPricing(_props: { data?: PseoPageData }) {
                                                     <div className="pricing-header">
                                                         <div className="pricing-name"><img alt="" height="32"
                                                                                            loading="lazy"
-                                                                                           src={asset("/images/rock-pro_1rock-pro.avif")}
+                                                                                           src={asset("/images-static/rock-pro_1rock-pro.avif")}
                                                                                            width="32px"/>
                                                             <div className="text-20 weight-semibold lh-156">Pro</div>
                                                         </div>
@@ -492,26 +492,26 @@ export function SectionPricing(_props: { data?: PseoPageData }) {
                                                        href="https://app.awesomic.com/register" target="_blank">
                                                         <div>Get started</div>
                                                         <img alt="" className="button-icon" loading="lazy"
-                                                             src={asset("/images/login-icon-black.svg")}/>
+                                                             src={asset("/images-static/login-icon-black.svg")}/>
                                                     </a>
                                                     <div className="spacer-28"></div>
                                                     <div className="pricing_list">
                                                         <div className="pricing_list-item"><img alt="" loading="lazy"
-                                                                                                src={asset("/images/checkmark-circle-white.svg")}/>
+                                                                                                src={asset("/images-static/checkmark-circle-white.svg")}/>
                                                             <div
                                                                 className="text-15 weight-regular lh-145">Part\u2013time
                                                                 talents
                                                             </div>
                                                         </div>
                                                         <div className="pricing_list-item"><img alt="" loading="lazy"
-                                                                                                src={asset("/images/checkmark-circle-white.svg")}/>
+                                                                                                src={asset("/images-static/checkmark-circle-white.svg")}/>
                                                             <div
                                                                 className="text-15 weight-regular lh-145 text-style-1line">All
                                                                 design &amp; no-code services
                                                             </div>
                                                         </div>
                                                         <div className="pricing_list-item"><img alt="" loading="lazy"
-                                                                                                src={asset("/images/slack-white.svg")}/>
+                                                                                                src={asset("/images-static/slack-white.svg")}/>
                                                             <div className="text-15 weight-regular lh-145">Slack
                                                                 integration
                                                             </div>
@@ -527,7 +527,7 @@ export function SectionPricing(_props: { data?: PseoPageData }) {
                                                         services
                                                     </div>
                                                     <img alt="" loading="lazy"
-                                                         src={asset("/images/chevron-down-white.svg")}/>
+                                                         src={asset("/images-static/chevron-down-white.svg")}/>
                                                 </a>
                                             </div>
                                         </div>
@@ -537,7 +537,7 @@ export function SectionPricing(_props: { data?: PseoPageData }) {
                                                     <div className="pricing-header">
                                                         <div className="pricing-name"><img alt="" height="32"
                                                                                            loading="lazy"
-                                                                                           src={asset("/images/rock-super_1rock-super.avif")}
+                                                                                           src={asset("/images-static/rock-super_1rock-super.avif")}
                                                                                            width="32px"/>
                                                             <div className="text-20 weight-semibold lh-156">Super</div>
                                                         </div>
@@ -574,27 +574,27 @@ export function SectionPricing(_props: { data?: PseoPageData }) {
                                                        href="https://app.awesomic.com/register" target="_blank">
                                                         <div className="z-index-1">Get started</div>
                                                         <img alt="" className="button-icon" height="20" loading="lazy"
-                                                             src={asset("/images/login-icon-white.svg")}/>
+                                                             src={asset("/images-static/login-icon-white.svg")}/>
                                                         <div
                                                             className="button-background w-variant-d66e8b99-9512-4f1b-0527-c00e632abd95"></div>
                                                     </a>
                                                     <div className="spacer-28"></div>
                                                     <div className="pricing_list">
                                                         <div className="pricing_list-item"><img alt="" loading="lazy"
-                                                                                                src={asset("/images/checkmark-circle-dark.svg")}/>
+                                                                                                src={asset("/images-static/checkmark-circle-dark.svg")}/>
                                                             <div
                                                                 className="text-15 weight-regular lh-145">Part\u2013time
                                                                 talents
                                                             </div>
                                                         </div>
                                                         <div className="pricing_list-item"><img alt="" loading="lazy"
-                                                                                                src={asset("/images/checkmark-circle-dark.svg")}/>
+                                                                                                src={asset("/images-static/checkmark-circle-dark.svg")}/>
                                                             <div className="text-15 weight-regular lh-145">All available
                                                                 services
                                                             </div>
                                                         </div>
                                                         <div className="pricing_list-item"><img alt="" loading="lazy"
-                                                                                                src={asset("/images/slack-dark.svg")}/>
+                                                                                                src={asset("/images-static/slack-dark.svg")}/>
                                                             <div className="text-15 weight-regular lh-145">Slack
                                                                 integration
                                                             </div>
@@ -609,7 +609,7 @@ export function SectionPricing(_props: { data?: PseoPageData }) {
                                                     <div className="text-13 weight-medium lh-135">View all services
                                                     </div>
                                                     <img alt="" loading="lazy"
-                                                         src={asset("/images/circle-chevron-down.svg")}/>
+                                                         src={asset("/images-static/circle-chevron-down.svg")}/>
                                                 </a>
                                             </div>
                                         </div>
@@ -619,7 +619,7 @@ export function SectionPricing(_props: { data?: PseoPageData }) {
                                                     <div className="pricing-header">
                                                         <div className="pricing-name"><img alt="" height="32"
                                                                                            loading="lazy"
-                                                                                           src={asset("/images/rock-1-1.avif")}
+                                                                                           src={asset("/images-static/rock-1-1.avif")}
                                                                                            width="32px"/>
                                                             <div className="text-20 weight-semibold lh-156">1 to 1</div>
                                                         </div>
@@ -635,7 +635,7 @@ export function SectionPricing(_props: { data?: PseoPageData }) {
                                                         <a className="pricing_to-details mod-talents w-inline-block"
                                                            href="https://app.awesomic.com/v2/hire-talent/talents"
                                                            target="_blank"><img alt="" loading="lazy"
-                                                                                src={asset("/images/pricing-1-1-faces_1pricing-1-1-faces.avif")}
+                                                                                src={asset("/images-static/pricing-1-1-faces_1pricing-1-1-faces.avif")}
                                                                                 width="49"/>
                                                             <div className="text-13 weight-medium lh-135">View all
                                                                 talents
@@ -672,7 +672,7 @@ export function SectionPricing(_props: { data?: PseoPageData }) {
                                                                     <div className="z-index-1">Book demo</div>
                                                                     <img alt="" className="button-icon" height="20"
                                                                          loading="lazy"
-                                                                         src={asset("/images/login-icon-white.svg")}/>
+                                                                         src={asset("/images-static/login-icon-white.svg")}/>
                                                                     <div
                                                                         className="button-background w-variant-d66e8b99-9512-4f1b-0527-c00e632abd95"></div>
                                                                 </a>
@@ -689,19 +689,19 @@ export function SectionPricing(_props: { data?: PseoPageData }) {
                                                     <div className="spacer-28"></div>
                                                     <div className="pricing_list">
                                                         <div className="pricing_list-item"><img alt="" loading="lazy"
-                                                                                                src={asset("/images/checkmark-circle-dark.svg")}/>
+                                                                                                src={asset("/images-static/checkmark-circle-dark.svg")}/>
                                                             <div className="text-15 weight-regular lh-145">Full-time
                                                                 dedicated talent
                                                             </div>
                                                         </div>
                                                         <div className="pricing_list-item"><img alt="" loading="lazy"
-                                                                                                src={asset("/images/checkmark-circle-dark.svg")}/>
+                                                                                                src={asset("/images-static/checkmark-circle-dark.svg")}/>
                                                             <div className="text-15 weight-regular lh-145">All available
                                                                 services
                                                             </div>
                                                         </div>
                                                         <div className="pricing_list-item"><img alt="" loading="lazy"
-                                                                                                src={asset("/images/checkmark-circle-dark.svg")}/>
+                                                                                                src={asset("/images-static/checkmark-circle-dark.svg")}/>
                                                             <div className="text-15 weight-regular lh-145">Choose your
                                                                 workspace
                                                             </div>
@@ -716,7 +716,7 @@ export function SectionPricing(_props: { data?: PseoPageData }) {
                                                     <div className="text-13 weight-medium lh-135">View all services
                                                     </div>
                                                     <img alt="" loading="lazy"
-                                                         src={asset("/images/circle-chevron-down.svg")}/>
+                                                         src={asset("/images-static/circle-chevron-down.svg")}/>
                                                 </a>
                                             </div>
                                         </div>

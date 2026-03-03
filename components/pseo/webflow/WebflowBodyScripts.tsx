@@ -15,7 +15,7 @@ const EMAIL_FORM_IDS = new Set([
   "annual",
   "ann-monthly",
   "monthly",
-  "wf-form-webflow-cta-form",
+  "wf-form-webflow-static-cta-form",
 ]);
 
 export function WebflowBodyScripts() {

@@ -24,7 +24,7 @@ export function SectionRelatedRoles(_props: { data?: PseoPageData }) {
                                 <div className="why-webflow-icon_outer smaller">
                                     <div className="whe-webflow-icon_inner smaller"><img alt="" height="20"
                                                                                          loading="lazy"
-                                                                                         src={asset("/images/layers-icon-black-20.svg")}
+                                                                                         src={asset("/images-static/layers-icon-black-20.svg")}
                                                                                          width="20"/></div>
                                 </div>
                                 <div>
@@ -39,7 +39,7 @@ export function SectionRelatedRoles(_props: { data?: PseoPageData }) {
                                 <div className="why-webflow-icon_outer smaller">
                                     <div className="whe-webflow-icon_inner smaller"><img alt="" height="20"
                                                                                          loading="lazy"
-                                                                                         src={asset("/images/stars-icon-black.svg")}
+                                                                                         src={asset("/images-static/stars-icon-black.svg")}
                                                                                          width="20"/></div>
                                 </div>
                                 <div>
@@ -54,7 +54,7 @@ export function SectionRelatedRoles(_props: { data?: PseoPageData }) {
                                 <div className="why-webflow-icon_outer smaller">
                                     <div className="whe-webflow-icon_inner smaller"><img alt="" height="20"
                                                                                          loading="lazy"
-                                                                                         src={asset("/images/stars-icon-black.svg")}
+                                                                                         src={asset("/images-static/stars-icon-black.svg")}
                                                                                          width="20"/></div>
                                 </div>
                                 <div>
@@ -69,7 +69,7 @@ export function SectionRelatedRoles(_props: { data?: PseoPageData }) {
                                 <div className="why-webflow-icon_outer smaller">
                                     <div className="whe-webflow-icon_inner smaller"><img alt="" height="20"
                                                                                          loading="lazy"
-                                                                                         src={asset("/images/stars-icon-black.svg")}
+                                                                                         src={asset("/images-static/stars-icon-black.svg")}
                                                                                          width="20"/></div>
                                 </div>
                                 <div>
@@ -84,7 +84,7 @@ export function SectionRelatedRoles(_props: { data?: PseoPageData }) {
                                 <div className="why-webflow-icon_outer smaller">
                                     <div className="whe-webflow-icon_inner smaller"><img alt="" height="20"
                                                                                          loading="lazy"
-                                                                                         src={asset("/images/stars-icon-black.svg")}
+                                                                                         src={asset("/images-static/stars-icon-black.svg")}
                                                                                          width="20"/></div>
                                 </div>
                                 <div>
@@ -99,7 +99,7 @@ export function SectionRelatedRoles(_props: { data?: PseoPageData }) {
                                 <div className="why-webflow-icon_outer smaller">
                                     <div className="whe-webflow-icon_inner smaller"><img alt="" height="20"
                                                                                          loading="lazy"
-                                                                                         src={asset("/images/stars-icon-black.svg")}
+                                                                                         src={asset("/images-static/stars-icon-black.svg")}
                                                                                          width="20"/></div>
                                 </div>
                                 <div>
@@ -114,7 +114,7 @@ export function SectionRelatedRoles(_props: { data?: PseoPageData }) {
                                 <div className="why-webflow-icon_outer smaller">
                                     <div className="whe-webflow-icon_inner smaller"><img alt="" height="20"
                                                                                          loading="lazy"
-                                                                                         src={asset("/images/stars-icon-black.svg")}
+                                                                                         src={asset("/images-static/stars-icon-black.svg")}
                                                                                          width="20"/></div>
                                 </div>
                                 <div>
@@ -129,7 +129,7 @@ export function SectionRelatedRoles(_props: { data?: PseoPageData }) {
                                 <div className="why-webflow-icon_outer smaller">
                                     <div className="whe-webflow-icon_inner smaller"><img alt="" height="20"
                                                                                          loading="lazy"
-                                                                                         src={asset("/images/stars-icon-black.svg")}
+                                                                                         src={asset("/images-static/stars-icon-black.svg")}
                                                                                          width="20"/></div>
                                 </div>
                                 <div>

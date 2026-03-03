@@ -126,11 +126,11 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                 <div className="container-1344">
                     <div className="w-layout-hflex flex-h_center-center gap-6">
                         <div className="text-tag"><img alt="" loading="lazy"
-                                                       src={asset("/images/google_symbol.svg_1.svg")}/>
+                                                       src={asset("/images-static/google_symbol.svg_1.svg")}/>
                             <div>4.9</div>
                         </div>
                         <div className="text-tag"><img alt="" loading="lazy"
-                                                       src={asset("/images/google_symbol.svg.svg")}/>
+                                                       src={asset("/images-static/google_symbol.svg.svg")}/>
                             <div>4.8</div>
                         </div>
                     </div>
@@ -157,44 +157,44 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                         <a className="logo-link w-inline-block" href="#"><img alt="Y Combinator logo"
                                                                                               className="logo-image"
                                                                                               loading="lazy"
-                                                                                              src={asset("/images/Ycombinator-carousel-logo.svg")}/></a>
+                                                                                              src={asset("/images-static/Ycombinator-carousel-logo.svg")}/></a>
                                     </li>
                                     <li className="logo-carousel_item">
                                         <a className="logo-link w-inline-block" href="#"><img alt="Coca-Cola logo"
                                                                                               className="logo-image"
                                                                                               loading="lazy"
-                                                                                              src={asset("/images/CocaCola.svg")}/></a>
+                                                                                              src={asset("/images-static/CocaCola.svg")}/></a>
                                     </li>
                                     <li className="logo-carousel_item">
                                         <a className="logo-link w-inline-block" href="#"><img alt="Disney Logo"
                                                                                               className="logo-image"
                                                                                               loading="lazy"
-                                                                                              src={asset("/images/Disney.svg")}/></a>
+                                                                                              src={asset("/images-static/Disney.svg")}/></a>
                                     </li>
                                     <li className="logo-carousel_item">
                                         <a className="logo-link w-inline-block" href="#"><img alt="Genesis Logo"
                                                                                               className="logo-image"
                                                                                               loading="lazy"
-                                                                                              src={asset("/images/genesis.avif")}
+                                                                                              src={asset("/images-static/genesis.avif")}
                                                                                               width="58"/></a>
                                     </li>
                                     <li className="logo-carousel_item">
                                         <a className="logo-link w-inline-block" href="#"><img alt="Udemy Logo"
                                                                                               className="logo-image"
                                                                                               loading="lazy"
-                                                                                              src={asset("/images/udemy.svg")}/></a>
+                                                                                              src={asset("/images-static/udemy.svg")}/></a>
                                     </li>
                                     <li className="logo-carousel_item">
                                         <a className="logo-link w-inline-block" href="#"><img alt="EY logo"
                                                                                               className="logo-image"
                                                                                               loading="lazy"
-                                                                                              src={asset("/images/EY-logo.svg")}/></a>
+                                                                                              src={asset("/images-static/EY-logo.svg")}/></a>
                                     </li>
                                     <li className="logo-carousel_item">
                                         <a className="logo-link w-inline-block" href="#"><img alt="PandaDoc logo"
                                                                                               className="logo-image"
                                                                                               loading="lazy"
-                                                                                              src={asset("/images/pandadoc.svg")}/></a>
+                                                                                              src={asset("/images-static/pandadoc.svg")}/></a>
                                     </li>
                                 </ul>
                                 <div className="logo-carousel-clone">
@@ -202,44 +202,44 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                         <li className="logo-carousel_item">
                                             <a className="logo-link w-inline-block" href="#"><img
                                                 alt="Y Combinator logo" className="logo-image" loading="lazy"
-                                                src={asset("/images/Ycombinator-carousel-logo.svg")}/></a>
+                                                src={asset("/images-static/Ycombinator-carousel-logo.svg")}/></a>
                                         </li>
                                         <li className="logo-carousel_item">
                                             <a className="logo-link w-inline-block" href="#"><img alt="Coca-Cola logo"
                                                                                                   className="logo-image"
                                                                                                   loading="lazy"
-                                                                                                  src={asset("/images/CocaCola.svg")}/></a>
+                                                                                                  src={asset("/images-static/CocaCola.svg")}/></a>
                                         </li>
                                         <li className="logo-carousel_item">
                                             <a className="logo-link w-inline-block" href="#"><img alt="Disney Logo"
                                                                                                   className="logo-image"
                                                                                                   loading="lazy"
-                                                                                                  src={asset("/images/Disney.svg")}/></a>
+                                                                                                  src={asset("/images-static/Disney.svg")}/></a>
                                         </li>
                                         <li className="logo-carousel_item">
                                             <a className="logo-link w-inline-block" href="#"><img alt="Genesis Logo"
                                                                                                   className="logo-image"
                                                                                                   loading="lazy"
-                                                                                                  src={asset("/images/genesis.avif")}
+                                                                                                  src={asset("/images-static/genesis.avif")}
                                                                                                   width="58"/></a>
                                         </li>
                                         <li className="logo-carousel_item">
                                             <a className="logo-link w-inline-block" href="#"><img alt="Udemy Logo"
                                                                                                   className="logo-image"
                                                                                                   loading="lazy"
-                                                                                                  src={asset("/images/udemy.svg")}/></a>
+                                                                                                  src={asset("/images-static/udemy.svg")}/></a>
                                         </li>
                                         <li className="logo-carousel_item">
                                             <a className="logo-link w-inline-block" href="#"><img alt="EY logo"
                                                                                                   className="logo-image"
                                                                                                   loading="lazy"
-                                                                                                  src={asset("/images/EY-logo.svg")}/></a>
+                                                                                                  src={asset("/images-static/EY-logo.svg")}/></a>
                                         </li>
                                         <li className="logo-carousel_item">
                                             <a className="logo-link w-inline-block" href="#"><img alt="PandaDoc logo"
                                                                                                   className="logo-image"
                                                                                                   loading="lazy"
-                                                                                                  src={asset("/images/pandadoc.svg")}/></a>
+                                                                                                  src={asset("/images-static/pandadoc.svg")}/></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -257,7 +257,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt=""
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/Rakesh-Goyal-photo_1Rakesh Goyal photo.avif")}/>
+                                                                                      src={asset("/images-static/Rakesh-Goyal-photo_1Rakesh Goyal photo.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Rakesh Goyal</div>
@@ -277,10 +277,10 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                         <div className="video-placeholder"><img
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
+                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
                                             srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images/polygon-play-talent.svg")}
+                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
                                         </div>
                                         <div className="video_preview-code w-background-video w-background-video-atom"
@@ -313,7 +313,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                         <div className="review_author-photo-wrapper"><img alt="Maxime Allouch Photo"
                                                                                           className="review_author-photo"
                                                                                           loading="lazy"
-                                                                                          src={asset("/images/Maxime-Allouch_1Maxime-Allouch.png")}/>
+                                                                                          src={asset("/images-static/Maxime-Allouch_1Maxime-Allouch.png")}/>
                                         </div>
                                         <div className="review_author-info">
                                             <div className="text-20 weight-bold lh-148 text-gray-900">Maxime Allouch
@@ -337,11 +337,11 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                             <div className="video-placeholder"><img alt=""
                                                                                     className="max-width-full placeholder-image w-variant-6fce41fb-4bcb-0c9a-0e28-63b62bb4d75a"
                                                                                     loading="lazy"
-                                                                                    src={asset("/images/maxime-allouch-new.avif")}/>
+                                                                                    src={asset("/images-static/maxime-allouch-new.avif")}/>
                                                 <div
                                                     className="review_play-icon w-variant-6fce41fb-4bcb-0c9a-0e28-63b62bb4d75a">
                                                     <img alt="" height="26" loading="lazy"
-                                                         src={asset("/images/polygon-play-talent.svg")} width="Auto"/>
+                                                         src={asset("/images-static/polygon-play-talent.svg")} width="Auto"/>
                                                 </div>
                                             </div>
                                             <div
@@ -377,7 +377,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt=""
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/Ben-Warren-photo_1Ben Warren photo.avif")}/>
+                                                                                      src={asset("/images-static/Ben-Warren-photo_1Ben Warren photo.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Ben Warren</div>
@@ -396,10 +396,10 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                         <div className="video-placeholder"><img
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
+                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
                                             srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images/polygon-play-talent.svg")}
+                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
                                         </div>
                                         <div className="video_preview-code w-background-video w-background-video-atom"
@@ -430,7 +430,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt=""
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/Erick-Enriquez-photo_1Erick Enriquez photo.avif")}/>
+                                                                                      src={asset("/images-static/Erick-Enriquez-photo_1Erick Enriquez photo.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Erick Enriquez</div>
@@ -452,10 +452,10 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                         <div className="video-placeholder"><img
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
+                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
                                             srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images/polygon-play-talent.svg")}
+                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
                                         </div>
                                         <div className="video_preview-code w-background-video w-background-video-atom"
@@ -486,7 +486,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt=""
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/Ivan-Tsybaev-photo_1Ivan Tsybaev photo.avif")}/>
+                                                                                      src={asset("/images-static/Ivan-Tsybaev-photo_1Ivan Tsybaev photo.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Ivan Tsybaev</div>
@@ -506,10 +506,10 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                         <div className="video-placeholder"><img
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
+                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
                                             srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images/polygon-play-talent.svg")}
+                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
                                         </div>
                                         <div className="video_preview-code w-background-video w-background-video-atom"
@@ -540,7 +540,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt="Photo of Sander Andersen"
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/Sander-Andersen_1Sander Andersen.avif")}/>
+                                                                                      src={asset("/images-static/Sander-Andersen_1Sander Andersen.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Sander Andersen</div>
@@ -562,10 +562,10 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                         <div className="video-placeholder"><img
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
+                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
                                             srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images/polygon-play-talent.svg")}
+                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
                                         </div>
                                         <div className="video_preview-code w-background-video w-background-video-atom"
@@ -596,7 +596,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt="Photo of Jack Solomon"
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/Jack-Solomon---photo_1Jack Solomon - photo.avif")}/>
+                                                                                      src={asset("/images-static/Jack-Solomon---photo_1Jack Solomon - photo.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Jack Solomon</div>
@@ -617,10 +617,10 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                         <div className="video-placeholder"><img
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
+                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
                                             srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images/polygon-play-talent.svg")}
+                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
                                         </div>
                                         <div className="video_preview-code w-background-video w-background-video-atom"
@@ -651,7 +651,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt="Photo of Charles Bai"
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/Charles-Bai_1Charles Bai.avif")}/>
+                                                                                      src={asset("/images-static/Charles-Bai_1Charles Bai.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Charles Bai</div>
@@ -672,10 +672,10 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                         <div className="video-placeholder"><img
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
+                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
                                             srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images/polygon-play-talent.svg")}
+                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
                                         </div>
                                         <div className="video_preview-code w-background-video w-background-video-atom"
@@ -706,7 +706,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt="Photo of Lyn Chen"
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/Lyn-Chen_1Lyn Chen.avif")}/>
+                                                                                      src={asset("/images-static/Lyn-Chen_1Lyn Chen.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Lyn Chen</div>
@@ -725,10 +725,10 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                         <div className="video-placeholder"><img
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
+                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
                                             srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images/polygon-play-talent.svg")}
+                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
                                         </div>
                                         <div className="video_preview-code w-background-video w-background-video-atom"
@@ -759,7 +759,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt="Photo of Nathan Shinder"
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/Nathan-Shinder_1Nathan Shinder.avif")}/>
+                                                                                      src={asset("/images-static/Nathan-Shinder_1Nathan Shinder.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Nathan Shinder</div>
@@ -783,10 +783,10 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                         <div className="video-placeholder"><img
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
+                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
                                             srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images/polygon-play-talent.svg")}
+                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
                                         </div>
                                         <div className="video_preview-code w-background-video w-background-video-atom"
@@ -817,7 +817,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt="Photo of Giorgi Tsurtsumia"
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/Giorgi-Tsurtsumia_1Giorgi Tsurtsumia.avif")}/>
+                                                                                      src={asset("/images-static/Giorgi-Tsurtsumia_1Giorgi Tsurtsumia.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Giorgi Tsurtsumia
@@ -839,10 +839,10 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                         <div className="video-placeholder"><img
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
+                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
                                             srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images/polygon-play-talent.svg")}
+                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
                                         </div>
                                         <div className="video_preview-code w-background-video w-background-video-atom"
@@ -873,7 +873,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt="Photo of Rajiv Bhat"
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/Rajiv-Bhat-photo_1Rajiv Bhat photo.avif")}/>
+                                                                                      src={asset("/images-static/Rajiv-Bhat-photo_1Rajiv Bhat photo.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Rajiv Bhat</div>
@@ -893,10 +893,10 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                         <div className="video-placeholder"><img
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
+                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
                                             srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images/polygon-play-talent.svg")}
+                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
                                         </div>
                                         <div className="video_preview-code w-background-video w-background-video-atom"
@@ -929,7 +929,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt=""
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/Ng-Yi-Ying-photo_1Ng Yi Ying photo.avif")}/>
+                                                                                      src={asset("/images-static/Ng-Yi-Ying-photo_1Ng Yi Ying photo.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Ng Yi Ying</div>
@@ -950,10 +950,10 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                         <div className="video-placeholder"><img
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
+                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
                                             srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images/polygon-play-talent.svg")}
+                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
                                         </div>
                                         <div className="video_preview-code w-background-video w-background-video-atom"
@@ -985,7 +985,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt="Maxime Allouch Photo"
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/Maxime-Allouch_1Maxime Allouch.png")}/>
+                                                                                      src={asset("/images-static/Maxime-Allouch_1Maxime Allouch.png")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Maxime Allouch</div>
@@ -1008,11 +1008,11 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                         <div className="video-placeholder"><img alt=""
                                                                                 className="max-width-full placeholder-image w-variant-6fce41fb-4bcb-0c9a-0e28-63b62bb4d75a"
                                                                                 loading="lazy"
-                                                                                src={asset("/images/maxime-allouch-new.avif")}/>
+                                                                                src={asset("/images-static/maxime-allouch-new.avif")}/>
                                             <div
                                                 className="review_play-icon w-variant-6fce41fb-4bcb-0c9a-0e28-63b62bb4d75a">
                                                 <img alt="" height="26" loading="lazy"
-                                                     src={asset("/images/polygon-play-talent.svg")} width="Auto"/>
+                                                     src={asset("/images-static/polygon-play-talent.svg")} width="Auto"/>
                                             </div>
                                         </div>
                                         <div className="video_preview-code w-background-video w-background-video-atom"
@@ -1045,7 +1045,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt=""
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/Max-Ahrens-photo_1Max Ahrens photo.avif")}/>
+                                                                                      src={asset("/images-static/Max-Ahrens-photo_1Max Ahrens photo.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Max Ahrens</div>
@@ -1066,10 +1066,10 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                         <div className="video-placeholder"><img
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
+                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
                                             srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images/polygon-play-talent.svg")}
+                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
                                         </div>
                                         <div className="video_preview-code w-background-video w-background-video-atom"
@@ -1100,7 +1100,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt="Shaunak Turaga photo"
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/Shaunak-Turaga-photo_1Shaunak Turaga photo.avif")}/>
+                                                                                      src={asset("/images-static/Shaunak-Turaga-photo_1Shaunak Turaga photo.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Shaunak Turaga</div>
@@ -1119,10 +1119,10 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                         <div className="video-placeholder"><img
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
+                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
                                             srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images/polygon-play-talent.svg")}
+                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
                                         </div>
                                         <div className="video_preview-code w-background-video w-background-video-atom"
@@ -1153,7 +1153,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt=""
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/David-J.-Phillips-phtoto_1David J. Phillips phtoto.avif")}/>
+                                                                                      src={asset("/images-static/David-J.-Phillips-phtoto_1David J. Phillips phtoto.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">David J. Phillips
@@ -1174,10 +1174,10 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                         <div className="video-placeholder"><img
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
+                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
                                             srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images/polygon-play-talent.svg")}
+                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
                                         </div>
                                         <div className="video_preview-code w-background-video w-background-video-atom"
@@ -1209,7 +1209,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt="Photo of John Banner"
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/john-banner-photo_1john banner photo.avif")}/>
+                                                                                      src={asset("/images-static/john-banner-photo_1john banner photo.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">John Banner</div>
@@ -1232,12 +1232,12 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image w-variant-6fce41fb-4bcb-0c9a-0e28-63b62bb4d75a"
                                             loading="lazy" sizes="100vw"
-                                            src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
+                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
                                             srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div
                                                 className="review_play-icon w-variant-6fce41fb-4bcb-0c9a-0e28-63b62bb4d75a">
                                                 <img alt="" height="26" loading="lazy"
-                                                     src={asset("/images/polygon-play-talent.svg")} width="Auto"/>
+                                                     src={asset("/images-static/polygon-play-talent.svg")} width="Auto"/>
                                             </div>
                                         </div>
                                         <div className="video_preview-code w-background-video w-background-video-atom"
@@ -1270,7 +1270,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt="Photo of Jean Carlos"
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/jean-carlos-photo_1jean carlos photo.avif")}/>
+                                                                                      src={asset("/images-static/jean-carlos-photo_1jean carlos photo.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Jeane Carlos</div>
@@ -1290,10 +1290,10 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                         <div className="video-placeholder"><img
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
+                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
                                             srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images/polygon-play-talent.svg")}
+                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
                                         </div>
                                         <div className="video_preview-code w-background-video w-background-video-atom"
@@ -1327,7 +1327,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt=""
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/Nik-Kotov-photo_1Nik Kotov photo.avif")}/>
+                                                                                      src={asset("/images-static/Nik-Kotov-photo_1Nik Kotov photo.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Nik Kotov</div>
@@ -1348,10 +1348,10 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                         <div className="video-placeholder"><img
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
+                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
                                             srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images/polygon-play-talent.svg")}
+                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
                                         </div>
                                         <div className="video_preview-code w-background-video w-background-video-atom"
@@ -1382,7 +1382,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt=""
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/Tal-Feld-photo_1Tal Feld photo.avif")}/>
+                                                                                      src={asset("/images-static/Tal-Feld-photo_1Tal Feld photo.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Tal Feld</div>
@@ -1401,10 +1401,10 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                         <div className="video-placeholder"><img
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
+                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
                                             srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images/polygon-play-talent.svg")}
+                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
                                         </div>
                                         <div className="video_preview-code w-background-video w-background-video-atom"
@@ -1435,7 +1435,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt=""
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/David-Head-photo_1David Head photo.avif")}/>
+                                                                                      src={asset("/images-static/David-Head-photo_1David Head photo.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">David Head</div>
@@ -1456,10 +1456,10 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                         <div className="video-placeholder"><img
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
+                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
                                             srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images/polygon-play-talent.svg")}
+                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
                                         </div>
                                         <div className="video_preview-code w-background-video w-background-video-atom"
@@ -1490,7 +1490,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt="Photo of Miles Penn"
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/Miles-Penn_1Miles Penn.avif")}/>
+                                                                                      src={asset("/images-static/Miles-Penn_1Miles Penn.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Miles Penn</div>
@@ -1510,10 +1510,10 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                         <div className="video-placeholder"><img
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
+                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
                                             srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images/polygon-play-talent.svg")}
+                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
                                         </div>
                                         <div className="video_preview-code w-background-video w-background-video-atom"
@@ -1544,7 +1544,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt="Photo of Graham Doig"
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/Graham-Doig_1Graham Doig.avif")}/>
+                                                                                      src={asset("/images-static/Graham-Doig_1Graham Doig.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Graham Doig</div>
@@ -1567,10 +1567,10 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                         <div className="video-placeholder"><img
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
+                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
                                             srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images/polygon-play-talent.svg")}
+                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
                                         </div>
                                         <div className="video_preview-code w-background-video w-background-video-atom"
@@ -1601,7 +1601,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt="Photo of Miles Penn"
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/Miles-Penn_1Miles Penn.avif")}/>
+                                                                                      src={asset("/images-static/Miles-Penn_1Miles Penn.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Miles Penn</div>
@@ -1621,10 +1621,10 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                         <div className="video-placeholder"><img
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
+                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
                                             srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images/polygon-play-talent.svg")}
+                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
                                         </div>
                                         <div className="video_preview-code w-background-video w-background-video-atom"
@@ -1655,7 +1655,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt="Photo of Daniel Osvath"
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/Daniel-Osvath_1Daniel Osvath.avif")}/>
+                                                                                      src={asset("/images-static/Daniel-Osvath_1Daniel Osvath.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Daniel Osvath</div>
@@ -1677,10 +1677,10 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                         <div className="video-placeholder"><img
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
+                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
                                             srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images/polygon-play-talent.svg")}
+                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
                                         </div>
                                         <div className="video_preview-code w-background-video w-background-video-atom"
@@ -1711,7 +1711,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt="Photo of Anahi Sosa"
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/Anahi-Sosa-photo_1Anahi Sosa photo.avif")}/>
+                                                                                      src={asset("/images-static/Anahi-Sosa-photo_1Anahi Sosa photo.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Anahi Sosa</div>
@@ -1732,10 +1732,10 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                         <div className="video-placeholder"><img
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
+                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
                                             srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images/polygon-play-talent.svg")}
+                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
                                         </div>
                                         <div className="video_preview-code w-background-video w-background-video-atom"
@@ -1766,7 +1766,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt="Photo of Chris Horne"
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images/Chris-Horne_photo_1Chris Horne_photo.avif")}/>
+                                                                                      src={asset("/images-static/Chris-Horne_photo_1Chris Horne_photo.avif")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Chris Horne</div>
@@ -1785,10 +1785,10 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                         <div className="video-placeholder"><img
                                             alt="John Banner Review placeholder image"
                                             className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
+                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
                                             srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
                                             <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images/polygon-play-talent.svg")}
+                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
                                                                                    width="Auto"/></div>
                                         </div>
                                         <div className="video_preview-code w-background-video w-background-video-atom"
@@ -1846,7 +1846,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                target="_blank">
                                 <div>Read more</div>
                                 <img alt="" className="button-icon w-variant-9aff5deb-9bed-fb3a-6140-c699312d49d7"
-                                     loading="lazy" src={asset("/images/new-page-black.svg")}/>
+                                     loading="lazy" src={asset("/images-static/new-page-black.svg")}/>
                             </a>
                         </div>
                     </div>

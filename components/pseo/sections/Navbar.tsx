@@ -29,8 +29,8 @@ export function Navbar(_props: { data?: PseoPageData }) {
         <div className="navbar_container">
           {/* Logo */}
           <a className="navbar_logo-link w-nav-brand" href="index.html">
-            {img("/images/awesomic-logo.svg", "Awesomic Logo", "navbar_logo wide")}
-            {img("/images/awesomic-smile-menu.svg", "", "navbar_logo small")}
+            {img("/images-static/awesomic-logo.svg", "Awesomic Logo", "navbar_logo wide")}
+            {img("/images-static/awesomic-smile-menu.svg", "", "navbar_logo small")}
           </a>
 
           {/* Main nav */}
@@ -43,7 +43,7 @@ export function Navbar(_props: { data?: PseoPageData }) {
               <div className="navbar-dropdown w-dropdown" data-delay="0" data-hover="true">
                 <div className="navbar-link is-dropdown w-dropdown-toggle">
                   <div>Our work</div>
-                  {img("/images/dropdown-chevron.svg", "", "dropdown-chevron")}
+                  {img("/images-static/dropdown-chevron.svg", "", "dropdown-chevron")}
                 </div>
                 <nav className="dropdown-navigation w-dropdown-list">
                   <div className="dropdown-navigation inner single-col">
@@ -61,7 +61,7 @@ export function Navbar(_props: { data?: PseoPageData }) {
               <div className="navbar-dropdown w-dropdown" data-delay="0" data-hover="true">
                 <div className="navbar-link is-dropdown w-dropdown-toggle">
                   <div>Services &amp; solutions</div>
-                  {img("/images/dropdown-chevron.svg", "", "dropdown-chevron")}
+                  {img("/images-static/dropdown-chevron.svg", "", "dropdown-chevron")}
                 </div>
                 <nav className="dropdown-navigation w-dropdown-list">
                   <div className="dropdown-navigation inner">
@@ -102,7 +102,7 @@ export function Navbar(_props: { data?: PseoPageData }) {
               <a className="navbar-link" href="about.html">About us</a>
               <a className="navbar-link" href="blog.html">Blog</a>
               <a className="navbar-link _w-icon w-inline-block" href="wall-of-love.html">
-                {img("/images/heart-icon.svg", "", "tablet_hide")}
+                {img("/images-static/heart-icon.svg", "", "tablet_hide")}
                 <div>Love</div>
               </a>
               <a className="navbar-link" href="talent.html">
@@ -113,7 +113,7 @@ export function Navbar(_props: { data?: PseoPageData }) {
             {/* Mobile CTA (visible on tablet and below) */}
             <div className="mobile-nabar-cta tablet_show">
               <a className="button is-white w-inline-block" href="https://app.awesomic.com/" target="_blank">
-                {img("/images/login-icon-black.svg", "", "button-icon_navbar")}
+                {img("/images-static/login-icon-black.svg", "", "button-icon_navbar")}
                 <div>Log in</div>
               </a>
               <div className="main-navbar-button-wrapper">
@@ -125,7 +125,7 @@ export function Navbar(_props: { data?: PseoPageData }) {
                     href="#"
                 >
                   <div className="z-index-1">Book demo</div>
-                  {img("/images/login-icon-white.svg", "", "button-icon", { height: "20" })}
+                  {img("/images-static/login-icon-white.svg", "", "button-icon", { height: "20" })}
                   <div className="button-background w-variant-d66e8b99-9512-4f1b-0527-c00e632abd95" />
                 </a>
               </div>
@@ -139,7 +139,7 @@ export function Navbar(_props: { data?: PseoPageData }) {
                     target="_blank"
                 >
                   <div className="z-index-1">Apply now</div>
-                  {img("/images/login-icon-white.svg", "", "button-icon", { height: "20" })}
+                  {img("/images-static/login-icon-white.svg", "", "button-icon", { height: "20" })}
                   <div className="button-background w-variant-d66e8b99-9512-4f1b-0527-c00e632abd95" />
                 </a>
               </div>
@@ -157,7 +157,7 @@ export function Navbar(_props: { data?: PseoPageData }) {
                   target="_blank"
               >
                 <div>Log in</div>
-                {img("/images/login-icon-black.svg", "", "button-icon w-variant-2c9bf72f-8ee3-90cf-f1f6-7d7020c93aef")}
+                {img("/images-static/login-icon-black.svg", "", "button-icon w-variant-2c9bf72f-8ee3-90cf-f1f6-7d7020c93aef")}
               </a>
               <div className="main-navbar-button-wrapper">
                 <a
@@ -168,7 +168,7 @@ export function Navbar(_props: { data?: PseoPageData }) {
                     href="#"
                 >
                   <div className="z-index-1">Book demo</div>
-                  {img("/images/faq_two-faces.avif", "", "button-icon", { height: "20" })}
+                  {img("/images-static/faq_two-faces.avif", "", "button-icon", { height: "20" })}
                   <div className="button-background" />
                 </a>
               </div>
@@ -182,7 +182,7 @@ export function Navbar(_props: { data?: PseoPageData }) {
                     target="_blank"
                 >
                   <div className="z-index-1">Apply now</div>
-                  {img("/images/faq_two-faces.avif", "", "button-icon", { height: "20" })}
+                  {img("/images-static/faq_two-faces.avif", "", "button-icon", { height: "20" })}
                   <div className="button-background" />
                 </a>
               </div>

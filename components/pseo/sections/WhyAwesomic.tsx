@@ -128,7 +128,7 @@ export function WhyAwesomic({data}: sectionProps) {
                                         <div className="spacer-4"></div>
                                         <div className="text-20 weight-semibold lh-156 text-gray-900">Customers</div>
                                     </div>
-                                    <img alt="" loading="lazy" src={asset("/images/customers-icon.png")} width="80"/>
+                                    <img alt="" loading="lazy" src={asset("/images-static/customers-icon.png")} width="80"/>
                                 </div>
                                 <div className="carousel-component absolute">
                                     <div className="carousel">
@@ -143,37 +143,37 @@ export function WhyAwesomic({data}: sectionProps) {
                                                 <li className="logo-carousel_item"><img alt="YC logo"
                                                                                         className="logo-image small"
                                                                                         height="24" loading="lazy"
-                                                                                        src={asset("/images/yc-new-png.png")}/>
+                                                                                        src={asset("/images-static/yc-new-png.png")}/>
                                                 </li>
                                                 <li className="logo-carousel_item"><img alt="Coca-Cola logo"
                                                                                         className="logo-image small"
                                                                                         loading="lazy"
-                                                                                        src={asset("/images/coca-cola-new-png.png")}/>
+                                                                                        src={asset("/images-static/coca-cola-new-png.png")}/>
                                                 </li>
                                                 <li className="logo-carousel_item"><img alt="Disney Logo"
                                                                                         className="logo-image small"
                                                                                         loading="lazy"
-                                                                                        src={asset("/images/disney-new-png.png")}/>
+                                                                                        src={asset("/images-static/disney-new-png.png")}/>
                                                 </li>
                                                 <li className="logo-carousel_item"><img alt="Genesis Logo"
                                                                                         className="logo-image small"
                                                                                         loading="lazy"
-                                                                                        src={asset("/images/genesis.avif")}
+                                                                                        src={asset("/images-static/genesis.avif")}
                                                                                         width="58"/></li>
                                                 <li className="logo-carousel_item"><img alt="udemy logo"
                                                                                         className="logo-image small"
                                                                                         loading="lazy"
-                                                                                        src={asset("/images/udemy-new-png.png")}/>
+                                                                                        src={asset("/images-static/udemy-new-png.png")}/>
                                                 </li>
                                                 <li className="logo-carousel_item"><img alt="EY logo"
                                                                                         className="logo-image small"
                                                                                         loading="lazy"
-                                                                                        src={asset("/images/ey-new-png_1ey-new-png.png")}/>
+                                                                                        src={asset("/images-static/ey-new-png_1ey-new-png.png")}/>
                                                 </li>
                                                 <li className="logo-carousel_item"><img alt="Pandadoc logo"
                                                                                         className="logo-image small"
                                                                                         loading="lazy"
-                                                                                        src={asset("/images/panda-doc-new-png.png")}/>
+                                                                                        src={asset("/images-static/panda-doc-new-png.png")}/>
                                                 </li>
                                             </ul>
                                             <div className="logo-carousel-clone">
@@ -181,37 +181,37 @@ export function WhyAwesomic({data}: sectionProps) {
                                                     <li className="logo-carousel_item"><img alt="YC logo"
                                                                                             className="logo-image small"
                                                                                             height="24" loading="lazy"
-                                                                                            src={asset("/images/yc-new-png.png")}/>
+                                                                                            src={asset("/images-static/yc-new-png.png")}/>
                                                     </li>
                                                     <li className="logo-carousel_item"><img alt="Coca-Cola logo"
                                                                                             className="logo-image small"
                                                                                             loading="lazy"
-                                                                                            src={asset("/images/coca-cola-new-png.png")}/>
+                                                                                            src={asset("/images-static/coca-cola-new-png.png")}/>
                                                     </li>
                                                     <li className="logo-carousel_item"><img alt="Disney Logo"
                                                                                             className="logo-image small"
                                                                                             loading="lazy"
-                                                                                            src={asset("/images/disney-new-png.png")}/>
+                                                                                            src={asset("/images-static/disney-new-png.png")}/>
                                                     </li>
                                                     <li className="logo-carousel_item"><img alt="Genesis Logo"
                                                                                             className="logo-image small"
                                                                                             loading="lazy"
-                                                                                            src={asset("/images/genesis.avif")}
+                                                                                            src={asset("/images-static/genesis.avif")}
                                                                                             width="58"/></li>
                                                     <li className="logo-carousel_item"><img alt="udemy logo"
                                                                                             className="logo-image small"
                                                                                             loading="lazy"
-                                                                                            src={asset("/images/udemy-new-png.png")}/>
+                                                                                            src={asset("/images-static/udemy-new-png.png")}/>
                                                     </li>
                                                     <li className="logo-carousel_item"><img alt="EY logo"
                                                                                             className="logo-image small"
                                                                                             loading="lazy"
-                                                                                            src={asset("/images/ey-new-png_1ey-new-png.png")}/>
+                                                                                            src={asset("/images-static/ey-new-png_1ey-new-png.png")}/>
                                                     </li>
                                                     <li className="logo-carousel_item"><img alt="Pandadoc logo"
                                                                                             className="logo-image small"
                                                                                             loading="lazy"
-                                                                                            src={asset("/images/panda-doc-new-png.png")}/>
+                                                                                            src={asset("/images-static/panda-doc-new-png.png")}/>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -225,7 +225,7 @@ export function WhyAwesomic({data}: sectionProps) {
                                     monthly fee
                                 </div>
                                 <img alt="" className="why-rock-image" height="182" loading="lazy"
-                                     src={asset("/images/logo-on-rock_1logo on rock.avif")} width="190.5"/>
+                                     src={asset("/images-static/logo-on-rock_1logo on rock.avif")} width="190.5"/>
                             </div>
                         </div>
                         <div className="why-awesomic_big" id="w-node-a488271d-2586-c5f6-c1af-585df5446862-dba9761c">
@@ -241,7 +241,7 @@ export function WhyAwesomic({data}: sectionProps) {
                                             </div>
                                         </div>
                                         <img alt="" className="tablet_hide" loading="lazy"
-                                             src={asset("/images/projects-icon.png")} width="80"/>
+                                             src={asset("/images-static/projects-icon.png")} width="80"/>
                                     </div>
                                 </div>
                                 <div className="why-awesomic_block _w-tags"
@@ -355,7 +355,7 @@ export function WhyAwesomic({data}: sectionProps) {
                                         </div>
                                         <div className="skills-animation-right"><img alt="" className="tablet_hide"
                                                                                      loading="lazy"
-                                                                                     src={asset("/images/skill-set-icon.png")}
+                                                                                     src={asset("/images-static/skill-set-icon.png")}
                                                                                      width="80"/></div>
                                     </div>
                                 </div>
@@ -366,7 +366,7 @@ export function WhyAwesomic({data}: sectionProps) {
                                                                                            className="face-banner-image"
                                                                                            loading="lazy"
                                                                                            sizes="(max-width: 479px) 100vw, 440px"
-                                                                                           src={asset("/images/background-bigger-for-card_1background-bigger-for card.avif")}
+                                                                                           src={asset("/images-static/background-bigger-for-card_1background-bigger-for card.avif")}
                                                                                            width="440"/>
                                     <div className="max-width-151 z-index-1 align-center">
                                         <div
@@ -375,7 +375,7 @@ export function WhyAwesomic({data}: sectionProps) {
                                         </div>
                                     </div>
                                     <img alt="" className="bg-light-blur" loading="lazy"
-                                         src={asset("/images/-cards-comlex-bg-light_1-cards-comlex-bg-light.avif")}/>
+                                         src={asset("/images-static/-cards-comlex-bg-light_1-cards-comlex-bg-light.avif")}/>
                                     <div className="spacer-32"></div>
                                     <div className="face-mask-wrapper"><img
                                         src="https://cdn.prod.website-files.com/68c2a33d71ce477bc4cfa871/68c2a33d71ce477bc4cfb02c_face-for-mask.avif"
@@ -392,7 +392,7 @@ export function WhyAwesomic({data}: sectionProps) {
                                         </svg>
                                     </div>
                                     <img alt="how we choose a pro clickable element" className="how-choose-pro-button"
-                                         loading="lazy" src={asset("/images/how-we-choose-a-pro-button.png")}
+                                         loading="lazy" src={asset("/images-static/how-we-choose-a-pro-button.png")}
                                          width="226"/>
                                     <div className="why-steps-animated-wrapper" style={{display: 'none'}}>
                                         <div className="why-animated-tabs w-tabs" data-current="Tab 1"
@@ -435,29 +435,29 @@ export function WhyAwesomic({data}: sectionProps) {
                                                                     <img alt=""
                                                                          className="approve_face-image is-first is-light"
                                                                          loading="lazy"
-                                                                         src={asset("/images/face_8face_7.avif")}/><img
+                                                                         src={asset("/images-static/face_8face_7.avif")}/><img
                                                                     alt="" className="approve_face-image is-light"
                                                                     loading="lazy"
-                                                                    src={asset("/images/face_14face_6.avif")}/><img
+                                                                    src={asset("/images-static/face_14face_6.avif")}/><img
                                                                     alt=""
                                                                     className="approve_face-image is-light mobile_hide"
                                                                     loading="lazy"
-                                                                    src={asset("/images/face_11face_5.avif")}/><img
+                                                                    src={asset("/images-static/face_11face_5.avif")}/><img
                                                                     alt=""
                                                                     className="approve_face-image medium_show landscape_show is-light"
                                                                     loading="lazy"
-                                                                    src={asset("/images/face_9face_4.avif")}/><img
+                                                                    src={asset("/images-static/face_9face_4.avif")}/><img
                                                                     alt=""
                                                                     className="approve_face-image large_show landscape_show is-light"
                                                                     loading="lazy"
-                                                                    src={asset("/images/face_10face_3.avif")}/><img
+                                                                    src={asset("/images-static/face_10face_3.avif")}/><img
                                                                     alt=""
                                                                     className="approve_face-image large_show landscape_show is-light tablet_hide"
                                                                     loading="lazy"
-                                                                    src={asset("/images/face_12face_2.avif")}/><img
+                                                                    src={asset("/images-static/face_12face_2.avif")}/><img
                                                                     alt="" className="approve_face-image is-light"
                                                                     loading="lazy"
-                                                                    src={asset("/images/face_13face_1.avif")}/>
+                                                                    src={asset("/images-static/face_13face_1.avif")}/>
                                                                     <div
                                                                         className="approve_face-image is-text is-light background-gray-150">+60
                                                                     </div>
@@ -491,28 +491,28 @@ export function WhyAwesomic({data}: sectionProps) {
                                                                     <img alt=""
                                                                          className="approve_face-image is-first is-light"
                                                                          loading="lazy"
-                                                                         src={asset("/images/face-9_1face-9.avif")}/><img
+                                                                         src={asset("/images-static/face-9_1face-9.avif")}/><img
                                                                     alt="" className="approve_face-image is-light"
                                                                     loading="lazy"
-                                                                    src={asset("/images/face_11face_5.avif")}/><img
+                                                                    src={asset("/images-static/face_11face_5.avif")}/><img
                                                                     alt="" className="approve_face-image is-light"
                                                                     loading="lazy"
-                                                                    src={asset("/images/face_8face_7.avif")}/><img
+                                                                    src={asset("/images-static/face_8face_7.avif")}/><img
                                                                     alt=""
                                                                     className="approve_face-image medium_show landscape_show is-light"
                                                                     loading="lazy"
-                                                                    src={asset("/images/face_9face_4.avif")}/><img
+                                                                    src={asset("/images-static/face_9face_4.avif")}/><img
                                                                     alt="" className="approve_face-image is-light"
                                                                     loading="lazy"
-                                                                    src={asset("/images/face_13face_1.avif")}/><img
+                                                                    src={asset("/images-static/face_13face_1.avif")}/><img
                                                                     alt=""
                                                                     className="approve_face-image large_show landscape_show is-light"
                                                                     loading="lazy"
-                                                                    src={asset("/images/face_10face_3.avif")}/><img
+                                                                    src={asset("/images-static/face_10face_3.avif")}/><img
                                                                     alt=""
                                                                     className="approve_face-image large_show landscape_show is-light tablet_hide"
                                                                     loading="lazy"
-                                                                    src={asset("/images/face_12face_2.avif")}/>
+                                                                    src={asset("/images-static/face_12face_2.avif")}/>
                                                                     <div
                                                                         className="approve_face-image is-text is-light background-gray-150">+19
                                                                     </div>
@@ -545,10 +545,10 @@ export function WhyAwesomic({data}: sectionProps) {
                                                                 <div className="approvement-faces_wrapper is-static">
                                                                     <img alt="" className="approve_face-image is-light"
                                                                          loading="lazy"
-                                                                         src={asset("/images/face_11face_5.avif")}/><img
+                                                                         src={asset("/images-static/face_11face_5.avif")}/><img
                                                                     alt="" className="approve_face-image is-light"
                                                                     loading="lazy"
-                                                                    src={asset("/images/face_13face_1.avif")}/></div>
+                                                                    src={asset("/images-static/face_13face_1.avif")}/></div>
                                                                 <div className="how-tab_progress-wrapper tablet_hide">
                                                                     <div className="how-tab_progress-status"></div>
                                                                 </div>
@@ -578,7 +578,7 @@ export function WhyAwesomic({data}: sectionProps) {
                                                                     <img alt=""
                                                                          className="approve_face-image is-first is-light"
                                                                          loading="lazy"
-                                                                         src={asset("/images/masked-featured-head_1masked-featured-head.avif")}/>
+                                                                         src={asset("/images-static/masked-featured-head_1masked-featured-head.avif")}/>
                                                                 </div>
                                                                 <div className="how-tab_progress-wrapper tablet_hide">
                                                                     <div className="how-tab_progress-status"></div>
@@ -591,7 +591,7 @@ export function WhyAwesomic({data}: sectionProps) {
                                             </div>
                                         </div>
                                         <img alt="Close icon" className="close-why-animated" loading="lazy"
-                                             src={asset("/images/close-gray-400.svg")}/>
+                                             src={asset("/images-static/close-gray-400.svg")}/>
                                     </div>
                                 </div>
                                 <div className="why-awesomic_block _w-hills">

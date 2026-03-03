@@ -103,7 +103,7 @@ export function CtaSection(_props: { data?: PseoPageData }) {
                                         <div className="z-index-1">Get matched</div>
                                         <div className="button-background"></div>
                                         <img alt="" className="button-icon" height="20" loading="lazy"
-                                             src={asset("/images/login-icon-white.svg")}/>
+                                             src={asset("/images-static/login-icon-white.svg")}/>
                                     </a>
                                 </div>
                             </form>
@@ -118,7 +118,7 @@ export function CtaSection(_props: { data?: PseoPageData }) {
                 </div>
             </div>
             <img alt="" className="moving-circle" id="cta-circle" loading="lazy"
-                 src={asset("/images/moving-ellipse.svg")}/>
+                 src={asset("/images-static/moving-ellipse.svg")}/>
             <div className="w-embed">
                 <style dangerouslySetInnerHTML={{
                     __html: `

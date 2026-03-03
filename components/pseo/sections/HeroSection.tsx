@@ -7,13 +7,13 @@ const ASSET_BASE = process.env.NEXT_PUBLIC_ASSET_BASE ?? "";
 const asset = (src: string) => `${ASSET_BASE}${src.startsWith("/") ? src : `/${src}`}`;
 
 const CLIENT_LOGOS = [
-    {src: "/images/yc-new-png.png", alt: "YC logo"},
-    {src: "/images/coca-cola-new-png.png", alt: "Coca-Cola logo"},
-    {src: "/images/disney-new-png.png", alt: "Disney logo"},
-    {src: "/images/genesis.avif", alt: "Genesis logo"},
-    {src: "/images/udemy-new-png.png", alt: "Udemy logo"},
-    {src: "/images/ey-new-png_1ey-new-png.png", alt: "EY logo"},
-    {src: "/images/panda-doc-new-png.png", alt: "PandaDoc logo"},
+    {src: "/images-static/yc-new-png.png", alt: "YC logo"},
+    {src: "/images-static/coca-cola-new-png.png", alt: "Coca-Cola logo"},
+    {src: "/images-static/disney-new-png.png", alt: "Disney logo"},
+    {src: "/images-static/genesis.avif", alt: "Genesis logo"},
+    {src: "/images-static/udemy-new-png.png", alt: "Udemy logo"},
+    {src: "/images-static/ey-new-png_1ey-new-png.png", alt: "EY logo"},
+    {src: "/images-static/panda-doc-new-png.png", alt: "PandaDoc logo"},
 ];
 
 interface HeroSectionProps {
@@ -21,7 +21,7 @@ interface HeroSectionProps {
 }
 
 export default function HeroSection({data}: HeroSectionProps) {
-    // Sets CSS variable for dynamic checkbox background images (Webflow pattern)
+    // Sets CSS variable for dynamic checkbox background images-static (Webflow pattern)
     useEffect(() => {
         console.log(data);
         document
@@ -49,7 +49,7 @@ export default function HeroSection({data}: HeroSectionProps) {
                             <div className="homepage_hero-tags">
                                 <div className="text-tag gap-8">
                                     <img
-                                        src={asset("/images/YC-small-badge.svg")}
+                                        src={asset("/images-static/YC-small-badge.svg")}
                                         loading="lazy"
                                         alt="YC small logo"
                                     />
@@ -58,7 +58,7 @@ export default function HeroSection({data}: HeroSectionProps) {
                                 <div className="text-tag gap-8 mobile_hide">
                                     <div className="w-layout-hflex flex-h_center-center gap-4">
                                         <img
-                                            src={asset("/images/google_symbol.svg_1.svg")}
+                                            src={asset("/images-static/google_symbol.svg_1.svg")}
                                             loading="lazy"
                                             alt="Google Play logo"
                                             height={16}
@@ -67,7 +67,7 @@ export default function HeroSection({data}: HeroSectionProps) {
                                     </div>
                                     <div className="w-layout-hflex flex-h_center-center gap-4">
                                         <img
-                                            src={asset("/images/google_symbol.svg.svg")}
+                                            src={asset("/images-static/google_symbol.svg.svg")}
                                             loading="lazy"
                                             alt="Trustpilot logo"
                                             height={16}
@@ -136,7 +136,7 @@ export default function HeroSection({data}: HeroSectionProps) {
                                                 </div>
                                                 <div className="button-background"/>
                                                 <img
-                                                    src={asset("/images/login-icon-white.svg")}
+                                                    src={asset("/images-static/login-icon-white.svg")}
                                                     loading="lazy"
                                                     alt=""
                                                     height={20}

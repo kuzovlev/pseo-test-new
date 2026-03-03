@@ -177,11 +177,11 @@ export function HowItWorksSection(_props: { data?: PseoPageData }) {
                                                 {_props.data.how_step_1_name}
                                             </div>
                                         </div>
-                                        <img alt="" loading="lazy" src={asset("/images/chevron-down-gray.svg")}/>
+                                        <img alt="" loading="lazy" src={asset("/images-static/chevron-down-gray.svg")}/>
                                     </div>
                                     <div className="how-tabs_content tablet_show"><img alt="Join Awesomic Tab Image"
                                                                                        loading="lazy"
-                                                                                       src={asset("/images/how-tab-1_1how-tab-1.avif")}
+                                                                                       src={asset("/images-static/how-tab-1_1how-tab-1.avif")}
                                                                                        width="553"/></div>
                                     <div className="how-tab_details">
                                         <div className="max-width-313">
@@ -194,7 +194,7 @@ export function HowItWorksSection(_props: { data?: PseoPageData }) {
                                                  tab-link="/pricing">
                                                 <div className="z-index-1">View plans</div>
                                                 <img alt="" className="z-index-1" loading="lazy"
-                                                     src={asset("/images/open-link-icon.svg")}/>
+                                                     src={asset("/images-static/open-link-icon.svg")}/>
                                                 <div className="button-background"></div>
                                             </div>
                                             <div className="how-tab_progress-wrapper">
@@ -216,11 +216,11 @@ export function HowItWorksSection(_props: { data?: PseoPageData }) {
                                                 {_props.data.how_step_2_name}
                                             </div>
                                         </div>
-                                        <img alt="" loading="lazy" src={asset("/images/chevron-down-gray.svg")}/>
+                                        <img alt="" loading="lazy" src={asset("/images-static/chevron-down-gray.svg")}/>
                                     </div>
                                     <div className="how-tabs_content tablet_show"><img alt="Submit tasks Tab image"
                                                                                        loading="lazy"
-                                                                                       src={asset("/images/how-tab-2_1how-tab-2.avif")}
+                                                                                       src={asset("/images-static/how-tab-2_1how-tab-2.avif")}
                                                                                        width="553"/></div>
                                     <div className="how-tab_details">
                                         <div className="max-width-313">
@@ -232,7 +232,7 @@ export function HowItWorksSection(_props: { data?: PseoPageData }) {
                                             <div button-black="" className="button tab_button-imitation">
                                                 <div className="z-index-1">Submit now</div>
                                                 <img alt="" className="z-index-1" loading="lazy"
-                                                     src={asset("/images/open-link-icon.svg")}/>
+                                                     src={asset("/images-static/open-link-icon.svg")}/>
                                                 <div className="button-background"></div>
                                             </div>
                                             <div className="how-tab_progress-wrapper">
@@ -254,11 +254,11 @@ export function HowItWorksSection(_props: { data?: PseoPageData }) {
                                                 {_props.data.how_step_3_name}
                                             </div>
                                         </div>
-                                        <img alt="" loading="lazy" src={asset("/images/chevron-down-gray.svg")}/>
+                                        <img alt="" loading="lazy" src={asset("/images-static/chevron-down-gray.svg")}/>
                                     </div>
                                     <div className="how-tabs_content tablet_show"><img alt="Get matched Tab image"
                                                                                        loading="lazy"
-                                                                                       src={asset("/images/how-tab-3_1how-tab-3.avif")}
+                                                                                       src={asset("/images-static/how-tab-3_1how-tab-3.avif")}
                                                                                        width="553"/></div>
                                     <div className="how-tab_details">
                                         <div className="max-width-313">
@@ -270,7 +270,7 @@ export function HowItWorksSection(_props: { data?: PseoPageData }) {
                                             <div button-black="" className="button tab_button-imitation">
                                                 <div className="z-index-1">View all talents</div>
                                                 <img alt="" className="z-index-1" loading="lazy"
-                                                     src={asset("/images/open-link-icon.svg")}/>
+                                                     src={asset("/images-static/open-link-icon.svg")}/>
                                                 <div className="button-background"></div>
                                             </div>
                                             <div className="how-tab_progress-wrapper">
@@ -291,11 +291,11 @@ export function HowItWorksSection(_props: { data?: PseoPageData }) {
                                                 {_props.data.how_step_4_name}
                                             </div>
                                         </div>
-                                        <img alt="" loading="lazy" src={asset("/images/chevron-down-gray.svg")}/>
+                                        <img alt="" loading="lazy" src={asset("/images-static/chevron-down-gray.svg")}/>
                                     </div>
                                     <div className="how-tabs_content tablet_show"><img
                                         alt="'Refine until perfect' Tab image" loading="lazy"
-                                        src={asset("/images/how-tabs-4_1how-tabs-4.avif")} width="553"/></div>
+                                        src={asset("/images-static/how-tabs-4_1how-tabs-4.avif")} width="553"/></div>
                                     <div className="how-tab_details">
                                         <div className="max-width-343">
                                             <div className="text-15 weight-regular lh-145">
@@ -308,7 +308,7 @@ export function HowItWorksSection(_props: { data?: PseoPageData }) {
                                                  className="button tab_button-imitation">
                                                 <div className="z-index-1">Get started</div>
                                                 <img alt="" className="z-index-1" loading="lazy"
-                                                     src={asset("/images/open-link-icon.svg")}/>
+                                                     src={asset("/images-static/open-link-icon.svg")}/>
                                                 <div className="button-background"></div>
                                             </div>
                                             <div className="how-tab_progress-wrapper">
@@ -322,16 +322,16 @@ export function HowItWorksSection(_props: { data?: PseoPageData }) {
                         <div className="how-tabs_content w-tab-content">
                             <div className="how-tab-pane_wrapper w-tab-pane w--tab-active" data-w-tab="Tab 1"><img
                                 alt="Join Awesomic Tab Image" loading="lazy"
-                                src={asset("/images/how-tab-1_1how-tab-1.avif")} width="553"/></div>
+                                src={asset("/images-static/how-tab-1_1how-tab-1.avif")} width="553"/></div>
                             <div className="how-tab-pane_wrapper w-tab-pane" data-w-tab="Tab 2"><img
                                 alt="Submit tasks Tab image" loading="lazy"
-                                src={asset("/images/how-tab-2_1how-tab-2.avif")} width="553"/></div>
+                                src={asset("/images-static/how-tab-2_1how-tab-2.avif")} width="553"/></div>
                             <div className="how-tab-pane_wrapper w-tab-pane" data-w-tab="Tab 3"><img
                                 alt="Get matched Tab image" loading="lazy"
-                                src={asset("/images/how-tab-3_1how-tab-3.avif")} width="553"/></div>
+                                src={asset("/images-static/how-tab-3_1how-tab-3.avif")} width="553"/></div>
                             <div className="how-tab-pane_wrapper w-tab-pane" data-w-tab="Tab 4"><img
                                 alt="'Refine until perfect' Tab image" loading="lazy"
-                                src={asset("/images/how-tabs-4_1how-tabs-4.avif")} width="553"/></div>
+                                src={asset("/images-static/how-tabs-4_1how-tabs-4.avif")} width="553"/></div>
                         </div>
                     </div>
                     <div className="w-embed">
