@@ -8,7 +8,6 @@ const asset = (src: string) => `${ASSET_BASE}${src.startsWith("/") ? src : `/${s
 
 export function HowItWorksSection(_props: { data?: PseoPageData }) {
     useEffect(() => {
-        console.log(_props);
 
         var tabTimeout;
         var isInView = false;

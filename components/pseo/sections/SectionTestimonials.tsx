@@ -60,7 +60,6 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
             );
         })();
         const moreReviewsBlock = document.querySelector(".more-reviews_block");
-        console.log('read more component')
         const buttonWhiteS = moreReviewsBlock?.querySelector(".button.is-white");
         const reviewsComponent = document.querySelector(".reviews-component");
         if (buttonWhiteS && reviewsComponent) {

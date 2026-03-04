@@ -41,59 +41,26 @@ export const PSEO_TAGS = {
   pageBySlug: (slug: string) => `pseo:page:${slug}`,
 } as const;
 
-// function getSupabaseServerClient() {
-//   const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
-//   const serviceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
-//   const anonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
-//
-//   if (!url) {
-//     throw new Error("Missing NEXT_PUBLIC_SUPABASE_URL in env.");
-//   }
-//
-//   // Prefer service role key if present (server-only). Otherwise use anon key.
-//   const keyToUse = serviceKey || anonKey;
-//   if (!keyToUse) {
-//     throw new Error(
-//       "Missing Supabase key. Set NEXT_PUBLIC_SUPABASE_ANON_KEY (recommended) or SUPABASE_SERVICE_ROLE_KEY (server-only)."
-//     );
-//   }
-//
-//   return createClient(url, keyToUse, {
-//     auth: {
-//       persistSession: false,
-//       autoRefreshToken: false,
-//       detectSessionInUrl: false,
-//     },
-//   });
-// }
-
 /** Fetch a page by slug (slug can be nested like "hire/design/ux"). */
 export async function getLandingPageBySlug(
     slug: string
 ): Promise<LandingPageRecord | null> {
   const supabase = getSupabaseServerClient();
 
-  console.log("RAW SLUG PARAM:", JSON.stringify(slug));
-
   const { data: allRows } = await supabase
       .from(TABLE)
       .select("slug");
 
-  console.log(
-      "DB SLUGS:",
-      allRows?.map((r: any) => JSON.stringify(r.slug))
-  );
-
-  console.log("LOOKING FOR:", JSON.stringify(slug));
+  // console.log(
+  //     "DB SLUGS:",
+  //     allRows?.map((r: any) => JSON.stringify(r.slug))
+  // );
 
   const { data, error } = await supabase
       .from(TABLE)
       .select("*")
       .eq("slug", slug)
       .maybeSingle();
-
-  console.log("ERROR:", error);
-  console.log("RESULT:", data);
 
   return data ?? null;
 }
@@ -144,7 +111,6 @@ export async function listLandingPages(params?: {
 
   const { data, error } = await q.range(offset, offset + limit - 1);
   if (error) {
-    console.error("Supabase listLandingPages error", error);
     return [];
   }
   return (data ?? []).map((r) => normalizeRecord(r as LandingPageRecord));
@@ -164,15 +130,8 @@ function getSupabaseServerClient() {
   const serviceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
   const anonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
-  console.log("Using service role:", !!serviceKey);
-  console.log("Using anon key:", !!anonKey);
-
   const keyToUse = serviceKey || anonKey;
 
-  console.log(
-      "Actually using:",
-      serviceKey ? "SERVICE ROLE" : "ANON KEY"
-  );
 
   return createClient(url!, keyToUse!, {
     auth: {

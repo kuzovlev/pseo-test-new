@@ -75,7 +75,6 @@ export function WhyAwesomic({data}: sectionProps) {
         });
         // click on "show tabs" button \u2192 always restart at first step
         showTabsTrigger.addEventListener('click', function () {
-            console.log('clicked');
             clearTimeout(whyTimeout);
             whyAnimationContainer.style.display = '';
             const firstTab = document.querySelector('.why-step');

@@ -23,7 +23,6 @@ interface HeroSectionProps {
 export default function HeroSection({data}: HeroSectionProps) {
     // Sets CSS variable for dynamic checkbox background images-static (Webflow pattern)
     useEffect(() => {
-        console.log(data);
         document
             .querySelectorAll<HTMLElement>(".hero_dynamic-checkbox")
             .forEach((label) => {
