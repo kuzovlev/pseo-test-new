@@ -311,3 +311,17 @@
 .gemini-link:hover .gemini-tooltip {
     visibility: visible;
 }
+
+.legal_richtext ul li p, .legal_richtext ol li p {
+    margin: 0;
+}
+.legal_richtext ul {
+    list-style: disc;
+}
+.legal_richtext ol {
+    list-style: decimal;
+}
+.legal_richtext p:has(+ ul),
+.legal_richtext p:has(+ ol) {
+    margin-bottom: 8px;
+}
