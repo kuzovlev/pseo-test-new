@@ -23,12 +23,18 @@ import { unstable_cache } from "next/cache";
 export type LandingPageRecord = {
   id?: string | number;
   slug: string;
+  updated_at?: string | null;
   // optional common fields
   category?: string | null;
   seo_title?: string | null;
   seo_description?: string | null;
   // allow extra fields (your CSV columns)
   [key: string]: any;
+};
+
+export type LandingPageSitemapRecord = {
+  slug: string;
+  updated_at?: string | null;
 };
 
 const TABLE = process.env.PSEO_SUPABASE_TABLE ?? "pseo_data";
@@ -82,10 +88,13 @@ export const getLandingPageBySlugCached = (slug: string) =>
 export async function listLandingPageSlugs(): Promise<string[]> {
   const supabase = getSupabaseServerClient();
 
-  const { data, error } = await supabase.from(TABLE).select("slug");
+  const { data, error } = await supabase.from(TABLE).select("slug, updated_at");
   if (error || !data) return [];
   return data
-    .map((r: any) => String(r.slug ?? "").trim())
+    .map((r: any) => ({
+      slug: String(r.slug ?? "").trim(),
+      updated_at: r.updated_at ?? null,
+    }))
     .filter(Boolean);
 }
 

@@ -50,7 +50,7 @@ export async function POST(req: Request) {
   // Revalidate sitemap only.
   if (body?.sitemap === true) {
     revalidateTag(PSEO_TAGS.sitemap, "max");
-    revalidatePath("/sitemap.xml");
+    revalidatePath("/hire-sitemap/sitemap.xml");
     did.push("sitemap");
   }
 
@@ -59,7 +59,7 @@ export async function POST(req: Request) {
     revalidateTag(PSEO_TAGS.page, "max");
     revalidateTag(PSEO_TAGS.slugs, "max");
     revalidateTag(PSEO_TAGS.sitemap, "max");
-    revalidatePath("/sitemap.xml");
+    revalidatePath("/hire-sitemap.xml");
     did.push("all");
   }
 
