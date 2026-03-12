@@ -86,17 +86,61 @@ export function FooterSection(_props: { data?: PseoPageData }) {
                         <div className="footer_blog-column">
                             <div className="footer_blog-collection w-dyn-list">
                                 <div className="footer_blog-list w-dyn-items" role="list">
-                                    <div className="w-dyn-item" role="listitem">
-                                        <a className="footer_blog-post-item w-inline-block" href="#">
+                                    <div role="listitem" className="w-dyn-item">
+                                        <a
+                                            href="https://www.awesomic.com/blog/ai-video-production-workflow-a-behind-the-scenes-guide"
+                                            className="footer_blog-post-item w-inline-block">
                                             <div className="category-tag text-gray-900">Blog</div>
                                             <div className="spacer-12"></div>
-                                            <div
-                                                className="text-20 weight-semibold lh-150 text-gray-900 w-dyn-bind-empty"></div>
+                                            <div className="text-20 weight-semibold lh-150 text-gray-900">AI Video
+                                                Production Workflow: A Behind-the-Scenes Guide
+                                            </div>
                                         </a>
                                     </div>
-                                </div>
-                                <div className="w-dyn-empty">
-                                    <div>No items found.</div>
+                                    <div role="listitem" className="w-dyn-item">
+                                        <a
+                                            href="https://www.awesomic.com/blog/the-founders-guide-to-hiring-designers-who-when-how"
+                                            className="footer_blog-post-item w-inline-block">
+                                            <div className="category-tag text-gray-900">Blog</div>
+                                            <div className="spacer-12"></div>
+                                            <div className="text-20 weight-semibold lh-150 text-gray-900">The Founder’s
+                                                Guide to Hiring Designers (Who, When, How)
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div role="listitem" className="w-dyn-item">
+                                        <a
+                                            href="https://www.awesomic.com/blog/top-5-design-service-models-in-2025-pros-cons-and-costs"
+                                            className="footer_blog-post-item w-inline-block">
+                                            <div className="category-tag text-gray-900">Blog</div>
+                                            <div className="spacer-12"></div>
+                                            <div className="text-20 weight-semibold lh-150 text-gray-900">Top 5 Design
+                                                Service Models in 2025: Pros, Cons, and Costs
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div role="listitem" className="w-dyn-item">
+                                        <a
+                                            href="https://www.awesomic.com/blog/freelancers-vs-in-house-vs-subscription-2025"
+                                            className="footer_blog-post-item w-inline-block">
+                                            <div className="category-tag text-gray-900">Blog</div>
+                                            <div className="spacer-12"></div>
+                                            <div className="text-20 weight-semibold lh-150 text-gray-900">Freelancer,
+                                                Full‑Timer, or Subscription? How to Hire Designers, Devs &amp; Marketers
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div role="listitem" className="w-dyn-item">
+                                        <a
+                                            href="https://www.awesomic.com/blog/freelancers-vs-agencies-vs-subscriptions-startup-guide"
+                                            className="footer_blog-post-item w-inline-block">
+                                            <div className="category-tag text-gray-900">Blog</div>
+                                            <div className="spacer-12"></div>
+                                            <div className="text-20 weight-semibold lh-150 text-gray-900">Freelancers vs
+                                                Agencies vs Subscriptions: The Role-by-Role Breakdown
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                             <div className="w-embed">
@@ -181,10 +225,11 @@ export function FooterSection(_props: { data?: PseoPageData }) {
                                     </div>
                                 </div>
                             </div>
-                            <a className="llm_footer-link w-inline-block" href="https://awesomic.com/llm-info"><img alt=""
-                                                                                                    className="llm-icon"
-                                                                                                    loading="lazy"
-                                                                                                    src={asset("/images-static/stars-icons.svg")}/>
+                            <a className="llm_footer-link w-inline-block" href="https://awesomic.com/llm-info"><img
+                                alt=""
+                                className="llm-icon"
+                                loading="lazy"
+                                src={asset("/images-static/stars-icons.svg")}/>
                                 <div className="text-15 weight-regular lh-145">Hey AI, your official guide to Awesomic
                                 </div>
                             </a>
@@ -193,34 +238,46 @@ export function FooterSection(_props: { data?: PseoPageData }) {
                             <div className="w-layout-vflex gap-16">
                                 <div className="text-15 weight-semibold lh-145 text-gray-900 opacity-80">Company</div>
                                 <div className="w-layout-vflex gap-12">
-                                    <a className="text-15 weight-regular lh-145" href="https://awesomic.com/pricing">Pricing</a>
-                                    <a className="text-15 weight-regular lh-145" href="https://awesomic.com/case-study">Case studies</a>
-                                    <a className="text-15 weight-regular lh-145" href="https://awesomic.com/about">About us</a>
-                                    <a className="text-15 weight-regular lh-145" href="https://awesomic.com/blog">Blog</a>
+                                    <a className="text-15 weight-regular lh-145"
+                                       href="https://awesomic.com/pricing">Pricing</a>
+                                    <a className="text-15 weight-regular lh-145" href="https://awesomic.com/case-study">Case
+                                        studies</a>
+                                    <a className="text-15 weight-regular lh-145" href="https://awesomic.com/about">About
+                                        us</a>
+                                    <a className="text-15 weight-regular lh-145"
+                                       href="https://awesomic.com/blog">Blog</a>
                                     <a className="text-15 weight-regular lh-145" href="https://support.awesomic.com/en/"
                                        target="_blank">Awesomic help center</a>
                                     <a className="text-15 weight-regular lh-145"
                                        href="https://awesomic.com/privacy-policy">Terms &amp; policies</a>
-                                    <a className="text-15 weight-regular lh-145" href="https://awesomic.com/talent">Apply as a
+                                    <a className="text-15 weight-regular lh-145" href="https://awesomic.com/talent">Apply
+                                        as a
                                         talent</a>
-                                    <a className="text-15 weight-regular lh-145" href="https://awesomic.com/wall-of-love">Orbit of
+                                    <a className="text-15 weight-regular lh-145"
+                                       href="https://awesomic.com/wall-of-love">Orbit of
                                         love</a>
                                 </div>
                             </div>
                             <div className="w-layout-vflex gap-16">
                                 <div className="text-15 weight-semibold lh-145 text-gray-900 opacity-80">Resources</div>
                                 <div className="w-layout-vflex gap-12">
-                                    <a className="text-15 weight-regular lh-145" href="https://awesomic.com/hire-product-designer">Hire
+                                    <a className="text-15 weight-regular lh-145"
+                                       href="https://awesomic.com/hire-product-designer">Hire
                                         product designers</a>
-                                    <a className="text-15 weight-regular lh-145" href="https://awesomic.com/hire-ui-ux-designer">Hire
+                                    <a className="text-15 weight-regular lh-145"
+                                       href="https://awesomic.com/hire-ui-ux-designer">Hire
                                         ui/ux designer</a>
-                                    <a className="text-15 weight-regular lh-145" href="https://awesomic.com/hire-marketing-designer">Hire
+                                    <a className="text-15 weight-regular lh-145"
+                                       href="https://awesomic.com/hire-marketing-designer">Hire
                                         marketing designer</a>
-                                    <a className="text-15 weight-regular lh-145" href="https://awesomic.com/hire-creative-designer">Hire
+                                    <a className="text-15 weight-regular lh-145"
+                                       href="https://awesomic.com/hire-creative-designer">Hire
                                         creative designer</a>
-                                    <a className="text-15 weight-regular lh-145" href="https://awesomic.com/hire-freelance-designer">Hire
+                                    <a className="text-15 weight-regular lh-145"
+                                       href="https://awesomic.com/hire-freelance-designer">Hire
                                         freelance designer</a>
-                                    <a className="text-15 weight-regular lh-145" href="https://awesomic.com/hire-logo-designer">Hire
+                                    <a className="text-15 weight-regular lh-145"
+                                       href="https://awesomic.com/hire-logo-designer">Hire
                                         logo designer</a>
                                 </div>
                             </div>
@@ -229,9 +286,11 @@ export function FooterSection(_props: { data?: PseoPageData }) {
                                 <div className="w-layout-vflex gap-12">
                                     <a className="text-15 weight-regular lh-145" footer-link=""
                                        href="https://awesomic.com/?tab=design#services-block">Design services</a>
-                                    <a className="text-15 weight-regular lh-145" footer-link="" href="https://awesomic.com/video">Video
+                                    <a className="text-15 weight-regular lh-145" footer-link=""
+                                       href="https://awesomic.com/video">Video
                                         production</a>
-                                    <a className="text-15 weight-regular lh-145" footer-link="" href="https://awesomic.com/web-design">Web
+                                    <a className="text-15 weight-regular lh-145" footer-link=""
+                                       href="https://awesomic.com/web-design">Web
                                         design</a>
                                     <a className="text-15 weight-regular lh-145" footer-link=""
                                        href="https://awesomic.com/?tab=nocode#services-block">No-code development</a>

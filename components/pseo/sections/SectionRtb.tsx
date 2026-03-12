@@ -15,7 +15,7 @@ export function SectionRtb(_props: { data?: PseoPageData }) {
                             </h2>
                             <div className="spacer-20"></div>
                             <div className="text-16 weight-regular lh-150 text-align-center">
-                                {_props.data?.rtb_desciption}
+                                {_props.data?.rtb_description}
                             </div>
                         </div>
                         <div className="spacer-48"></div>
