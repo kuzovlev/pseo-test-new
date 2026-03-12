@@ -166,17 +166,64 @@ export function FooterSection(_props: { data?: PseoPageData }) {
             <div className="tablet_show">
                 <div className="w-dyn-list">
                     <div className="footer_mobile-blog w-dyn-items" role="list">
-                        <div className="footer_mobile-blog-item w-dyn-item" role="listitem">
-                            <a className="footer_blog-post-item w-inline-block" href="#">
+                        <div role="listitem" className="footer_mobile-blog-item w-dyn-item">
+                            <a
+                                href="https://awesomic.com/blog/ai-video-production-workflow-a-behind-the-scenes-guide"
+                                className="footer_blog-post-item w-inline-block">
+                                <div className="category-tag text-gray-900">Blog</div>
+                                <div className="spacer-12"></div>
+                                <div className="text-16 weight-semibold lh-150 text-gray-900 text-style-2lines">AI Video
+                                    Production Workflow: A Behind-the-Scenes Guide
+                                </div>
+                            </a>
+                        </div>
+                        <div role="listitem" className="footer_mobile-blog-item w-dyn-item">
+                            <a
+                                href="https://awesomic.com/blog/the-founders-guide-to-hiring-designers-who-when-how"
+                                className="footer_blog-post-item w-inline-block">
+                                <div className="category-tag text-gray-900">Blog</div>
+                                <div className="spacer-12"></div>
+                                <div className="text-16 weight-semibold lh-150 text-gray-900 text-style-2lines">The
+                                    Founder’s Guide to Hiring Designers (Who, When, How)
+                                </div>
+                            </a>
+                        </div>
+                        <div role="listitem" className="footer_mobile-blog-item w-dyn-item">
+                            <a
+                                href="https://awesomic.com/blog/top-5-design-service-models-in-2025-pros-cons-and-costs"
+                                className="footer_blog-post-item w-inline-block">
+                                <div className="category-tag text-gray-900">Blog</div>
+                                <div className="spacer-12"></div>
+                                <div className="text-16 weight-semibold lh-150 text-gray-900 text-style-2lines">Top 5
+                                    Design
+                                    Service Models in 2025: Pros, Cons, and Costs
+                                </div>
+                            </a>
+                        </div>
+                        <div role="listitem" className="footer_mobile-blog-item w-dyn-item">
+                            <a
+                                href="https://awesomic.com/blog/freelancers-vs-in-house-vs-subscription-2025"
+                                className="footer_blog-post-item w-inline-block">
                                 <div className="category-tag text-gray-900">Blog</div>
                                 <div className="spacer-12"></div>
                                 <div
-                                    className="text-16 weight-semibold lh-150 text-gray-900 text-style-2lines w-dyn-bind-empty"></div>
+                                    className="text-16 weight-semibold lh-150 text-gray-900 text-style-2lines">Freelancer,
+                                    Full‑Timer, or Subscription? How to Hire Designers, Devs &amp; Marketers
+                                </div>
                             </a>
                         </div>
-                    </div>
-                    <div className="w-dyn-empty">
-                        <div>No items found.</div>
+                        <div role="listitem" className="footer_mobile-blog-item w-dyn-item">
+                            <a
+                                href="https://awesomic.com/blog/freelancers-vs-agencies-vs-subscriptions-startup-guide"
+                                className="footer_blog-post-item w-inline-block">
+                                <div className="category-tag text-gray-900">Blog</div>
+                                <div className="spacer-12"></div>
+                                <div
+                                    className="text-16 weight-semibold lh-150 text-gray-900 text-style-2lines">Freelancers
+                                    vs Agencies vs Subscriptions: The Role-by-Role Breakdown
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div className="spacer-48"></div>

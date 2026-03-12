@@ -45,7 +45,7 @@ export default function HeroSection({data}: HeroSectionProps) {
 
                         {/* ── Left — headline ── */}
                         <div className="pseo_hero-left">
-                            <div className="homepage_hero-tags">
+                            <div className="homepage_hero-tags updated-hero">
                                 <div className="text-tag gap-8">
                                     <img
                                         src={asset("/images-static/YC-small-badge.svg")}
@@ -77,17 +77,14 @@ export default function HeroSection({data}: HeroSectionProps) {
                             </div>
 
                             <div className="spacer-20"/>
-
-                            <div className="tablet_max-width-600 align-center">
-                                <h1 className="pseo_h1">
-                                    {data?.Name_h1}
-                                </h1>
-                            </div>
+                            <h1 className="pseo_h1">
+                                {data?.Name_h1}
+                            </h1>
                         </div>
 
                         {/* ── Right — CTA block ── */}
                         <div
-                            id="w-node-_7d67ae3d-ea84-e2bc-dd27-47e5c7e20372-beb9ff5c"
+                            id="w-node-_7d67ae3d-ea84-e2bc-dd27-47e5c7e20372-b043a3e3"
                             className="pseo_cta-block"
                         >
                             <p className="pseo-hero-text">

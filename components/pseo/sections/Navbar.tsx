@@ -37,8 +37,6 @@ export function Navbar(_props: { data?: PseoPageData }) {
           <nav className="navbar_menu is-page-height-tablet w-nav-menu" role="navigation">
             <div className="navbar_menu navigation-list">
 
-              <a className="navbar-link" href="https://awesomic.com/pricing">Pricing</a>
-
               {/* Our work dropdown */}
               <div className="navbar-dropdown w-dropdown" data-delay="0" data-hover="true">
                 <div className="navbar-link is-dropdown w-dropdown-toggle">
@@ -49,13 +47,15 @@ export function Navbar(_props: { data?: PseoPageData }) {
                   <div className="dropdown-navigation inner single-col">
                     <div className="dropdown-column">
                       <div className="dropdown-section">
-                        <DropdownLink href="https://awesomic.com/case-study" icon="/images/case-study-icon.svg" label="Case studies" />
-                        <DropdownLink href="https://awesomic.com/design-menu/web" icon="/images/design-menu-icon.svg" label="Design menu" isNew />
+                        <DropdownLink href="https://awesomic.com/case-study" icon="/images-static/case-study-icon.svg" label="Case studies" />
+                        <DropdownLink href="https://awesomic.com/design-menu/web" icon="/images-static/design-menu-icon.svg" label="Design menu" isNew />
                       </div>
                     </div>
                   </div>
                 </nav>
               </div>
+
+              <a className="navbar-link" href="https://awesomic.com/pricing">Pricing</a>
 
               {/* Services & solutions dropdown */}
               <div className="navbar-dropdown w-dropdown" data-delay="0" data-hover="true">
@@ -70,14 +70,14 @@ export function Navbar(_props: { data?: PseoPageData }) {
                     <div className="dropdown-column">
                       <div className="dropdown-section">
                         <div className="dropdown_section-name">Services:</div>
-                        <DropdownLink href="https://awesomic.com/?tab=design#services-block"   icon="/images/magic-wand-16-n.svg"       label="Design services" />
-                        <DropdownLink href="https://awesomic.com/video"                    icon="/images/video-production-icon.svg" label="Video production" />
-                        <DropdownLink href="https://awesomic.com/web-design"               icon="/images/web-dis-icon.svg"          label="Web design" isNew />
-                        <DropdownLink href="https://awesomic.com/branding"                 icon="/images/branding-icon.svg"         label="Branding" />
-                        <DropdownLink href="https://awesomic.com/graphic"                  icon="/images/graph-des-icon-nav.svg"    label="Graphic design" isNew />
-                        <DropdownLink href="https://awesomic.com/?tab=nocode#services-block"   icon="/images/brick-icon-dark.svg"       label="No-code development" />
-                        <DropdownLink href="https://awesomic.com/?tab=marketing#services-block" icon="/images/stats-icon-dark.svg"      label="Marketing services" />
-                        <DropdownLink href="https://awesomic.com/?tab=software#services-block" icon="/images/settings-icon-dark.svg"   label="Software development" />
+                        <DropdownLink href="https://awesomic.com/?tab=design#services-block"   icon="/images-static/magic-wand-16-n.svg"       label="Design services" />
+                        <DropdownLink href="https://awesomic.com/video"                    icon="/images-static/video-production-icon.svg" label="Video production" />
+                        <DropdownLink href="https://awesomic.com/web-design"               icon="/images-static/web-dis-icon.svg"          label="Web design" isNew />
+                        <DropdownLink href="https://awesomic.com/branding"                 icon="/images-static/branding-icon.svg"         label="Branding" />
+                        <DropdownLink href="https://awesomic.com/graphic"                  icon="/images-static/graph-des-icon-nav.svg"    label="Graphic design" isNew />
+                        <DropdownLink href="https://awesomic.com/?tab=nocode#services-block"   icon="/images-static/brick-icon-dark.svg"       label="No-code development" />
+                        <DropdownLink href="https://awesomic.com/?tab=marketing#services-block" icon="/images-static/stats-icon-dark.svg"      label="Marketing services" />
+                        <DropdownLink href="https://awesomic.com/?tab=software#services-block" icon="/images-static/settings-icon-dark.svg"   label="Software development" />
                       </div>
                     </div>
 
@@ -85,13 +85,13 @@ export function Navbar(_props: { data?: PseoPageData }) {
                     <div className="dropdown-column">
                       <div className="dropdown-section">
                         <div className="dropdown_section-name">Solutions:</div>
-                        <DropdownLink href="https://awesomic.com/webflow"   icon="/images/webflow-menu-icon.svg" label="Webflow" />
-                        <DropdownLink href="https://awesomic.com/framer"    icon="/images/framer-menu-icon.svg"  label="Framer" />
-                        <DropdownLink href="https://awesomic.com/wordpress" icon="/images/wp-menu-icon.svg"      label="Wordpress" />
+                        <DropdownLink href="https://awesomic.com/webflow"   icon="/images-static/webflow-menu-icon.svg" label="Webflow" />
+                        <DropdownLink href="https://awesomic.com/framer"    icon="/images-static/framer-menu-icon.svg"  label="Framer" />
+                        <DropdownLink href="https://awesomic.com/wordpress" icon="/images-static/wp-menu-icon.svg"      label="Wordpress" />
                       </div>
                       <div className="dropdown-section">
                         <div className="dropdown_section-name">Industry:</div>
-                        <DropdownLink href="https://awesomic.com/agencies" icon="/images/agencies-menu-icon.svg" label="Agencies" />
+                        <DropdownLink href="https://awesomic.com/agencies" icon="/images-static/agencies-menu-icon.svg" label="Agencies" />
                       </div>
                     </div>
 
@@ -230,7 +230,7 @@ function DropdownLink({ href, icon, label, isNew }: DropdownLinkProps) {
           {isNew && <div className="nav_new-badge">new</div>}
         </div>
         <img
-            src={`${ASSET_BASE}/images/new-page-black.svg`}
+            src={`${ASSET_BASE}/images-static/new-page-black.svg`}
             alt=""
             className="dropdown-hover-icon"
             loading="lazy"
