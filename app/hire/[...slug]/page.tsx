@@ -26,7 +26,7 @@ export async function generateMetadata({
         description: page?.seo_description ?? undefined,
 
         alternates: {
-            canonical: 'https://awesomic.com/hire' + (slugPath ? '/' + slugPath : ''),
+            canonical: 'https://www.awesomic.com/hire' + (slugPath ? '/' + slugPath : ''),
         },
 
         icons: {
