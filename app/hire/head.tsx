@@ -27,7 +27,7 @@ export default function Head() {
       <link href="/webflow-static/css/global-styles.css" rel="stylesheet" type="text/css" />
       <link href="https://www.awesomic.com/pseo-template" rel="canonical" />
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-      <link rel="shortcut icon" href={favicon} type="image/x-icon" />
+      <link rel="shortcut icon" href="https://cdn.prod.website-files.com/6818a97ae905afeb08eff668/685c20ff61458aaeb7fac08c_favicon-upd.png" type="image/x-icon" />
       <link rel="apple-touch-icon" href={webclip} />
       <script dangerouslySetInnerHTML={{ __html: `!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);` }} />
       <script src="https://www.googletagmanager.com/gtag/js?id=G-D430Z6534X" async></script>
