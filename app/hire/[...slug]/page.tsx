@@ -24,6 +24,14 @@ export async function generateMetadata({
     return {
         title: page?.seo_title ?? undefined,
         description: page?.seo_description ?? undefined,
+
+        alternates: {
+            canonical: 'https://awesomic.com/hire' + (slugPath ? '/' + slugPath : ''),
+        },
+
+        icons: {
+            icon: "https://cdn.prod.website-files.com/6818a97ae905afeb08eff668/685c20ff61458aaeb7fac08c_favicon-upd.png",
+        },
     };
 }
 

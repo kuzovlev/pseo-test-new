@@ -9,8 +9,6 @@ export default function Head() {
       <title>pSEO template</title>
       <meta charSet="utf-8" />
       <meta content="Awesomic matches you with top design, marketing, dev, and product talent in as few as 24 hours through a subscription plan. Take a deep breath... and Awesomic." name="description" />
-      <meta content="pSEO template" property="og:title" />
-      <meta content="Awesomic matches you with top design, marketing, dev, and product talent in as few as 24 hours through a subscription plan. Take a deep breath... and Awesomic." property="og:description" />
       <meta content="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/OpenGraph%20image.jpg" property="og:image" />
       <meta content="pSEO template" property="twitter:title" />
       <meta content="Awesomic matches you with top design, marketing, dev, and product talent in as few as 24 hours through a subscription plan. Take a deep breath... and Awesomic." property="twitter:description" />
