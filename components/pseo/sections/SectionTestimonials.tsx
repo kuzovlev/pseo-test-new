@@ -268,39 +268,9 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                     </div>
                                 </div>
                                 <div className="review_content">
-                                    <div className="text-16 weight-regular lh-150">Love Awesomic \u2013 When we started
+                                    <div className="text-16 weight-regular lh-150">Love Awesomic – When we started
                                         out we got all our design and landing page work done from them. They are fast
                                         and high quality!
-                                    </div>
-                                    <div className="video-review_content">
-                                        <div className="video-placeholder"><img
-                                            alt="John Banner Review placeholder image"
-                                            className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
-                                            <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
-                                                                                   width="Auto"/></div>
-                                        </div>
-                                        <div className="video_preview-code w-background-video w-background-video-atom"
-                                             style={{
-                                                 width: '100%',
-                                                 height: '100%',
-                                                 position: 'absolute',
-                                                 top: '0',
-                                                 left: '0',
-                                                 zIndex: '1'
-                                             }}>
-                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsInline="">
-                                                <source
-                                                    data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
-                                                    data-wf-ignore="true"/>
-                                            </video>
-                                        </div>
-                                        <video className="video-review">
-                                            <source data-src="" type="video/mp4"/>
-                                        </video>
                                     </div>
                                 </div>
                             </div>
@@ -391,36 +361,6 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                     <div className="text-16 weight-regular lh-150">We used Awesomic for our logo design
                                         and have received lots of unprompted compliments. Highly recommended!
                                     </div>
-                                    <div className="video-review_content">
-                                        <div className="video-placeholder"><img
-                                            alt="John Banner Review placeholder image"
-                                            className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
-                                            <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
-                                                                                   width="Auto"/></div>
-                                        </div>
-                                        <div className="video_preview-code w-background-video w-background-video-atom"
-                                             style={{
-                                                 width: '100%',
-                                                 height: '100%',
-                                                 position: 'absolute',
-                                                 top: '0',
-                                                 left: '0',
-                                                 zIndex: '1'
-                                             }}>
-                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsInline="">
-                                                <source
-                                                    data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
-                                                    data-wf-ignore="true"/>
-                                            </video>
-                                        </div>
-                                        <video className="video-review">
-                                            <source data-src="" type="video/mp4"/>
-                                        </video>
-                                    </div>
                                 </div>
                             </div>
                             <div className="review_item" data-wf--review-item--variant="base" timing="0,10000"
@@ -447,36 +387,6 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                         responsive and engaged. Will definitely be returning to Awesomic for future
                                         design needs.
                                     </div>
-                                    <div className="video-review_content">
-                                        <div className="video-placeholder"><img
-                                            alt="John Banner Review placeholder image"
-                                            className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
-                                            <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
-                                                                                   width="Auto"/></div>
-                                        </div>
-                                        <div className="video_preview-code w-background-video w-background-video-atom"
-                                             style={{
-                                                 width: '100%',
-                                                 height: '100%',
-                                                 position: 'absolute',
-                                                 top: '0',
-                                                 left: '0',
-                                                 zIndex: '1'
-                                             }}>
-                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsInline="">
-                                                <source
-                                                    data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
-                                                    data-wf-ignore="true"/>
-                                            </video>
-                                        </div>
-                                        <video className="video-review">
-                                            <source data-src="" type="video/mp4"/>
-                                        </video>
-                                    </div>
                                 </div>
                             </div>
                             <div className="review_item" data-wf--review-item--variant="base" timing="0,10000"
@@ -500,36 +410,6 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                     <div className="text-16 weight-regular lh-150">Amazing service for such a good
                                         price! Especially with this offer. We\u2019ve been their customers for some time
                                         now and are happy. They are reliable and hassle-free to work with.
-                                    </div>
-                                    <div className="video-review_content">
-                                        <div className="video-placeholder"><img
-                                            alt="John Banner Review placeholder image"
-                                            className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
-                                            <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
-                                                                                   width="Auto"/></div>
-                                        </div>
-                                        <div className="video_preview-code w-background-video w-background-video-atom"
-                                             style={{
-                                                 width: '100%',
-                                                 height: '100%',
-                                                 position: 'absolute',
-                                                 top: '0',
-                                                 left: '0',
-                                                 zIndex: '1'
-                                             }}>
-                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsInline="">
-                                                <source
-                                                    data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
-                                                    data-wf-ignore="true"/>
-                                            </video>
-                                        </div>
-                                        <video className="video-review">
-                                            <source data-src="" type="video/mp4"/>
-                                        </video>
                                     </div>
                                 </div>
                             </div>
@@ -557,36 +437,6 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                         don\u2019t think we\u2019ll need that in the foreseeable future - Awesomic
                                         covers all our needs.
                                     </div>
-                                    <div className="video-review_content">
-                                        <div className="video-placeholder"><img
-                                            alt="John Banner Review placeholder image"
-                                            className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
-                                            <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
-                                                                                   width="Auto"/></div>
-                                        </div>
-                                        <div className="video_preview-code w-background-video w-background-video-atom"
-                                             style={{
-                                                 width: '100%',
-                                                 height: '100%',
-                                                 position: 'absolute',
-                                                 top: '0',
-                                                 left: '0',
-                                                 zIndex: '1'
-                                             }}>
-                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsInline="">
-                                                <source
-                                                    data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
-                                                    data-wf-ignore="true"/>
-                                            </video>
-                                        </div>
-                                        <video className="video-review">
-                                            <source data-src="" type="video/mp4"/>
-                                        </video>
-                                    </div>
                                 </div>
                             </div>
                             <div className="review_item" data-wf--review-item--variant="base" timing="0,10000"
@@ -611,36 +461,6 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                         logo, sales deck, and a Ul design in &lt; 2 weeks; super responsive, lots of
                                         revisions, so much easier than finding freelancers - and super super happy with
                                         the quality. 100% recommend.
-                                    </div>
-                                    <div className="video-review_content">
-                                        <div className="video-placeholder"><img
-                                            alt="John Banner Review placeholder image"
-                                            className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
-                                            <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
-                                                                                   width="Auto"/></div>
-                                        </div>
-                                        <div className="video_preview-code w-background-video w-background-video-atom"
-                                             style={{
-                                                 width: '100%',
-                                                 height: '100%',
-                                                 position: 'absolute',
-                                                 top: '0',
-                                                 left: '0',
-                                                 zIndex: '1'
-                                             }}>
-                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsInline="">
-                                                <source
-                                                    data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
-                                                    data-wf-ignore="true"/>
-                                            </video>
-                                        </div>
-                                        <video className="video-review">
-                                            <source data-src="" type="video/mp4"/>
-                                        </video>
                                     </div>
                                 </div>
                             </div>
@@ -667,36 +487,6 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                         a webflow engineer helped up implemented the website. We will continue to use
                                         Awesomic in the future for design tasks.
                                     </div>
-                                    <div className="video-review_content">
-                                        <div className="video-placeholder"><img
-                                            alt="John Banner Review placeholder image"
-                                            className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
-                                            <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
-                                                                                   width="Auto"/></div>
-                                        </div>
-                                        <div className="video_preview-code w-background-video w-background-video-atom"
-                                             style={{
-                                                 width: '100%',
-                                                 height: '100%',
-                                                 position: 'absolute',
-                                                 top: '0',
-                                                 left: '0',
-                                                 zIndex: '1'
-                                             }}>
-                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsInline="">
-                                                <source
-                                                    data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
-                                                    data-wf-ignore="true"/>
-                                            </video>
-                                        </div>
-                                        <video className="video-review">
-                                            <source data-src="" type="video/mp4"/>
-                                        </video>
-                                    </div>
                                 </div>
                             </div>
                             <div className="review_item" data-wf--review-item--variant="base" timing="0,10000"
@@ -719,36 +509,6 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                 <div className="review_content">
                                     <div className="text-16 weight-regular lh-150">Had them re-design my whole dang
                                         website. They are fantastic and I\u2019ve been recommending them to everyone.
-                                    </div>
-                                    <div className="video-review_content">
-                                        <div className="video-placeholder"><img
-                                            alt="John Banner Review placeholder image"
-                                            className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
-                                            <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
-                                                                                   width="Auto"/></div>
-                                        </div>
-                                        <div className="video_preview-code w-background-video w-background-video-atom"
-                                             style={{
-                                                 width: '100%',
-                                                 height: '100%',
-                                                 position: 'absolute',
-                                                 top: '0',
-                                                 left: '0',
-                                                 zIndex: '1'
-                                             }}>
-                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsInline="">
-                                                <source
-                                                    data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
-                                                    data-wf-ignore="true"/>
-                                            </video>
-                                        </div>
-                                        <video className="video-review">
-                                            <source data-src="" type="video/mp4"/>
-                                        </video>
                                     </div>
                                 </div>
                             </div>
@@ -778,36 +538,6 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                         a matter of days. We continue working with Awesomic across multiple projects and
                                         always highly recommend!
                                     </div>
-                                    <div className="video-review_content">
-                                        <div className="video-placeholder"><img
-                                            alt="John Banner Review placeholder image"
-                                            className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
-                                            <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
-                                                                                   width="Auto"/></div>
-                                        </div>
-                                        <div className="video_preview-code w-background-video w-background-video-atom"
-                                             style={{
-                                                 width: '100%',
-                                                 height: '100%',
-                                                 position: 'absolute',
-                                                 top: '0',
-                                                 left: '0',
-                                                 zIndex: '1'
-                                             }}>
-                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsInline="">
-                                                <source
-                                                    data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
-                                                    data-wf-ignore="true"/>
-                                            </video>
-                                        </div>
-                                        <video className="video-review">
-                                            <source data-src="" type="video/mp4"/>
-                                        </video>
-                                    </div>
                                 </div>
                             </div>
                             <div className="review_item" data-wf--review-item--variant="base" timing="0,10000"
@@ -834,36 +564,6 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                         daily basis! Customer service and designer commitment was top notch! Highly
                                         recommended!
                                     </div>
-                                    <div className="video-review_content">
-                                        <div className="video-placeholder"><img
-                                            alt="John Banner Review placeholder image"
-                                            className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
-                                            <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
-                                                                                   width="Auto"/></div>
-                                        </div>
-                                        <div className="video_preview-code w-background-video w-background-video-atom"
-                                             style={{
-                                                 width: '100%',
-                                                 height: '100%',
-                                                 position: 'absolute',
-                                                 top: '0',
-                                                 left: '0',
-                                                 zIndex: '1'
-                                             }}>
-                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsInline="">
-                                                <source
-                                                    data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
-                                                    data-wf-ignore="true"/>
-                                            </video>
-                                        </div>
-                                        <video className="video-review">
-                                            <source data-src="" type="video/mp4"/>
-                                        </video>
-                                    </div>
                                 </div>
                             </div>
                             <div className="review_item" data-wf--review-item--variant="base" timing="0,10000"
@@ -887,36 +587,6 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                     <div className="text-16 weight-regular lh-150">\u201cAbsolutely phenomenal! Awesomic
                                         has become a big part of everything design at our startup. The team is so
                                         passionate about doing great work and such a delight to collaborate with.\u201d
-                                    </div>
-                                    <div className="video-review_content">
-                                        <div className="video-placeholder"><img
-                                            alt="John Banner Review placeholder image"
-                                            className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
-                                            <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
-                                                                                   width="Auto"/></div>
-                                        </div>
-                                        <div className="video_preview-code w-background-video w-background-video-atom"
-                                             style={{
-                                                 width: '100%',
-                                                 height: '100%',
-                                                 position: 'absolute',
-                                                 top: '0',
-                                                 left: '0',
-                                                 zIndex: '1'
-                                             }}>
-                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsInline="">
-                                                <source
-                                                    data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
-                                                    data-wf-ignore="true"/>
-                                            </video>
-                                        </div>
-                                        <video className="video-review">
-                                            <source data-src="" type="video/mp4"/>
-                                        </video>
                                     </div>
                                 </div>
                             </div>
@@ -944,36 +614,6 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                         good words for the awesome works! Fast matching, outstanding communication,
                                         quality works and cost saving! We highly recommend Awesomic and enjoy peace of
                                         mind!
-                                    </div>
-                                    <div className="video-review_content">
-                                        <div className="video-placeholder"><img
-                                            alt="John Banner Review placeholder image"
-                                            className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
-                                            <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
-                                                                                   width="Auto"/></div>
-                                        </div>
-                                        <div className="video_preview-code w-background-video w-background-video-atom"
-                                             style={{
-                                                 width: '100%',
-                                                 height: '100%',
-                                                 position: 'absolute',
-                                                 top: '0',
-                                                 left: '0',
-                                                 zIndex: '1'
-                                             }}>
-                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsInline="">
-                                                <source
-                                                    data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
-                                                    data-wf-ignore="true"/>
-                                            </video>
-                                        </div>
-                                        <video className="video-review">
-                                            <source data-src="" type="video/mp4"/>
-                                        </video>
                                     </div>
                                 </div>
                             </div>
@@ -1061,36 +701,6 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                         once we started using Awesomic the only thing we were annoyed about is that we
                                         hadn\u2019t tried it earlier.
                                     </div>
-                                    <div className="video-review_content">
-                                        <div className="video-placeholder"><img
-                                            alt="John Banner Review placeholder image"
-                                            className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
-                                            <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
-                                                                                   width="Auto"/></div>
-                                        </div>
-                                        <div className="video_preview-code w-background-video w-background-video-atom"
-                                             style={{
-                                                 width: '100%',
-                                                 height: '100%',
-                                                 position: 'absolute',
-                                                 top: '0',
-                                                 left: '0',
-                                                 zIndex: '1'
-                                             }}>
-                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsInline="">
-                                                <source
-                                                    data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
-                                                    data-wf-ignore="true"/>
-                                            </video>
-                                        </div>
-                                        <video className="video-review">
-                                            <source data-src="" type="video/mp4"/>
-                                        </video>
-                                    </div>
                                 </div>
                             </div>
                             <div className="review_item" data-wf--review-item--variant="base" timing="0,10000"
@@ -1113,36 +723,6 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                 <div className="review_content">
                                     <div className="text-16 weight-regular lh-150">Awesomic has been awesome for logo,
                                         website, and sales material needs!
-                                    </div>
-                                    <div className="video-review_content">
-                                        <div className="video-placeholder"><img
-                                            alt="John Banner Review placeholder image"
-                                            className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
-                                            <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
-                                                                                   width="Auto"/></div>
-                                        </div>
-                                        <div className="video_preview-code w-background-video w-background-video-atom"
-                                             style={{
-                                                 width: '100%',
-                                                 height: '100%',
-                                                 position: 'absolute',
-                                                 top: '0',
-                                                 left: '0',
-                                                 zIndex: '1'
-                                             }}>
-                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsInline="">
-                                                <source
-                                                    data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
-                                                    data-wf-ignore="true"/>
-                                            </video>
-                                        </div>
-                                        <video className="video-review">
-                                            <source data-src="" type="video/mp4"/>
-                                        </video>
                                     </div>
                                 </div>
                             </div>
@@ -1168,36 +748,6 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                     <div className="text-16 weight-regular lh-150">This is one of the best deals on
                                         bookface very happy Awesomic customer here! Their software is beautiful and
                                         elegant, and their designs are A+. The turnaround time is super impressive.
-                                    </div>
-                                    <div className="video-review_content">
-                                        <div className="video-placeholder"><img
-                                            alt="John Banner Review placeholder image"
-                                            className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
-                                            <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
-                                                                                   width="Auto"/></div>
-                                        </div>
-                                        <div className="video_preview-code w-background-video w-background-video-atom"
-                                             style={{
-                                                 width: '100%',
-                                                 height: '100%',
-                                                 position: 'absolute',
-                                                 top: '0',
-                                                 left: '0',
-                                                 zIndex: '1'
-                                             }}>
-                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsInline="">
-                                                <source
-                                                    data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
-                                                    data-wf-ignore="true"/>
-                                            </video>
-                                        </div>
-                                        <video className="video-review">
-                                            <source data-src="" type="video/mp4"/>
-                                        </video>
                                     </div>
                                 </div>
                             </div>
@@ -1285,36 +835,6 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                         FAANG quality! Both customer support and designers have great and quick
                                         communication.
                                     </div>
-                                    <div className="video-review_content">
-                                        <div className="video-placeholder"><img
-                                            alt="John Banner Review placeholder image"
-                                            className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
-                                            <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
-                                                                                   width="Auto"/></div>
-                                        </div>
-                                        <div className="video_preview-code w-background-video w-background-video-atom"
-                                             style={{
-                                                 width: '100%',
-                                                 height: '100%',
-                                                 position: 'absolute',
-                                                 top: '0',
-                                                 left: '0',
-                                                 zIndex: '1'
-                                             }}>
-                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsInline="">
-                                                <source
-                                                    data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
-                                                    data-wf-ignore="true"/>
-                                            </video>
-                                        </div>
-                                        <video className="video-review">
-                                            <source data-src="" type="video/mp4"/>
-                                        </video>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1339,39 +859,9 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                 </div>
                                 <div className="review_content">
                                     <div className="text-16 weight-regular lh-150">Recently engaged Awesomic for a side
-                                        project I\u2019m working on. Saw results literally on day 1. Overall, very
+                                        project I`m working on. Saw results literally on day 1. Overall, very
                                         impressed and will definitely continue to use their services for my graphic
                                         design needs!
-                                    </div>
-                                    <div className="video-review_content">
-                                        <div className="video-placeholder"><img
-                                            alt="John Banner Review placeholder image"
-                                            className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
-                                            <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
-                                                                                   width="Auto"/></div>
-                                        </div>
-                                        <div className="video_preview-code w-background-video w-background-video-atom"
-                                             style={{
-                                                 width: '100%',
-                                                 height: '100%',
-                                                 position: 'absolute',
-                                                 top: '0',
-                                                 left: '0',
-                                                 zIndex: '1'
-                                             }}>
-                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsInline="">
-                                                <source
-                                                    data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
-                                                    data-wf-ignore="true"/>
-                                            </video>
-                                        </div>
-                                        <video className="video-review">
-                                            <source data-src="" type="video/mp4"/>
-                                        </video>
                                     </div>
                                 </div>
                             </div>
@@ -1395,36 +885,6 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                 <div className="review_content">
                                     <div className="text-16 weight-regular lh-150">We did the 1 to 1 plan, exceeded our
                                         expectations. Amazing support. Highly recommend.
-                                    </div>
-                                    <div className="video-review_content">
-                                        <div className="video-placeholder"><img
-                                            alt="John Banner Review placeholder image"
-                                            className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
-                                            <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
-                                                                                   width="Auto"/></div>
-                                        </div>
-                                        <div className="video_preview-code w-background-video w-background-video-atom"
-                                             style={{
-                                                 width: '100%',
-                                                 height: '100%',
-                                                 position: 'absolute',
-                                                 top: '0',
-                                                 left: '0',
-                                                 zIndex: '1'
-                                             }}>
-                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsInline="">
-                                                <source
-                                                    data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
-                                                    data-wf-ignore="true"/>
-                                            </video>
-                                        </div>
-                                        <video className="video-review">
-                                            <source data-src="" type="video/mp4"/>
-                                        </video>
                                     </div>
                                 </div>
                             </div>
@@ -1451,36 +911,6 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                         happy with. Normally they say you can\u2019t get speed, quality, and cost all
                                         together but somehow Awesomic\u2019s pulled it off here.
                                     </div>
-                                    <div className="video-review_content">
-                                        <div className="video-placeholder"><img
-                                            alt="John Banner Review placeholder image"
-                                            className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
-                                            <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
-                                                                                   width="Auto"/></div>
-                                        </div>
-                                        <div className="video_preview-code w-background-video w-background-video-atom"
-                                             style={{
-                                                 width: '100%',
-                                                 height: '100%',
-                                                 position: 'absolute',
-                                                 top: '0',
-                                                 left: '0',
-                                                 zIndex: '1'
-                                             }}>
-                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsInline="">
-                                                <source
-                                                    data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
-                                                    data-wf-ignore="true"/>
-                                            </video>
-                                        </div>
-                                        <video className="video-review">
-                                            <source data-src="" type="video/mp4"/>
-                                        </video>
-                                    </div>
                                 </div>
                             </div>
                             <div className="review_item" data-wf--review-item--variant="base" timing="0,10000"
@@ -1504,36 +934,6 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                     <div className="text-16 weight-regular lh-150">Incredible deal and awesome service.
                                         We've been using them for a while and just doubled our capacity / usage, because
                                         they're reliable, good, and easy to work with, with no need to manage someone.
-                                    </div>
-                                    <div className="video-review_content">
-                                        <div className="video-placeholder"><img
-                                            alt="John Banner Review placeholder image"
-                                            className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
-                                            <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
-                                                                                   width="Auto"/></div>
-                                        </div>
-                                        <div className="video_preview-code w-background-video w-background-video-atom"
-                                             style={{
-                                                 width: '100%',
-                                                 height: '100%',
-                                                 position: 'absolute',
-                                                 top: '0',
-                                                 left: '0',
-                                                 zIndex: '1'
-                                             }}>
-                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsInline="">
-                                                <source
-                                                    data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
-                                                    data-wf-ignore="true"/>
-                                            </video>
-                                        </div>
-                                        <video className="video-review">
-                                            <source data-src="" type="video/mp4"/>
-                                        </video>
                                     </div>
                                 </div>
                             </div>
@@ -1562,36 +962,6 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                         didn\u2019t even know we wanted until we saw how excellent they were. Highly
                                         recommend.
                                     </div>
-                                    <div className="video-review_content">
-                                        <div className="video-placeholder"><img
-                                            alt="John Banner Review placeholder image"
-                                            className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
-                                            <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
-                                                                                   width="Auto"/></div>
-                                        </div>
-                                        <div className="video_preview-code w-background-video w-background-video-atom"
-                                             style={{
-                                                 width: '100%',
-                                                 height: '100%',
-                                                 position: 'absolute',
-                                                 top: '0',
-                                                 left: '0',
-                                                 zIndex: '1'
-                                             }}>
-                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsInline="">
-                                                <source
-                                                    data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
-                                                    data-wf-ignore="true"/>
-                                            </video>
-                                        </div>
-                                        <video className="video-review">
-                                            <source data-src="" type="video/mp4"/>
-                                        </video>
-                                    </div>
                                 </div>
                             </div>
                             <div className="review_item" data-wf--review-item--variant="base" timing="0,10000"
@@ -1615,36 +985,6 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                     <div className="text-16 weight-regular lh-150">Incredible deal and awesome service.
                                         We've been using them for a while and just doubled our capacity / usage, because
                                         they're reliable, good, and easy to work with, with no need to manage someone.
-                                    </div>
-                                    <div className="video-review_content">
-                                        <div className="video-placeholder"><img
-                                            alt="John Banner Review placeholder image"
-                                            className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
-                                            <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
-                                                                                   width="Auto"/></div>
-                                        </div>
-                                        <div className="video_preview-code w-background-video w-background-video-atom"
-                                             style={{
-                                                 width: '100%',
-                                                 height: '100%',
-                                                 position: 'absolute',
-                                                 top: '0',
-                                                 left: '0',
-                                                 zIndex: '1'
-                                             }}>
-                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsInline="">
-                                                <source
-                                                    data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
-                                                    data-wf-ignore="true"/>
-                                            </video>
-                                        </div>
-                                        <video className="video-review">
-                                            <source data-src="" type="video/mp4"/>
-                                        </video>
                                     </div>
                                 </div>
                             </div>
@@ -1672,36 +1012,6 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                         daily turnaround times for small tasks make feedback and revisions very simple,
                                         and they have a talented team with specialists in all areas.
                                     </div>
-                                    <div className="video-review_content">
-                                        <div className="video-placeholder"><img
-                                            alt="John Banner Review placeholder image"
-                                            className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
-                                            <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
-                                                                                   width="Auto"/></div>
-                                        </div>
-                                        <div className="video_preview-code w-background-video w-background-video-atom"
-                                             style={{
-                                                 width: '100%',
-                                                 height: '100%',
-                                                 position: 'absolute',
-                                                 top: '0',
-                                                 left: '0',
-                                                 zIndex: '1'
-                                             }}>
-                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsInline="">
-                                                <source
-                                                    data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
-                                                    data-wf-ignore="true"/>
-                                            </video>
-                                        </div>
-                                        <video className="video-review">
-                                            <source data-src="" type="video/mp4"/>
-                                        </video>
-                                    </div>
                                 </div>
                             </div>
                             <div className="review_item" data-wf--review-item--variant="base" timing="0,10000"
@@ -1727,36 +1037,6 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                         away but didn\u2019t want to hire a FTE yet. Amazing tool and really great team
                                         of designers!
                                     </div>
-                                    <div className="video-review_content">
-                                        <div className="video-placeholder"><img
-                                            alt="John Banner Review placeholder image"
-                                            className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
-                                            <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
-                                                                                   width="Auto"/></div>
-                                        </div>
-                                        <div className="video_preview-code w-background-video w-background-video-atom"
-                                             style={{
-                                                 width: '100%',
-                                                 height: '100%',
-                                                 position: 'absolute',
-                                                 top: '0',
-                                                 left: '0',
-                                                 zIndex: '1'
-                                             }}>
-                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsInline="">
-                                                <source
-                                                    data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
-                                                    data-wf-ignore="true"/>
-                                            </video>
-                                        </div>
-                                        <video className="video-review">
-                                            <source data-src="" type="video/mp4"/>
-                                        </video>
-                                    </div>
                                 </div>
                             </div>
                             <div className="review_item" data-wf--review-item--variant="base" timing="0,10000"
@@ -1779,36 +1059,6 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                 <div className="review_content">
                                     <div className="text-16 weight-regular lh-150">Had them re-design my whole dang
                                         website. They are fantastic and I\u2019ve been recommending them to everyone.
-                                    </div>
-                                    <div className="video-review_content">
-                                        <div className="video-placeholder"><img
-                                            alt="John Banner Review placeholder image"
-                                            className="max-width-full placeholder-image" loading="lazy" sizes="100vw"
-                                            src={asset("/images-static/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif")}
-                                            srcSet="__ASSET_BASE__/images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 500w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 800w, images/johnBanner-placeholder-image_1johnBanner-placeholder-image.avif 880w"/>
-                                            <div className="review_play-icon"><img alt="" height="26" loading="lazy"
-                                                                                   src={asset("/images-static/polygon-play-talent.svg")}
-                                                                                   width="Auto"/></div>
-                                        </div>
-                                        <div className="video_preview-code w-background-video w-background-video-atom"
-                                             style={{
-                                                 width: '100%',
-                                                 height: '100%',
-                                                 position: 'absolute',
-                                                 top: '0',
-                                                 left: '0',
-                                                 zIndex: '1'
-                                             }}>
-                                            <video autoPlay="" data-object-fit="cover" data-wf-ignore="true" loop=""
-                                                   playsInline="">
-                                                <source
-                                                    data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/covers%20for%20video%20feedbacks/Vera%20health%20cover.mp4"
-                                                    data-wf-ignore="true"/>
-                                            </video>
-                                        </div>
-                                        <video className="video-review">
-                                            <source data-src="" type="video/mp4"/>
-                                        </video>
                                     </div>
                                 </div>
                             </div>
