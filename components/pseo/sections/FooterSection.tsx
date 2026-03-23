@@ -307,25 +307,20 @@ export function FooterSection(_props: { data?: PseoPageData }) {
                             </div>
                             <div className="w-layout-vflex gap-16">
                                 <div className="text-15 weight-semibold lh-145 text-gray-900 opacity-80">Resources</div>
-                                <div className="w-layout-vflex gap-12">
-                                    <a className="text-15 weight-regular lh-145"
-                                       href="https://awesomic.com/hire-product-designer">Hire
-                                        product designers</a>
-                                    <a className="text-15 weight-regular lh-145"
-                                       href="https://awesomic.com/hire-ui-ux-designer">Hire
-                                        ui/ux designer</a>
-                                    <a className="text-15 weight-regular lh-145"
-                                       href="https://awesomic.com/hire-marketing-designer">Hire
-                                        marketing designer</a>
-                                    <a className="text-15 weight-regular lh-145"
-                                       href="https://awesomic.com/hire-creative-designer">Hire
-                                        creative designer</a>
-                                    <a className="text-15 weight-regular lh-145"
-                                       href="https://awesomic.com/hire-freelance-designer">Hire
-                                        freelance designer</a>
-                                    <a className="text-15 weight-regular lh-145"
-                                       href="https://awesomic.com/hire-logo-designer">Hire
-                                        logo designer</a>
+                                <div className="w-layout-vflex gap-16">
+                                    <div className="text-15 weight-semibold lh-145 text-gray-900 opacity-80">Resources
+                                    </div>
+                                    <div className="w-layout-vflex gap-12"><a
+                                        href="https://www.awesomic.com/hire/hire-a-product-designer"
+                                        className="text-15 weight-regular lh-145">Hire product designers</a><a
+                                        href="https://www.awesomic.com/hire/hire-a-UI-designer"
+                                        className="text-15 weight-regular lh-145">Hire UI designer</a><a
+                                        href="https://www.awesomic.com/hire/hire-a-creative-strategist-designer"
+                                        className="text-15 weight-regular lh-145">Hire creative designer</a><a
+                                        href="https://www.awesomic.com/hire/hire-a-freelance-designer"
+                                        className="text-15 weight-regular lh-145">Hire freelance designer</a><a
+                                        href="https://www.awesomic.com/hire/hire-a-logo-designer"
+                                        className="text-15 weight-regular lh-145">Hire logo designer</a></div>
                                 </div>
                             </div>
                             <div className="w-layout-vflex gap-16">
