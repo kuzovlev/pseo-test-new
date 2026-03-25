@@ -25,7 +25,7 @@ export function PseoTemplate({ data }: { data: PseoPageData }) {
           <CtaSection data={data} />
           <SectionRtb data={data} />
           <FaqSection data={data} />
-          {/*<SectionRelatedRoles data={data} />*/}
+          <SectionRelatedRoles data={data} />
           <SectionPost data={data} />
           <FooterSection data={data} />
         </div>
