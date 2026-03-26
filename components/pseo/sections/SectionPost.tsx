@@ -8,7 +8,7 @@ const asset = (src: string) => `${ASSET_BASE}${src.startsWith("/") ? src : `/${s
 
 export function SectionPost(_props: { data?: PseoPageData }) {
     return (
-        <section className="background-gray-100 section-radius">
+        <section className="section-radius section-offset background-white">
             <div className="spacer-80 tablet_spacer-64"></div>
 
             <div className="padding-global">

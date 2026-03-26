@@ -1,6 +1,7 @@
 import { createClient } from "@supabase/supabase-js";
 import type { PseoPageData } from "@/lib/pseo-types";
 import { RelatedRolesSwiper } from "./RelatedRolesSwiper";
+import * as https from "node:https";
 
 const ASSET_BASE = process.env.NEXT_PUBLIC_ASSET_BASE ?? "";
 const asset = (src: string) => `${ASSET_BASE}${src.startsWith("/") ? src : `/${src}`}`;
@@ -8,7 +9,7 @@ const asset = (src: string) => `${ASSET_BASE}${src.startsWith("/") ? src : `/${s
 type RelatedRoleRow = {
     slug: string;
     Name_h1: string | null;
-    hero_description: string | null;
+    card_description: string | null;
 };
 
 export async function SectionRelatedRoles(_props: {
@@ -18,7 +19,10 @@ export async function SectionRelatedRoles(_props: {
         ? _props.data.related_pages.filter(Boolean)
         : [];
 
+    console.log("SectionRelatedRoles relatedSlugs:", relatedSlugs);
+
     if (!relatedSlugs.length) {
+        console.log("SectionRelatedRoles: no related slugs");
         return null;
     }
 
@@ -26,6 +30,7 @@ export async function SectionRelatedRoles(_props: {
     const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
     if (!supabaseUrl || !supabaseAnonKey) {
+        console.log("SectionRelatedRoles: missing supabase env");
         return null;
     }
 
@@ -33,8 +38,11 @@ export async function SectionRelatedRoles(_props: {
 
     const { data: relatedRolesRaw, error } = await supabase
         .from("pseo_data")
-        .select("slug, Name_h1, hero_description")
+        .select("slug, Name_h1, card_description")
         .in("slug", relatedSlugs);
+
+    console.log("SectionRelatedRoles relatedRolesRaw:", relatedRolesRaw);
+    console.log("SectionRelatedRoles error:", error);
 
     if (error || !relatedRolesRaw?.length) {
         console.error("Error fetching related roles:", error);
@@ -49,7 +57,10 @@ export async function SectionRelatedRoles(_props: {
         .map((slug) => relatedRolesMap.get(slug))
         .filter((item): item is RelatedRoleRow => Boolean(item));
 
+    console.log("SectionRelatedRoles relatedRoles:", relatedRoles);
+
     if (!relatedRoles.length) {
+        console.log("SectionRelatedRoles: no ordered related roles");
         return null;
     }
 
@@ -70,11 +81,10 @@ export async function SectionRelatedRoles(_props: {
                     </div>
                     <div className="spacer-40"></div>
 
-                    {/* 🔥 IMPORTANT: add "swiper" class */}
                     <div className="webflow-cards swiper">
                         <div className="swiper-wrapper">
                             {relatedRoles.map((role) => (
-                                <div key={role.slug} className="role-card swiper-slide">
+                                <a href={`https://www.awesomic.com/hire/${role.slug}`} key={role.slug} className="role-card swiper-slide">
                                     <div className="why-webflow-icon_outer smaller">
                                         <div className="whe-webflow-icon_inner smaller">
                                             <img
@@ -92,15 +102,14 @@ export async function SectionRelatedRoles(_props: {
                                         </div>
                                         <div className="spacer-8"></div>
                                         <div className="text-14 weight-book lh-168">
-                                            {role.hero_description}
+                                            {role.card_description}
                                         </div>
                                     </div>
-                                </div>
+                                </a>
                             ))}
                         </div>
                     </div>
 
-                    {/* 👇 initialize swiper */}
                     <RelatedRolesSwiper />
                 </div>
             </div>
