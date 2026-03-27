@@ -1,6 +1,8 @@
 import { createClient } from "@supabase/supabase-js";
 import type { PseoPageData } from "@/lib/pseo-types";
 import { RelatedRolesSwiper } from "./RelatedRolesSwiper";
+import { RoleIcon } from "@/components/RoleIcon";
+
 import * as https from "node:https";
 
 const ASSET_BASE = process.env.NEXT_PUBLIC_ASSET_BASE ?? "";
@@ -84,16 +86,17 @@ export async function SectionRelatedRoles(_props: {
                     <div className="webflow-cards swiper">
                         <div className="swiper-wrapper">
                             {relatedRoles.map((role) => (
-                                <a href={`https://www.awesomic.com/hire/${role.slug}`} key={role.slug} className="role-card swiper-slide">
+                                <a href={`/hire/${role.slug}`} key={role.slug} className="role-card swiper-slide">
                                     <div className="why-webflow-icon_outer smaller">
                                         <div className="whe-webflow-icon_inner smaller">
-                                            <img
-                                                alt=""
-                                                height="20"
-                                                loading="lazy"
-                                                src={asset("/images-static/layers-icon-black-20.svg")}
-                                                width="20"
-                                            />
+                                            {/*<img*/}
+                                            {/*    alt=""*/}
+                                            {/*    height="20"*/}
+                                            {/*    loading="lazy"*/}
+                                            {/*    src={asset("/images-static/layers-icon-black-20.svg")}*/}
+                                            {/*    width="20"*/}
+                                            {/*/>*/}
+                                            <RoleIcon roleName={role.Name_h1} size={20} />
                                         </div>
                                     </div>
                                     <div>
