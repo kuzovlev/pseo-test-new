@@ -1,9 +1,30 @@
+'use client';
+
 import type {PseoPageData} from "@/lib/pseo-types";
+import {useEffect} from "react";
 
 const ASSET_BASE = process.env.NEXT_PUBLIC_ASSET_BASE ?? "";
 const asset = (src: string) => `${ASSET_BASE}${src.startsWith("/") ? src : `/${src}`}`;
 
 export function SectionPricing(_props: { data?: PseoPageData }) {
+
+    useEffect(() => {
+        const oneToOneTabsButtons = document.querySelectorAll<HTMLElement>('.one-to-one-tab');
+        oneToOneTabsButtons.forEach((item) => {
+            item.addEventListener('click', function () {
+                const parentCard = item.closest('.pricing_item');
+                if (!parentCard) return;
+                parentCard.querySelector('.one-to-one-tab.is-active')?.classList.remove('is-active');
+                item.classList.add('is-active');
+                const attributes = Object.fromEntries(Array.from(item.attributes).map((attr) => [attr.name, attr.value]));
+                const longEl = parentCard.querySelector<HTMLElement>('[long-changable]');
+                const shortEl = parentCard.querySelector<HTMLElement>('[short-changable]');
+                if (longEl) longEl.innerText = attributes['long-text-sub'];
+                if (shortEl) shortEl.innerText = attributes['short-text-sub'];
+            });
+        });
+    }, []);
+
     return (
         <section className="background-gray-100 section-radius">
             <div className="spacer-34 mobile_spacer-24"></div>
@@ -33,7 +54,7 @@ export function SectionPricing(_props: { data?: PseoPageData }) {
                                                 <div>
                                                     <div className="pricing-header">
                                                         <div className="pricing-name">
-                                                            <img width="Auto" height="32" alt="" loading="lazy"
+                                                            <img width="Auto" height="32" width='32' alt="" loading="lazy"
                                                                  src={asset("/images-static/rock-super_1rock-super.avif")}/>
                                                             <div className="text-20 weight-semibold lh-156">AI designer</div>
                                                         </div>
@@ -91,7 +112,7 @@ export function SectionPricing(_props: { data?: PseoPageData }) {
                                                 <div>
                                                     <div className="pricing-header">
                                                         <div className="pricing-name">
-                                                            <img width="Auto" height="32" alt="" loading="lazy"
+                                                            <img width="Auto" height="32" width="32" alt="" loading="lazy"
                                                                  src={asset("/images-static/rock-pro_1rock-pro.avif")}/>
                                                             <div className="text-20 weight-semibold lh-156">All-in-one</div>
                                                         </div>
@@ -149,7 +170,7 @@ export function SectionPricing(_props: { data?: PseoPageData }) {
                                                 <div>
                                                     <div className="pricing-header one-to-one">
                                                         <div className="pricing-name">
-                                                            <img width="Auto" height="32" alt="" loading="lazy"
+                                                            <img width="Auto" height="32" width='32' alt="" loading="lazy"
                                                                  src={asset("/images-static/rock-1-1.avif")}/>
                                                             <div className="text-20 weight-semibold lh-156">1 to 1</div>
                                                         </div>
@@ -248,7 +269,7 @@ export function SectionPricing(_props: { data?: PseoPageData }) {
                                                 <div>
                                                     <div className="pricing-header">
                                                         <div className="pricing-name">
-                                                            <img width="Auto" height="32" alt="" loading="lazy"
+                                                            <img width="Auto" height="32" width='32' alt="" loading="lazy"
                                                                  src={asset("/images-static/rock-super_1rock-super.avif")}/>
                                                             <div className="text-20 weight-semibold lh-156">AI designer</div>
                                                         </div>
@@ -306,7 +327,7 @@ export function SectionPricing(_props: { data?: PseoPageData }) {
                                                 <div>
                                                     <div className="pricing-header">
                                                         <div className="pricing-name">
-                                                            <img width="Auto" height="32" alt="" loading="lazy"
+                                                            <img width="Auto" height="32" width="32" alt="" loading="lazy"
                                                                  src={asset("/images-static/rock-pro_1rock-pro.avif")}/>
                                                             <div className="text-20 weight-semibold lh-156">All-in-one</div>
                                                         </div>
@@ -368,7 +389,7 @@ export function SectionPricing(_props: { data?: PseoPageData }) {
                                                 <div>
                                                     <div className="pricing-header one-to-one">
                                                         <div className="pricing-name">
-                                                            <img width="Auto" height="32" alt="" loading="lazy"
+                                                            <img width="Auto" height="32" width='32' alt="" loading="lazy"
                                                                  src={asset("/images-static/rock-1-1.avif")}/>
                                                             <div className="text-20 weight-semibold lh-156">1 to 1</div>
                                                         </div>

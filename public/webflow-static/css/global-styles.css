@@ -325,3 +325,12 @@
 .legal_richtext p:has(+ ol) {
     margin-bottom: 8px;
 }
+
+.one-to-one-tab .one-to-one-tab-icon{
+    width: 0px;
+    opacity: 0;
+}
+.one-to-one-tab.is-active .one-to-one-tab-icon{
+    width: 16px;
+    opacity: 1;
+}
