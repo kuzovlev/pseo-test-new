@@ -67,7 +67,7 @@ export function SectionPricing(_props: { data?: PseoPageData }) {
                                                 </div>
                                                 <div>
                                                     <div className="pricing_price-container">
-                                                        <div original-value="499" className="heading-style-h4 mod-numbers text-white">$499</div>
+                                                        <div original-value="200" className="heading-style-h4 mod-numbers text-white">$200</div>
                                                         <div className="pricing_price-info">
                                                             <div className="text-13 weight-regular lh-135 text-gray-400 mod-pricing"><br/>/ month</div>
                                                         </div>
@@ -282,7 +282,7 @@ export function SectionPricing(_props: { data?: PseoPageData }) {
                                                 </div>
                                                 <div>
                                                     <div className="pricing_price-container">
-                                                        <div original-value="499" className="heading-style-h4 mod-numbers text-white">$499</div>
+                                                        <div original-value="200" className="heading-style-h4 mod-numbers text-white">$200</div>
                                                         <div className="pricing_price-info">
                                                             <div className="text-13 weight-regular lh-135 text-gray-400 mod-pricing"><br/>/ month</div>
                                                         </div>
