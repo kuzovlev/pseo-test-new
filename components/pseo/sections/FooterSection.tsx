@@ -313,7 +313,7 @@ export function FooterSection(_props: { data?: PseoPageData }) {
                                     <div className="w-layout-vflex gap-12"><a
                                         href="https://www.awesomic.com/hire/hire-a-product-designer"
                                         className="text-15 weight-regular lh-145">Hire product designers</a><a
-                                        href="https://www.awesomic.com/hire/hire-a-UI-designer"
+                                        href="https://www.awesomic.com/hire/hire-a-ui-designer"
                                         className="text-15 weight-regular lh-145">Hire UI designer</a><a
                                         href="https://www.awesomic.com/hire/hire-a-creative-strategist-designer"
                                         className="text-15 weight-regular lh-145">Hire creative designer</a><a
