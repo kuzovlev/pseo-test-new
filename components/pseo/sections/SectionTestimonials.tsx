@@ -624,7 +624,7 @@ export function SectionTestimonials(_props: { data?: PseoPageData }) {
                                     <div className="review_author-photo-wrapper"><img alt="Maxime Allouch Photo"
                                                                                       className="review_author-photo"
                                                                                       loading="lazy"
-                                                                                      src={asset("/images-static/Maxime-Allouch_1Maxime Allouch.png")}/>
+                                                                                      src={asset("/images-static/Maxime-Allouch_1Maxime-Allouch.png")}/>
                                     </div>
                                     <div className="review_author-info">
                                         <div className="text-20 weight-bold lh-148 text-gray-900">Maxime Allouch</div>

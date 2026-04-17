@@ -2,7 +2,10 @@ import type { Metadata } from "next";
 import { getLandingPageBySlugCached } from "@/lib/supabase";
 import { PseoTemplate } from "@/components/pseo/Template";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 3600;
+
+const OG_IMAGE =
+    "https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/OpenGraph%20image.jpg";
 
 function getSlug(params: { slug?: string[] }) {
     if (!params?.slug || !Array.isArray(params.slug)) return "";
@@ -21,16 +24,41 @@ export async function generateMetadata({
 
     const page = await getLandingPageBySlugCached(slugPath);
 
+    const canonical =
+        "https://www.awesomic.com/hire" + (slugPath ? "/" + slugPath : "");
+    const title = page?.seo_title ?? undefined;
+    const description = page?.seo_description ?? undefined;
+
     return {
-        title: page?.seo_title ?? undefined,
-        description: page?.seo_description ?? undefined,
+        title,
+        description,
 
         alternates: {
-            canonical: 'https://www.awesomic.com/hire' + (slugPath ? '/' + slugPath : ''),
+            canonical,
         },
 
         icons: {
             icon: "https://cdn.prod.website-files.com/6818a97ae905afeb08eff668/685c20ff61458aaeb7fac08c_favicon-upd.png",
+        },
+
+        openGraph: {
+            type: "website",
+            url: canonical,
+            title,
+            description,
+            siteName: "Awesomic",
+            images: [
+                {
+                    url: OG_IMAGE,
+                },
+            ],
+        },
+
+        twitter: {
+            card: "summary_large_image",
+            title,
+            description,
+            images: [OG_IMAGE],
         },
     };
 }
