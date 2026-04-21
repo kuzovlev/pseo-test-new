@@ -308,7 +308,6 @@ export function FooterSection(_props: { data?: PseoPageData }) {
                             <div className="w-layout-vflex gap-16">
                                 <div className="text-15 weight-semibold lh-145 text-gray-900 opacity-80">Resources</div>
                                 <div className="w-layout-vflex gap-16">
-                                    <div className="text-15 weight-semibold lh-145 text-gray-900 opacity-80">Resources
                                     </div>
                                     <div className="w-layout-vflex gap-12"><a
                                         href="https://www.awesomic.com/hire/hire-a-product-designer"

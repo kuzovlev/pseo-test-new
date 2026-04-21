@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import { permanentRedirect } from "next/navigation";
 import { getLandingPageBySlugCached } from "@/lib/supabase";
+import { getRedirectDestination, NOT_FOUND_URL } from "@/lib/redirects";
 import { PseoTemplate } from "@/components/pseo/Template";
 
 export const revalidate = 3600;
@@ -72,23 +74,14 @@ export default async function HirePage({
     const slugPath = getSlug(resolvedParams);
 
     if (!slugPath) {
-        return (
-            <div style={{ padding: 40 }}>
-                <h1>NO SLUG PARAMS</h1>
-                <pre>{JSON.stringify({ resolvedParams }, null, 2)}</pre>
-            </div>
-        );
+        permanentRedirect(NOT_FOUND_URL);
     }
 
     const page = await getLandingPageBySlugCached(slugPath);
 
     if (!page) {
-        return (
-            <div style={{ padding: 40 }}>
-                <h1>PAGE NOT FOUND</h1>
-                <pre>{JSON.stringify({ slugPath }, null, 2)}</pre>
-            </div>
-        );
+        const destination = getRedirectDestination(slugPath);
+        permanentRedirect(destination ?? NOT_FOUND_URL);
     }
 
     return (
