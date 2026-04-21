@@ -183,7 +183,7 @@ export default function HeroSection({data}: HeroSectionProps) {
                     {/* ── Talent iframe ── */}
                     <div className="position-relative">
                         <iframe
-                            src="https://app.awesomic.com/hire-talent/talents"
+                            src="https://app.awesomic.com/hire-talent/talents?iframe=1"
                             width="100%"
                             height={700}
                             style={{border: 0}}
