@@ -6,6 +6,26 @@ import rehypeSanitize from "rehype-sanitize";
 const ASSET_BASE = process.env.NEXT_PUBLIC_ASSET_BASE ?? "";
 const asset = (src: string) => `${ASSET_BASE}${src.startsWith("/") ? src : `/${src}`}`;
 
+/**
+ * Some rows in the CMS were imported without line breaks, so the whole article
+ * is a single run-on line. Markdown only treats `#`, `##`, … as headings when
+ * they start a line, so those headings render as literal text (e.g. "## Step 1")
+ * while inline markup like **bold** and [links](…) still work. Content that
+ * already contains newlines is well-formed and left untouched.
+ */
+function normalizeMarkdown(md?: string): string {
+    if (!md) return "";
+    if (md.includes("\n")) return md;
+
+    return md
+        // Put bold headings ("## **Title**") on their own line.
+        .replace(/\s*(#{1,6}\s+\*\*[^*\n]+?\*\*)\s*/g, "\n\n$1\n\n")
+        // Break before any remaining heading markers.
+        .replace(/\s*(#{1,6}\s)/g, "\n\n$1")
+        .replace(/\n{3,}/g, "\n\n")
+        .trim();
+}
+
 export function SectionPost(_props: { data?: PseoPageData }) {
     return (
         <section className="section-radius section-offset background-white">
@@ -83,7 +103,7 @@ export function SectionPost(_props: { data?: PseoPageData }) {
 
                         <div className="prose max-w-none legal_richtext w-richtext">
                             <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeSanitize]}>
-                                {_props.data?.content_html ?? ""}
+                                {normalizeMarkdown(_props.data?.content_html)}
                             </ReactMarkdown>
                         </div>
                     </div>
