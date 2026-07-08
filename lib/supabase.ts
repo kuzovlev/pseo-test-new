@@ -39,6 +39,12 @@ export type LandingPageSitemapRecord = {
 
 const TABLE = process.env.PSEO_SUPABASE_TABLE ?? "pseo_data";
 
+// How long (in seconds) cached Supabase reads may be served before being
+// refreshed in the background. Without this, unstable_cache holds values
+// indefinitely and only busts on tag revalidation, so Supabase edits never
+// appear until /api/revalidate is called or the app is redeployed.
+const CACHE_TTL_SECONDS = 60;
+
 // Cache tags (used for on-demand revalidation via revalidateTag)
 export const PSEO_TAGS = {
   slugs: "pseo:slugs",
@@ -81,6 +87,7 @@ export const getLandingPageBySlugCached = (slug: string) =>
     ["pseo", "page", TABLE, slug],
     {
       tags: [PSEO_TAGS.page, PSEO_TAGS.pageBySlug(slug)],
+      revalidate: CACHE_TTL_SECONDS,
     }
   )();
 
@@ -102,6 +109,7 @@ export async function listLandingPageSlugs(): Promise<string[]> {
 export const listLandingPageSlugsCached = () =>
   unstable_cache(async () => listLandingPageSlugs(), ["pseo", "slugs", TABLE], {
     tags: [PSEO_TAGS.slugs, PSEO_TAGS.sitemap],
+    revalidate: CACHE_TTL_SECONDS,
   })();
 
 /** Optional: use for sitemap / filtering / batch jobs. */
