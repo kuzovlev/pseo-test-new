@@ -102,7 +102,7 @@ export function FaqSection(_props: { data?: PseoPageData }) {
                                     <div key={idx} className="faq_item">
                                         <div className="faq_item-inner">
                                             <div className="faq_question">
-                                                <div className="text-20 weight-semibold lh-150 mobile_text-16">{q}</div>
+                                                <h3 className="text-20 weight-semibold lh-150 mobile_text-16">{q}</h3>
                                                 <img alt="" className="faq_chevron" loading="lazy" src={asset("/images-static/chevron-down-gray.svg")} />
                                             </div>
                                             <div className="faq_answer">
