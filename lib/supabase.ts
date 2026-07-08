@@ -43,7 +43,7 @@ const TABLE = process.env.PSEO_SUPABASE_TABLE ?? "pseo_data";
 // refreshed in the background. Without this, unstable_cache holds values
 // indefinitely and only busts on tag revalidation, so Supabase edits never
 // appear until /api/revalidate is called or the app is redeployed.
-const CACHE_TTL_SECONDS = 60;
+const CACHE_TTL_SECONDS = 3600;
 
 // Cache tags (used for on-demand revalidation via revalidateTag)
 export const PSEO_TAGS = {
