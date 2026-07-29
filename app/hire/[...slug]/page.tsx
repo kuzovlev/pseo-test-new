@@ -1,13 +1,25 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { permanentRedirect } from "next/navigation";
 import { getLandingPageBySlugCached } from "@/lib/supabase";
 import { getRedirectDestination, NOT_FOUND_URL } from "@/lib/redirects";
 import { PseoTemplate } from "@/components/pseo/Template";
+import { ASSET_BASE } from "@/lib/pseo-assets";
 
 export const revalidate = 3600;
 
 const OG_IMAGE =
     "https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/OpenGraph%20image.jpg";
+
+const FAVICON =
+    "https://cdn.prod.website-files.com/6818a97ae905afeb08eff668/685c20ff61458aaeb7fac08c_favicon-upd.png";
+const APPLE_TOUCH_ICON = ASSET_BASE
+    ? `${ASSET_BASE}/images/webclip.png`
+    : "/images-static/webclip.png";
+
+export const viewport: Viewport = {
+    width: "device-width",
+    initialScale: 1,
+};
 
 function getSlug(params: { slug?: string[] }) {
     if (!params?.slug || !Array.isArray(params.slug)) return "";
@@ -39,8 +51,22 @@ export async function generateMetadata({
             canonical,
         },
 
+        formatDetection: {
+            telephone: false,
+        },
+
+        verification: {
+            google: "z790Eh7WsNc3VPeFLSLyBq1OjJBH2QXtrdaDzfvqxfM",
+            other: {
+                "facebook-domain-verification":
+                    "kbqd4j0ykeixr7lahwx5mwtyh4bolk",
+            },
+        },
+
         icons: {
-            icon: "https://cdn.prod.website-files.com/6818a97ae905afeb08eff668/685c20ff61458aaeb7fac08c_favicon-upd.png",
+            icon: FAVICON,
+            shortcut: FAVICON,
+            apple: APPLE_TOUCH_ICON,
         },
 
         openGraph: {

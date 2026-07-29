@@ -8,17 +8,63 @@ export default function HireLayout({
     children: ReactNode;
 }) {
     return (
-        <html lang="en">
-        <head>
-            <link rel="stylesheet" href="/webflow-static/css/normalize.css" />
-            <link rel="stylesheet" href="/webflow-static/css/webflow.css" />
-            <link rel="stylesheet" href="/webflow-static/css/awesomic-2025-new.webflow.css" />
+        <>
+            <link rel="stylesheet" href="/webflow-static/css/normalize.css" precedence="default" />
+            <link rel="stylesheet" href="/webflow-static/css/webflow.css" precedence="default" />
+            <link rel="stylesheet" href="/webflow-static/css/awesomic-2025-new.webflow.css" precedence="default" />
             <link
                 rel="stylesheet"
                 href="https://assets.calendly.com/assets/external/widget.css"
+                precedence="default"
             />
-        </head>
-        <body>
+
+        {/* Organization structured data (JSON-LD) */}
+        <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "Organization",
+                    name: "Awesomic",
+                    url: "https://www.awesomic.com",
+                    logo: "",
+                    foundingDate: "2020",
+                    founder: [
+                        {
+                            "@type": "Person",
+                            name: "Roman Sevast",
+                            jobTitle: "Co-Founder & CEO",
+                            sameAs: [
+                                "https://www.linkedin.com/in/roman-sevast/",
+                                "https://x.com/roman_sevast",
+                            ],
+                        },
+                        {
+                            "@type": "Person",
+                            name: "Stacy Pavlyshyna",
+                            jobTitle: "Co-Founder & COO",
+                            sameAs: [
+                                "https://www.linkedin.com/in/stacy-pavlyshyna/",
+                            ],
+                        },
+                    ],
+                    address: {
+                        "@type": "PostalAddress",
+                        addressLocality: "San Francisco",
+                        addressRegion: "CA",
+                        addressCountry: "USA",
+                    },
+                    sameAs: [
+                        "https://www.linkedin.com/company/awesomic",
+                        "https://twitter.com/awesomic",
+                        "https://www.instagram.com/awesomic",
+                    ],
+                    description:
+                        "Awesomic matches companies, from startups to enterprise, with top vetted design, marketing, product, and development talent in as few as 24 hours via a subscription-based app.",
+                }),
+            }}
+        />
+
         {children}
 
         {/* GTM dataLayer init (must run before GTM container) */}
@@ -75,7 +121,6 @@ posthog.init('phc_uiXvHutVnws9tSigRGBBvQEfbp918L3VROCDfzMZ0c5',{api_host:'https:
             src="/webflow-static/js/webflow.js"
             strategy="afterInteractive"
         />
-        </body>
-        </html>
+        </>
     );
 }
