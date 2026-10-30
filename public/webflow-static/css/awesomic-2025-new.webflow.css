@@ -25072,7 +25072,7 @@ figure {
 .hd3z-scene:has(.hd3z-grass-video) { background: rgb(255, 255, 255); }
 .hd3z-grass-video { position: absolute; bottom: 0px; left: 50%; width: max(100%, 2360px); height: auto; aspect-ratio: 1920 / 288; object-fit: cover; transform: translateX(-50%); -webkit-mask: linear-gradient(transparent, rgb(0, 0, 0) 55%); mask: linear-gradient(transparent, rgb(0, 0, 0) 55%); }
 .hd3z-grass-video--footer-grass-v6b-loop { aspect-ratio: 1920 / 384; -webkit-mask: linear-gradient(transparent, rgba(0, 0, 0, 0.4) 22%, rgb(0, 0, 0) 45%); mask: linear-gradient(transparent, rgba(0, 0, 0, 0.4) 22%, rgb(0, 0, 0) 45%); }
-.hd3z-download { position: relative; z-index: 2; display: grid; grid-template-columns: minmax(0px, 4.4fr) minmax(0px, 7.6fr); gap: 48px; align-items: center; margin: 40px -24px 0px; padding: 20px 24px; border-radius: 24px; background: rgba(255, 255, 255, 0.66); border: 1px solid rgba(255, 255, 255, 0.9); backdrop-filter: blur(14px); }
+.hd3z-download { position: relative; z-index: 2; display: grid; grid-template-columns: minmax(0px, 4.4fr) minmax(0px, 7.6fr); gap: 48px; align-items: center; margin: 40px -24px 0px; padding: 20px 24px; border-radius: 24px; background: transparent; border: 1px solid transparent; }
 .hd3z-download-title { display: block; font-size: 20px; font-weight: 500; line-height: 130%; color: rgb(9, 9, 11); }
 .hd3z-download-copy p { margin: 4px 0px 0px; font-size: 14px; line-height: 150%; color: rgb(63, 63, 70); }
 .hd3z-download-grid { display: grid; grid-template-columns: repeat(4, minmax(0px, 1fr)); gap: 8px; }
