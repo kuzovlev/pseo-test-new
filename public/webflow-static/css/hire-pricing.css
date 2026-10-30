@@ -1,0 +1,2801 @@
+/* Pricing block on every /hire/* page (components/pseo/pricing/PricingBlock.tsx).
+   Ported from awesomic-migrate as used on awesomic.com/pricing (30 Oct 2026):
+   src/components/hero-desktop-3/pricing-desktop-3.css, pricing-desktop-3-v2.css,
+   the v6 grass behind the summary card (scenes-v6.css) and the /pricing page
+   tweaks (src/app/pricing/pricing.css), scoped here to #hire-pricing.
+   Image URLs point at /images-static; nothing else changed. */
+
+/* ===== pricing-desktop-3.css ===== */
+/* "Pricing · Agents, talent, or both." (PricingDesktop3.tsx). Heading row on
+   the 80px gutters, then one grey stage: two step panels on the left (agent
+   plan tiles, talent rows) and a sticky dark summary card on the right. */
+
+.hd3k-section {
+  padding: 0 80px 120px;
+  background: #fff;
+  font-family: Cosmica, Arial, sans-serif;
+  color: #09090b;
+}
+
+.hd3k-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+.hd3k-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  height: 30px;
+  padding: 0 13px;
+  border-radius: 8px;
+  background: #eaeaec;
+  font-size: 14px;
+  color: #3f3f46;
+  letter-spacing: -0.02em;
+}
+
+.hd3k-heading h2 {
+  margin: 20px 0 0;
+  font-size: 56px;
+  font-weight: 500;
+  line-height: 64px;
+  letter-spacing: -0.015em;
+  white-space: nowrap;
+  color: #09090b;
+}
+
+.hd3k-intro {
+  flex: 0 1 440px;
+  padding-top: 50px;
+}
+
+.hd3k-intro p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: #3f3f46;
+}
+
+/* — Billing switch — */
+.hd3k-switch {
+  display: inline-flex;
+  flex: none;
+  margin-left: auto;
+  gap: 2px;
+  padding: 4px;
+  border-radius: 14px;
+  background: #f4f4f5;
+}
+
+.hd3k-switch button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 36px;
+  padding: 0 14px;
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  color: #71717a;
+  cursor: pointer;
+  transition: background 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hd3k-switch button.is-on {
+  background: #fff;
+  color: #09090b;
+  box-shadow: 0 0 0 1px #09090b0d, 0 2px 6px -2px #09090b1f;
+}
+
+.hd3k-switch button:focus-visible,
+.hd3k-tile:focus-visible,
+.hd3k-row:focus-visible,
+.hd3k-none:focus-visible,
+.hd3k-cta:focus-visible {
+  outline: 2px solid #09090b;
+  outline-offset: 2px;
+}
+
+.hd3k-save {
+  padding: 1px 6px;
+  border-radius: 6px;
+  background: #ff5a001a;
+  color: #ff5a00;
+  font-size: 12px;
+}
+
+/* — Stage — */
+.hd3k-stage {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 380px;
+  align-items: start;
+  gap: 12px;
+  margin-top: 64px;
+  padding: 12px;
+  border-radius: 36px;
+  background: #f4f4f5;
+}
+
+.hd3k-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.hd3k-step {
+  padding: 32px;
+  border-radius: 28px;
+  background: #fff;
+}
+
+.hd3k-step-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.hd3k-num {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  background: #f4f4f5;
+  font-size: 13px;
+  font-weight: 500;
+  color: #3f3f46;
+}
+
+.hd3k-step-copy {
+  flex: 1 1 380px;
+  min-width: 0;
+}
+
+.hd3k-step-copy h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 2px 0 0;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+  color: #09090b;
+}
+
+.hd3k-step-copy p {
+  max-width: 520px;
+  margin: 8px 0 0;
+  font-size: 15px;
+  line-height: 150%;
+  color: #71717a;
+}
+
+.hd3k-optional {
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: #f4f4f5;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #71717a;
+}
+
+.hd3k-logos {
+  display: flex;
+  flex: none;
+}
+
+.hd3k-logos img {
+  width: 32px;
+  height: 32px;
+  margin-left: -6px;
+  padding: 6px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: #f4f4f5;
+  object-fit: contain;
+}
+
+.hd3k-logos img:first-child {
+  margin-left: 0;
+}
+
+/* Shared selectable surface */
+.hd3k-tile,
+.hd3k-row,
+.hd3k-none {
+  border: 0;
+  background: #fff;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 1px #e4e4e7;
+  transition: box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.hd3k-tile:hover,
+.hd3k-row:hover,
+.hd3k-none:hover {
+  box-shadow: inset 0 0 0 1px #a1a1aa;
+}
+
+.hd3k-tile.is-on,
+.hd3k-row.is-on,
+.hd3k-none.is-on {
+  background: #fafafa;
+  box-shadow: inset 0 0 0 1.5px #09090b;
+}
+
+.hd3k-radio {
+  flex: none;
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1.5px #d4d4d8;
+  transition: box-shadow 0.2s ease;
+}
+
+.hd3k-radio.is-on {
+  box-shadow: inset 0 0 0 5px #09090b;
+}
+
+/* Agent tiles */
+.hd3k-tiles {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.hd3k-tile {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.hd3k-tile-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 24px;
+}
+
+.hd3k-tile-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #09090b;
+}
+
+.hd3k-badge {
+  margin-left: auto;
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: #ff5a001a;
+  font-size: 12px;
+  color: #ff5a00;
+}
+
+.hd3k-tile-price {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-top: 20px;
+}
+
+.hd3k-tile-price strong {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: -0.03em;
+  color: #09090b;
+}
+
+.hd3k-tile-price span,
+.hd3k-row-price span {
+  font-size: 14px;
+  color: #71717a;
+}
+
+.hd3k-meter {
+  display: block;
+  height: 4px;
+  margin-top: 16px;
+  border-radius: 4px;
+  background: #f4f4f5;
+  overflow: hidden;
+}
+
+.hd3k-meter i {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: #d4d4d8;
+  transition: background 0.2s ease;
+}
+
+.hd3k-tile.is-on .hd3k-meter i {
+  background: #ff5a00;
+}
+
+.hd3k-budget {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #3f3f46;
+}
+
+.hd3k-tile-text {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #f4f4f5;
+  font-size: 14px;
+  line-height: 150%;
+  color: #71717a;
+}
+
+/* "No agents / talent for now" */
+.hd3k-none {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  margin-top: 12px;
+  padding: 14px 20px;
+  border-radius: 16px;
+  font-size: 14px;
+}
+
+.hd3k-none strong {
+  flex: none;
+  font-weight: 500;
+  color: #09090b;
+}
+
+.hd3k-none span {
+  color: #71717a;
+}
+
+/* Talent rows */
+.hd3k-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.hd3k-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.hd3k-row-pics {
+  display: flex;
+  flex: none;
+  width: 96px;
+}
+
+.hd3k-row-pics img {
+  width: 40px;
+  height: 40px;
+  margin-left: -12px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.hd3k-row-pics img:first-child {
+  margin-left: 0;
+}
+
+.hd3k-row.is-on .hd3k-row-pics img {
+  border-color: #fafafa;
+}
+
+.hd3k-row-copy {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.hd3k-row-copy strong {
+  font-size: 16px;
+  font-weight: 500;
+  color: #09090b;
+}
+
+.hd3k-row-copy span {
+  font-size: 14px;
+  line-height: 150%;
+  color: #71717a;
+}
+
+.hd3k-row-price {
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  align-items: flex-end;
+  min-width: 120px;
+}
+
+.hd3k-row-price strong {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  color: #09090b;
+  animation: hd3k-fade 0.4s ease;
+}
+
+.hd3k-row-amount {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.hd3k-row-price s {
+  font-size: 14px;
+  color: #a1a1aa;
+}
+
+/* — Summary — */
+.hd3k-summary {
+  position: sticky;
+  top: 96px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.hd3k-sum-card {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  border-radius: 28px;
+  background: #09090b;
+  color: #fff;
+}
+
+.hd3k-sum-eyebrow {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.hd3k-sum-sub {
+  margin: 6px 0 0;
+  font-size: 14px;
+  line-height: 150%;
+  color: #ffffff99;
+}
+
+.hd3k-lines {
+  margin: 24px 0 0;
+}
+
+.hd3k-lines > div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 0;
+  border-top: 1px solid #ffffff1a;
+}
+
+.hd3k-lines dt {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.hd3k-lines small {
+  font-size: 13px;
+  font-weight: 400;
+  color: #ffffff80;
+}
+
+.hd3k-lines dd {
+  margin: 0;
+  font-size: 15px;
+  text-align: right;
+  color: #ffffffcc;
+}
+
+.hd3k-total {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 20px;
+  border-top: 1px solid #ffffff1a;
+}
+
+.hd3k-total > span {
+  font-size: 15px;
+  color: #ffffffcc;
+}
+
+.hd3k-total strong {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: -0.03em;
+  white-space: nowrap;
+  animation: hd3k-fade 0.4s ease;
+}
+
+.hd3k-total strong.is-custom small {
+  font-size: 20px;
+  letter-spacing: -0.02em;
+  color: #ffffffcc;
+}
+
+.hd3k-total small {
+  font-size: 15px;
+  letter-spacing: 0;
+  color: #ffffff99;
+}
+
+.hd3k-note {
+  min-height: 42px;
+  margin: 8px 0 0;
+  font-size: 13px;
+  line-height: 160%;
+  color: #ffffff80;
+}
+
+/* White CTA on the dark card */
+.hd3k-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+  padding: 14px 16px;
+  border: 0.5px solid #09090b1a;
+  border-radius: 14px;
+  background: #fff;
+  color: #09090b;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 125%;
+  text-decoration: none;
+  box-shadow: inset 0 -4px 10px -4px #09090b1f, 0 4px 6px #00000024;
+  transition: background 0.2s ease;
+}
+
+.hd3k-cta:hover {
+  background: #f4f4f5;
+}
+
+.hd3k-cta.is-disabled {
+  background: #ffffff1a;
+  color: #ffffff66;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.hd3k-proof {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 20px 24px;
+  border-radius: 20px;
+  background: #fff;
+}
+
+.hd3k-proof img {
+  flex: none;
+  margin-top: 1px;
+}
+
+.hd3k-proof p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 160%;
+  color: #71717a;
+}
+
+.hd3k-proof strong {
+  font-weight: 500;
+  color: #09090b;
+}
+
+@keyframes hd3k-fade {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (max-width: 1279px) {
+  .hd3k-stage {
+    grid-template-columns: minmax(0, 1fr) 340px;
+  }
+
+  .hd3k-step {
+    padding: 24px;
+  }
+
+  .hd3k-logos {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hd3k-total strong,
+  .hd3k-row-price strong {
+    animation: none;
+  }
+
+  .hd3k-switch button,
+  .hd3k-tile,
+  .hd3k-row,
+  .hd3k-none {
+    transition: none;
+  }
+}
+
+/* ===== pricing-desktop-3-v2.css ===== */
+/* Pricing for hero Version 2 (PricingDesktop3V2.tsx): v1's configurator
+   structure with Version 2's look. Reuses the v1 heading and billing switch
+   (hd3k-*); everything else is hd3n-*.
+   - Left: one white panel, both steps joined by a step rail (black numbers,
+     a thin line between them).
+   - Choices are soft zinc surfaces; the pick turns white with a near-black
+     ring, like the v2 tabs.
+   - Right: a light summary card standing on the v2 grass that fades into a
+     white sky, with the brand primary button. */
+
+.hd3n-stage {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  align-items: start;
+  gap: 16px;
+  margin-top: 64px;
+}
+
+/* — Steps panel — */
+.hd3n-steps {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 40px;
+  border: 1px solid #e4e4e7;
+  border-radius: 36px;
+  background: #fff;
+}
+
+.hd3n-step {
+  position: relative;
+  padding: 32px 0 32px 56px;
+}
+
+/* Rail: a thin line from step 1's number down to step 2's. */
+.hd3n-step:first-child::after {
+  content: '';
+  position: absolute;
+  top: 72px;
+  bottom: -32px;
+  left: 15px;
+  width: 2px;
+  border-radius: 2px;
+  background: linear-gradient(#09090b, #e4e4e7);
+}
+
+/* No divider between the steps: step 1's bottom air and step 2's top air
+   (32px each) separate them, with the rail joining the two numbers. */
+
+.hd3n-step-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.hd3n-num {
+  position: absolute;
+  top: 32px;
+  left: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #09090b;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.hd3n-step-copy {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.hd3n-step-copy h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 2px 0 0;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+  color: #09090b;
+}
+
+.hd3n-step-copy p {
+  max-width: 520px;
+  margin: 8px 0 0;
+  font-size: 15px;
+  line-height: 150%;
+  color: #71717a;
+}
+
+.hd3n-optional {
+  padding: 3px 8px;
+  border-radius: 80px;
+  border: 1px solid #e4e4e7;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #71717a;
+}
+
+.hd3n-logos {
+  display: flex;
+  flex: none;
+}
+
+.hd3n-logos img {
+  width: 32px;
+  height: 32px;
+  margin-left: -6px;
+  padding: 6px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: #f4f4f5;
+  object-fit: contain;
+}
+
+.hd3n-logos img:first-child {
+  margin-left: 0;
+}
+
+.hd3n-step .hd3k-switch {
+  margin-left: auto;
+}
+
+/* — Shared selectable surface: zinc at rest, white + black ring when on — */
+.hd3n-tile,
+.hd3n-row {
+  border: 0;
+  background: #f4f4f5;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: box-shadow 0.25s ease, background 0.25s ease, transform 0.25s ease;
+}
+
+.hd3n-tile:hover,
+.hd3n-row:hover {
+  background: #ececee;
+}
+
+.hd3n-tile.is-on,
+.hd3n-row.is-on {
+  background: #fff;
+  box-shadow: 0 0 0 1.5px #09090b, 0 12px 28px -14px #09090b40;
+}
+
+.hd3n-tile.is-on {
+  transform: translateY(-2px);
+}
+
+.hd3n-radio {
+  flex: none;
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: inset 0 0 0 1.5px #d4d4d8;
+  transition: box-shadow 0.2s ease;
+}
+
+.hd3n-radio.is-on {
+  box-shadow: inset 0 0 0 5px #09090b;
+}
+
+/* Awesomic plan tiles: four per person tiers. */
+.hd3n-tiles {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.hd3n-tile {
+  display: flex;
+  flex-direction: column;
+  padding: 18px;
+  border-radius: 22px;
+}
+
+.hd3n-tile-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 24px;
+}
+
+.hd3n-tile-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #09090b;
+}
+
+.hd3n-badge {
+  align-self: flex-start;
+  margin-top: 10px;
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: #ff5a001a;
+  font-size: 12px;
+  white-space: nowrap;
+  color: #ff5a00;
+}
+
+.hd3n-badge.is-empty {
+  visibility: hidden;
+}
+
+.hd3n-badge.is-empty::before {
+  content: '\00a0';
+}
+
+.hd3n-tile-price {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 14px;
+}
+
+.hd3n-tile-price strong {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: -0.03em;
+  color: #09090b;
+}
+
+.hd3n-tile-price span,
+.hd3n-row-price span {
+  font-size: 14px;
+  color: #71717a;
+}
+
+.hd3n-meter {
+  display: block;
+  height: 4px;
+  margin-top: 16px;
+  border-radius: 4px;
+  background: #e4e4e7;
+  overflow: hidden;
+}
+
+.hd3n-tile.is-on .hd3n-meter {
+  background: #f4f4f5;
+}
+
+.hd3n-meter i {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: #a1a1aa;
+  transition: background 0.2s ease;
+}
+
+.hd3n-tile.is-on .hd3n-meter i {
+  background: #ff5a00;
+}
+
+.hd3n-budget {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #3f3f46;
+}
+
+.hd3n-tile-text {
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 150%;
+  color: #71717a;
+}
+
+/* "No agents / talent for now": a quiet dashed option, not a fourth card. */
+.hd3n-none {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  margin-top: 10px;
+  padding: 14px 20px;
+  border: 1px dashed #d4d4d8;
+  border-radius: 18px;
+  background: transparent;
+  font: inherit;
+  font-size: 14px;
+  text-align: left;
+  color: inherit;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.hd3n-none:hover {
+  border-color: #a1a1aa;
+}
+
+.hd3n-none.is-on {
+  border: 1.5px solid #09090b;
+  background: #fff;
+}
+
+.hd3n-none strong {
+  flex: none;
+  font-weight: 500;
+  color: #09090b;
+}
+
+.hd3n-none span {
+  color: #71717a;
+}
+
+/* Talent rows */
+.hd3n-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.hd3n-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  padding: 24px;
+  border-radius: 22px;
+}
+
+.hd3n-row-pics {
+  display: flex;
+  flex: none;
+  width: 92px;
+}
+
+.hd3n-row-pics img {
+  width: 40px;
+  height: 40px;
+  margin-left: -12px;
+  border: 2px solid #f4f4f5;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: border-color 0.25s ease;
+}
+
+.hd3n-row-pics img:first-child {
+  margin-left: 0;
+}
+
+.hd3n-row.is-on .hd3n-row-pics img {
+  border-color: #fff;
+}
+
+.hd3n-row-copy {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.hd3n-row-copy strong {
+  font-size: 16px;
+  font-weight: 500;
+  color: #09090b;
+}
+
+.hd3n-row-copy span {
+  font-size: 14px;
+  line-height: 145%;
+  color: #71717a;
+}
+
+.hd3n-row-price {
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  align-items: flex-end;
+  min-width: 120px;
+}
+
+.hd3n-row-price strong {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  color: #09090b;
+  animation: hd3n-fade 0.4s ease;
+}
+
+.hd3n-row-amount {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.hd3n-row-price s {
+  font-size: 14px;
+  color: #a1a1aa;
+}
+
+/* — Summary: light card on the v2 grass — */
+.hd3n-summary {
+  position: sticky;
+  top: 96px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid #e4e4e7;
+  border-radius: 36px;
+  background-color: #fff;
+  background-image: url('../../images-static/pricing/hero-cards-grass-v6.jpg');
+  background-image: image-set(
+    url('../../images-static/pricing/hero-cards-grass-v6.jpg') 1x,
+    url('../../images-static/pricing/hero-cards-grass-v6-2x.webp') 2x
+  );
+  background-position: 30% bottom;
+  background-size: auto 230px;
+  background-repeat: no-repeat;
+}
+
+.hd3n-sum-card {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 32px 0;
+}
+
+.hd3n-sum-eyebrow {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: #09090b;
+}
+
+.hd3n-sum-sub {
+  margin: 6px 0 0;
+  font-size: 14px;
+  line-height: 150%;
+  color: #71717a;
+}
+
+.hd3n-lines {
+  margin: 24px 0 0;
+}
+
+.hd3n-lines > div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 0;
+  border-top: 1px solid #f4f4f5;
+}
+
+.hd3n-lines dt {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #09090b;
+}
+
+.hd3n-lines small {
+  font-size: 13px;
+  font-weight: 400;
+  color: #a1a1aa;
+}
+
+.hd3n-lines dd {
+  margin: 0;
+  font-size: 15px;
+  text-align: right;
+  color: #3f3f46;
+}
+
+.hd3n-total {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 20px;
+  border-top: 1px solid #f4f4f5;
+}
+
+.hd3n-total > span {
+  font-size: 15px;
+  color: #3f3f46;
+}
+
+.hd3n-total strong {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 52px;
+  letter-spacing: -0.03em;
+  white-space: nowrap;
+  color: #09090b;
+  animation: hd3n-fade 0.4s ease;
+}
+
+.hd3n-total strong.is-custom small {
+  font-size: 20px;
+  letter-spacing: -0.02em;
+  color: #3f3f46;
+}
+
+.hd3n-total small {
+  font-size: 15px;
+  letter-spacing: 0;
+  color: #71717a;
+}
+
+.hd3n-note {
+  min-height: 42px;
+  margin: 8px 0 0;
+  font-size: 13px;
+  line-height: 160%;
+  color: #71717a;
+}
+
+@keyframes hd3n-fade {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+}
+
+/* Brand primary button, with the signature sheen on hover. */
+.hd3n-cta {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 52px;
+  margin-top: 20px;
+  overflow: hidden;
+  border: 0.5px solid #ffffff33;
+  border-radius: 14px;
+  background: #09090b;
+  font: 500 14px/125% Cosmica, Arial, sans-serif;
+  color: #fff;
+  text-decoration: none;
+  box-shadow:
+    inset 0 0.5px #ffffff80,
+    inset 0 9px 14px -5px #757b8566,
+    0 0 0 1.5px #2c2e34,
+    0 4px 6px #00000024;
+}
+
+.hd3n-cta > span:first-child,
+.hd3n-cta > svg {
+  position: relative;
+  z-index: 1;
+}
+
+.hd3n-cta .button-background {
+  position: absolute;
+  inset: 0 0 auto;
+  z-index: 0;
+  width: 415px;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  background-image: url('../../images-static/button_Shapes-blur.svg');
+  background-size: cover;
+}
+
+.hd3n-cta:hover {
+  background-color: #09090b00;
+  box-shadow:
+    inset 0 0.5px #ffffff80,
+    inset 0 9px 14px -5px #ffffff80,
+    0 0 0 1.5px #9896d21a;
+}
+
+.hd3n-cta:hover .button-background {
+  opacity: 1;
+  animation: buttonBg 1.5s ease-in-out forwards;
+}
+
+.hd3n-cta.is-disabled {
+  border-color: #e4e4e7;
+  background: #f4f4f5;
+  color: #a1a1aa;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+/* Proof: a frosted chip sitting on the grass. */
+.hd3n-proof {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 120px 16px 16px;
+  padding: 12px 16px;
+  border: 1px solid #ffffffb3;
+  border-radius: 20px;
+  background: #ffffffc7;
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+}
+
+.hd3n-proof p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 150%;
+  color: #3f3f46;
+}
+
+.hd3n-proof strong {
+  font-weight: 500;
+  color: #09090b;
+}
+
+.hd3n-tile:focus-visible,
+.hd3n-row:focus-visible,
+.hd3n-none:focus-visible,
+.hd3n-cta:focus-visible {
+  outline: 2px solid #09090b;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hd3n-row-price strong,
+  .hd3n-total strong {
+    animation: none;
+  }
+  .hd3n-tile,
+  .hd3n-row {
+    transition: none;
+  }
+  .hd3n-tile.is-on {
+    transform: none;
+  }
+}
+
+@media (max-width: 1360px) {
+  .hd3n-stage {
+    grid-template-columns: minmax(0, 1fr) 330px;
+  }
+  .hd3n-steps {
+    padding: 8px 28px;
+  }
+  .hd3n-step {
+    padding-left: 48px;
+  }
+  .hd3n-tile-price strong {
+    font-size: 28px;
+  }
+  .hd3n-total strong {
+    font-size: 38px;
+  }
+}
+
+/* — 20 Oct 2026 pricing model additions — */
+
+/* "Included in every plan": one label and icon chips, two rows at most. */
+.hd3n-included {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 20px;
+  padding: 16px 18px;
+  border-radius: 18px;
+  background: #fafafa;
+}
+
+.hd3n-included-title {
+  flex: none;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 135%;
+  color: #09090b;
+}
+
+.hd3n-included ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hd3n-included li {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 26px;
+  font-size: 13px;
+  white-space: nowrap;
+  color: #3f3f46;
+}
+
+.hd3n-included li svg {
+  flex: none;
+  color: #71717a;
+}
+
+/* People on your team: a stepper, then one mini tier picker per extra person. */
+.hd3n-team {
+  margin-top: 12px;
+  padding: 16px 18px;
+  border: 1px solid #e4e4e7;
+  border-radius: 18px;
+}
+
+.hd3n-team-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.hd3n-team-head strong {
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  color: #09090b;
+}
+
+.hd3n-team-head span {
+  display: block;
+  margin-top: 2px;
+  font-size: 13px;
+  color: #71717a;
+}
+
+.hd3n-stepper {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: 2px;
+  padding: 3px;
+  border-radius: 12px;
+  background: #f4f4f5;
+}
+
+.hd3n-stepper button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: 0;
+  border-radius: 9px;
+  background: #fff;
+  color: #09090b;
+  cursor: pointer;
+  box-shadow: 0 1px 2px #09090b14;
+}
+
+.hd3n-stepper button:disabled {
+  background: transparent;
+  color: #d4d4d8;
+  box-shadow: none;
+  cursor: default;
+}
+
+.hd3n-stepper output {
+  min-width: 32px;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  color: #09090b;
+}
+
+.hd3n-people {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 14px 0 0;
+  padding: 14px 0 0;
+  border-top: 1px solid #f4f4f5;
+  list-style: none;
+}
+
+.hd3n-people li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 32px;
+}
+
+.hd3n-person {
+  font-size: 14px;
+  color: #09090b;
+}
+
+.hd3n-person-note {
+  font-size: 13px;
+  color: #71717a;
+}
+
+.hd3n-mini {
+  display: flex;
+  gap: 2px;
+  padding: 3px;
+  border-radius: 10px;
+  background: #f4f4f5;
+}
+
+.hd3n-mini button {
+  height: 26px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  font: inherit;
+  font-size: 12px;
+  color: #71717a;
+  cursor: pointer;
+}
+
+.hd3n-mini button.is-on {
+  background: #fff;
+  color: #09090b;
+  box-shadow: 0 1px 2px #09090b1f;
+}
+
+.hd3n-stepper button:focus-visible,
+.hd3n-mini button:focus-visible,
+.hd3n-compare:focus-visible,
+.hd3n-bar-total:focus-visible {
+  outline: 2px solid #09090b;
+  outline-offset: 2px;
+}
+
+/* Billing switch with its "i" note beside it (InfoTip). */
+.hd3n-billing {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+}
+
+/* Talent price large, the note underneath (two short lines at most), so
+   the plan copy keeps the width it needs to stay on two lines. */
+.hd3n-row-price {
+  min-width: 0;
+  max-width: 180px;
+}
+
+.hd3n-row-amount span {
+  font-size: 14px;
+  color: #71717a;
+}
+
+.hd3n-row-split {
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 140%;
+  text-align: right;
+  color: #71717a;
+}
+
+/* Summary additions. */
+.hd3n-lines dd {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.hd3n-line {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  white-space: nowrap;
+}
+
+.hd3n-line b {
+  min-width: 56px;
+  font-weight: 500;
+  text-align: right;
+  color: #09090b;
+}
+
+.hd3n-moved {
+  margin: 0 0 16px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: #ff5a0014;
+  font-size: 13px;
+  line-height: 145%;
+  color: #c2410c;
+  animation: hd3n-fade 0.4s ease;
+}
+
+.hd3n-note-q {
+  display: block;
+  margin-top: 6px;
+  color: #3f3f46;
+}
+
+.hd3n-side {
+  position: sticky;
+  top: 96px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.hd3n-side .hd3n-summary {
+  position: static;
+}
+
+.hd3n-compare {
+  display: inline-flex;
+  align-items: center;
+  align-self: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #09090b;
+  text-decoration: none;
+}
+
+.hd3n-compare:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Phone bottom bar: hidden everywhere but small screens. */
+.hd3n-bar {
+  display: none;
+}
+
+/* — Tablets — */
+@media (max-width: 1024px) {
+  .hd3k-section.hd3n-section {
+    padding: 0 32px 96px;
+  }
+
+  .hd3n-section .hd3k-heading {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .hd3n-section .hd3k-heading h2 {
+    font-size: 46px;
+    line-height: 112%;
+    white-space: normal;
+  }
+
+  .hd3n-section .hd3k-intro {
+    flex: none;
+    max-width: 560px;
+    padding-top: 0;
+  }
+
+  .hd3n-stage {
+    grid-template-columns: minmax(0, 1fr);
+    margin-top: 40px;
+  }
+
+  .hd3n-side {
+    position: static;
+  }
+
+  .hd3n-tiles {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hd3n-step-head {
+    flex-wrap: wrap;
+  }
+
+  .hd3n-billing {
+    margin-left: 0;
+  }
+}
+
+/* — Phones — */
+@media (max-width: 767px) {
+  .hd3k-section.hd3n-section {
+    padding: 0 16px 72px;
+  }
+
+  .hd3n-section .hd3k-heading h2 {
+    margin-top: 16px;
+    font-size: 32px;
+    line-height: 115%;
+  }
+
+  .hd3n-section .hd3k-heading h2 br {
+    display: none;
+  }
+
+  .hd3n-section .hd3k-intro p {
+    font-size: 16px;
+  }
+
+  .hd3n-stage {
+    margin-top: 28px;
+  }
+
+  .hd3n-step-head {
+    gap: 12px;
+  }
+
+  .hd3n-step-copy {
+    flex-basis: calc(100% - 44px);
+  }
+
+  .hd3n-tile-text {
+    line-height: 140%;
+  }
+
+  .hd3n-team-head {
+    flex-wrap: wrap;
+  }
+
+  .hd3n-team-head > div:first-child {
+    flex: 1 1 160px;
+  }
+
+  .hd3n-lines > div {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .hd3n-lines dd {
+    width: 100%;
+  }
+
+  .hd3n-line {
+    justify-content: space-between;
+  }
+
+  .hd3n-steps {
+    padding: 4px 16px;
+    border-radius: 28px;
+  }
+
+  .hd3n-step {
+    padding: 24px 0;
+  }
+
+  .hd3n-step:first-child::after {
+    display: none;
+  }
+
+  .hd3n-num {
+    position: static;
+    flex: none;
+  }
+
+  .hd3n-step-copy h3 {
+    flex-wrap: wrap;
+    font-size: 20px;
+    line-height: 26px;
+    white-space: normal;
+  }
+
+  .hd3n-step-copy p {
+    font-size: 14px;
+  }
+
+  .hd3n-logos {
+    display: none;
+  }
+
+  .hd3n-tiles {
+    gap: 8px;
+    margin-top: 20px;
+  }
+
+  .hd3n-tile {
+    padding: 14px;
+    border-radius: 18px;
+  }
+
+  .hd3n-tile-price strong {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .hd3n-tile-price span {
+    font-size: 12px;
+  }
+
+  .hd3n-tile-text {
+    font-size: 13px;
+  }
+
+  .hd3n-badge {
+    font-size: 11px;
+    white-space: normal;
+  }
+
+  .hd3n-included {
+    padding: 14px;
+  }
+
+  .hd3n-team {
+    padding: 14px;
+  }
+
+  .hd3n-team-head span {
+    font-size: 12px;
+  }
+
+  .hd3n-people li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .hd3n-mini {
+    width: 100%;
+  }
+
+  .hd3n-mini button {
+    flex: 1;
+    height: 32px;
+    padding: 0 4px;
+  }
+
+  .hd3n-rows {
+    margin-top: 20px;
+  }
+
+  .hd3n-row {
+    flex-wrap: wrap;
+    gap: 10px 12px;
+    padding: 16px;
+  }
+
+  .hd3n-row-pics {
+    width: auto;
+  }
+
+  .hd3n-row-copy {
+    flex-basis: 100%;
+    order: 3;
+  }
+
+  .hd3n-row-price {
+    order: 4;
+    flex-basis: 100%;
+    align-items: flex-start;
+    min-width: 0;
+  }
+
+  .hd3n-row-split {
+    text-align: left;
+  }
+
+  .hd3n-none {
+    flex-wrap: wrap;
+    gap: 4px 12px;
+    padding: 14px 16px;
+  }
+
+  .hd3n-none > span:not(.hd3n-radio) {
+    flex-basis: 100%;
+    padding-left: 30px;
+  }
+
+  .hd3n-sum-card {
+    padding: 24px 20px 0;
+  }
+
+  .hd3n-total strong {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .hd3n-proof {
+    margin-top: 80px;
+  }
+
+  /* Bottom bar: total + Continue; tapping the total opens the lines. */
+  .hd3n-bar {
+    position: fixed;
+    right: 8px;
+    bottom: 8px;
+    left: 8px;
+    z-index: 70;
+    display: block;
+    padding: 10px 10px 10px 16px;
+    border: 1px solid #e4e4e7;
+    border-radius: 20px;
+    background: #fffffff2;
+    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
+    box-shadow: 0 16px 40px -12px #09090b40;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.25s ease, transform 0.25s ease, visibility 0s linear 0.25s;
+  }
+
+  .hd3n-bar.is-shown {
+    visibility: visible;
+    opacity: 1;
+    transform: none;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+  }
+
+  .hd3n-bar-sheet {
+    padding: 4px 6px 12px 0;
+  }
+
+  .hd3n-bar-sheet .hd3n-lines {
+    margin: 0;
+  }
+
+  .hd3n-bar-sheet .hd3n-lines > div:first-child {
+    border-top: 0;
+  }
+
+  .hd3n-bar-sheet .hd3n-moved {
+    margin: 4px 0 0;
+  }
+
+  .hd3n-bar-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .hd3n-bar-total {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    font: inherit;
+    color: inherit;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .hd3n-bar-total > span {
+    font-size: 12px;
+    color: #71717a;
+  }
+
+  .hd3n-bar-total strong {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    color: #09090b;
+  }
+
+  .hd3n-bar-total small {
+    font-size: 13px;
+    letter-spacing: 0;
+    color: #71717a;
+  }
+
+  .hd3n-bar-chev {
+    position: absolute;
+    top: 2px;
+    left: 38px;
+    color: #71717a;
+    transition: transform 0.2s ease;
+  }
+
+  .hd3n-bar.is-open .hd3n-bar-chev {
+    transform: rotate(180deg);
+  }
+
+  .hd3n-bar .hd3n-cta {
+    flex: none;
+    height: 44px;
+    margin: 0;
+    padding: 0 18px;
+  }
+}
+
+/* The Light seat that comes free with a talent plan. */
+.hd3n-line b.hd3n-free {
+  color: #ff5a00;
+}
+
+/* Chosen line breaks in the talent copy: desktop and tablet only; phones
+   wrap naturally. */
+@media (max-width: 767px) {
+  .hd3n-br {
+    display: none;
+  }
+}
+
+/* Tier objects (rock → mossy stone → sphere → crystal) beside the plan
+   name; the radio moves to the right end of the row. */
+.hd3n-tile-top .hd3n-radio {
+  margin-left: auto;
+}
+
+.hd3n-object {
+  flex: none;
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  filter: grayscale(0.35) saturate(0.85);
+  transition: filter 0.25s ease, transform 0.25s ease;
+}
+
+.hd3n-tile:hover .hd3n-object,
+.hd3n-tile.is-on .hd3n-object {
+  filter: none;
+  transform: scale(1.08) rotate(-4deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hd3n-object {
+    transition: none;
+  }
+
+  .hd3n-tile:hover .hd3n-object,
+  .hd3n-tile.is-on .hd3n-object {
+    transform: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .hd3n-object {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+/* — Alternative version (layout="track", 21 Oct option D) —
+   Step 1: the four plans on one budget track, like the Setup slider, and one
+   detail card for the picked plan. Step 2: talent as a segmented choice with
+   one detail card. */
+.hd3n-track {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 28px;
+}
+
+/* Runs between the first and last stop centres; the fill grows to the pick. */
+.hd3n-track-line {
+  position: absolute;
+  top: 45px;
+  left: 12.5%;
+  right: 12.5%;
+  height: 4px;
+  border-radius: 4px;
+  background: #f4f4f5;
+}
+
+.hd3n-track-line i {
+  position: absolute;
+  inset: 0 auto 0 0;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #fdba8c, #ff5a00);
+  transition: width 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.hd3n-stop {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 0 0 4px;
+  border: 0;
+  background: none;
+  font: inherit;
+  color: #71717a;
+  cursor: pointer;
+}
+
+.hd3n-stop .hd3n-object {
+  transition: filter 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hd3n-stop.is-on .hd3n-object,
+.hd3n-stop:hover .hd3n-object {
+  filter: none;
+}
+
+.hd3n-stop.is-on .hd3n-object {
+  transform: scale(1.12) rotate(-4deg);
+}
+
+.hd3n-stop-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: inset 0 0 0 2px #d4d4d8;
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hd3n-stop.is-on .hd3n-stop-dot {
+  background: #09090b;
+  box-shadow: 0 0 0 4px #fff, 0 4px 10px #09090b40;
+  transform: scale(1.55);
+}
+
+.hd3n-stop-name {
+  margin-top: 4px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #3f3f46;
+}
+
+.hd3n-stop.is-on .hd3n-stop-name {
+  color: #09090b;
+}
+
+.hd3n-stop-price {
+  font-size: 14px;
+}
+
+.hd3n-detail,
+.hd3n-tdetail {
+  display: grid;
+  align-items: center;
+  gap: 24px;
+  margin-top: 20px;
+  padding: 22px 24px;
+  border-radius: 22px;
+  animation: hd3n-fade 0.4s ease;
+}
+
+.hd3n-detail {
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  background: #fff;
+  box-shadow: 0 0 0 1.5px #09090b, 0 12px 28px -16px #09090b40;
+}
+
+.hd3n-detail-object {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+}
+
+.hd3n-detail p,
+.hd3n-tdetail p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 150%;
+  color: #3f3f46;
+}
+
+.hd3n-detail p strong,
+.hd3n-tdetail p strong {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #09090b;
+}
+
+.hd3n-detail-price {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.hd3n-detail-price strong {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: #09090b;
+}
+
+.hd3n-detail-price span {
+  font-size: 13px;
+  color: #71717a;
+}
+
+.hd3n-seg {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4px;
+  margin-top: 28px;
+  padding: 4px;
+  border-radius: 18px;
+  background: #f4f4f5;
+}
+
+.hd3n-seg button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  min-height: 60px;
+  padding: 8px;
+  border: 0;
+  border-radius: 14px;
+  background: transparent;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  color: #3f3f46;
+  cursor: pointer;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hd3n-seg button:hover {
+  background: #ffffff80;
+}
+
+.hd3n-seg button.is-on {
+  background: #fff;
+  color: #09090b;
+  box-shadow: 0 1px 3px #09090b1a, 0 0 0 1px #e4e4e7;
+}
+
+.hd3n-seg small {
+  font-size: 12px;
+  font-weight: 400;
+  color: #71717a;
+}
+
+.hd3n-tdetail {
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  margin-top: 12px;
+  background: #fafafa;
+  box-shadow: inset 0 0 0 1px #e4e4e766;
+}
+
+.hd3n-tdetail.is-none {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.hd3n-tdetail .hd3n-row-pics img {
+  border-color: #fafafa;
+}
+
+.hd3n-tdetail-price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  white-space: nowrap;
+}
+
+.hd3n-tdetail-price strong {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #09090b;
+}
+
+.hd3n-tdetail-price .hd3n-row-amount > span,
+.hd3n-tdetail-price .hd3n-row-split {
+  font-size: 13px;
+  color: #71717a;
+}
+
+/* Phones: the track keeps four stops in a tighter row; talent options go
+   two by two; detail cards stack. */
+@media (max-width: 767px) {
+  .hd3n-track {
+    margin-top: 20px;
+  }
+
+  /* Objects shrink to 26px on phones, so the line moves up with the dots. */
+  .hd3n-track-line {
+    top: 39px;
+  }
+
+  .hd3n-stop-name {
+    font-size: 13px;
+  }
+
+  .hd3n-stop-price {
+    font-size: 12px;
+  }
+
+  .hd3n-detail,
+  .hd3n-tdetail {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+    padding: 18px;
+  }
+
+  .hd3n-detail-object {
+    width: 40px;
+    height: 40px;
+  }
+
+  .hd3n-detail-price strong {
+    font-size: 32px;
+  }
+
+  .hd3n-tdetail-price {
+    align-items: flex-start;
+  }
+
+  .hd3n-seg {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hd3n-track-line i,
+  .hd3n-stop .hd3n-object,
+  .hd3n-stop-dot {
+    transition: none;
+  }
+
+  .hd3n-detail,
+  .hd3n-tdetail {
+    animation: none;
+  }
+}
+
+/* — Main, calm (21 Oct option A) —
+   White cards with a hairline instead of zinc fills, a "Monthly budget" label
+   over a thinner meter, "Included in every plan" folded behind a + / −, and
+   "Awesomic Light included" as a quiet chip. Scoped to the cards layout. */
+.hd3n-section--calm .hd3n-tile,
+.hd3n-section--calm .hd3n-row {
+  background: #fff;
+  box-shadow: inset 0 0 0 1px #e4e4e7;
+}
+
+.hd3n-section--calm .hd3n-tile:hover,
+.hd3n-section--calm .hd3n-row:hover {
+  background: #fafafa;
+}
+
+.hd3n-section--calm .hd3n-tile.is-on {
+  background: #fff;
+  box-shadow: 0 0 0 1.5px #09090b, 0 12px 28px -16px #09090b40;
+}
+
+.hd3n-section--calm .hd3n-row.is-on {
+  background: #fff;
+  box-shadow: 0 0 0 1.5px #09090b;
+}
+
+.hd3n-section--calm .hd3n-tile-price span {
+  font-size: 13px;
+}
+
+.hd3n-budget-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 14px;
+  font-size: 12px;
+  color: #71717a;
+}
+
+.hd3n-budget-row b {
+  font-weight: 500;
+  color: #09090b;
+}
+
+.hd3n-section--calm .hd3n-meter {
+  height: 3px;
+  margin-top: 8px;
+  background: #f4f4f5;
+}
+
+.hd3n-section--calm .hd3n-tile-text {
+  margin-top: 12px;
+  font-size: 13px;
+}
+
+/* Folded "Included in every plan": a hairline card; the head is the toggle. */
+.hd3n-included--fold {
+  gap: 0;
+  padding: 0;
+  background: #fff;
+  box-shadow: inset 0 0 0 1px #e4e4e7;
+}
+
+.hd3n-included-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  padding: 16px 18px;
+  border: 0;
+  border-radius: 18px;
+  background: none;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: left;
+  color: #09090b;
+  cursor: pointer;
+}
+
+.hd3n-included-head small {
+  margin-left: 8px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #71717a;
+}
+
+.hd3n-included-toggle {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 9px;
+  background: #f4f4f5;
+  color: #09090b;
+  transition: background 0.2s ease;
+}
+
+.hd3n-included-head:hover .hd3n-included-toggle {
+  background: #e4e4e7;
+}
+
+.hd3n-included-head:focus-visible {
+  outline: 2px solid #09090b;
+  outline-offset: 2px;
+}
+
+.hd3n-included--fold ul {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px 16px;
+  padding: 16px 18px 18px;
+  border-top: 1px solid #f4f4f5;
+  animation: hd3n-fade 0.3s ease;
+}
+
+.hd3n-included--fold ul[hidden] {
+  display: none;
+}
+
+.hd3n-included--fold li {
+  height: auto;
+  white-space: normal;
+}
+
+.hd3n-section--calm .hd3n-team {
+  margin-top: 20px;
+}
+
+.hd3n-section--calm .hd3n-row {
+  padding: 20px 24px;
+}
+
+.hd3n-section--calm .hd3n-row-pics img {
+  width: 36px;
+  height: 36px;
+  border-color: #fff;
+}
+
+.hd3n-row-price .hd3n-row-quoted {
+  margin-top: 2px;
+  font-size: 13px;
+  color: #71717a;
+}
+
+.hd3n-row-price .hd3n-light-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: max-content;
+  margin-top: 8px;
+  padding: 3px 10px 3px 4px;
+  border-radius: 80px;
+  background: #f4f4f5;
+  font-size: 12px;
+  color: #3f3f46;
+}
+
+.hd3n-light-chip img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.hd3n-section--calm .hd3n-none {
+  border: 0;
+  background: #fafafa;
+}
+
+.hd3n-section--calm .hd3n-none.is-on {
+  border: 0;
+  background: #fff;
+  box-shadow: inset 0 0 0 1px #e4e4e7;
+}
+
+.hd3n-section--calm .hd3k-save {
+  padding: 0;
+  background: none;
+  font-weight: 500;
+  color: #09090b;
+}
+
+@media (max-width: 1024px) {
+  .hd3n-included--fold ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .hd3n-section--calm .hd3n-included--fold {
+    padding: 0;
+  }
+
+  .hd3n-included-head {
+    padding: 14px;
+    font-size: 14px;
+  }
+
+  .hd3n-included--fold ul {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
+    padding: 14px;
+  }
+
+  .hd3n-section--calm .hd3n-row {
+    padding: 16px;
+  }
+
+  .hd3n-budget-row {
+    font-size: 11px;
+    white-space: nowrap;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hd3n-included--fold ul {
+    animation: none;
+  }
+}
+
+/* 21 Oct 2026: expert prices carry cents ($1,799.99), so the amounts are
+   wider. The struck monthly price drops onto its own line before "/ month"
+   breaks, and the summary total lets "/ month" (and, for big teams, the
+   "Total" label) wrap instead of running out of the card. */
+.hd3n-row-amount {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  row-gap: 0;
+}
+
+.hd3n-row-amount span,
+.hd3n-tdetail-price span {
+  white-space: nowrap;
+}
+
+.hd3n-total {
+  flex-wrap: wrap;
+  row-gap: 4px;
+}
+
+.hd3n-total strong {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  row-gap: 0;
+  margin-left: auto;
+}
+
+/* The struck monthly price always takes its own line above the quarterly
+   one, so "/ month" stays beside the price at any price length. */
+.hd3n-row-amount s {
+  flex-basis: 100%;
+  text-align: right;
+}
+
+@media (max-width: 767px) {
+  .hd3n-row-amount {
+    justify-content: flex-start;
+  }
+
+  .hd3n-row-amount s {
+    text-align: left;
+  }
+}
+
+/* "i" notes (InfoTip): a small ring with a near-black bubble. Next to the
+   billing switch the bubble opens to the left; in the summary, to the right,
+   narrower so it stays inside the card. */
+.hd3n-tip {
+  position: relative;
+  display: inline-flex;
+  flex: none;
+}
+
+/* Two classes: the site-wide button reset ([type="button"] { border: 0 })
+   loads later and would win over one. */
+.hd3n-tip .hd3n-tip-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  border: 1px solid #d4d4d8;
+  border-radius: 50%;
+  background: #fff;
+  font: 500 11px/1 Cosmica, Arial, sans-serif;
+  color: #71717a;
+  cursor: help;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.hd3n-tip .hd3n-tip-btn:hover,
+.hd3n-tip.is-open .hd3n-tip-btn {
+  border-color: #a1a1aa;
+  color: #09090b;
+}
+
+.hd3n-tip-btn:focus-visible {
+  outline: 2px solid #09090b;
+  outline-offset: 2px;
+}
+
+.hd3n-tip-text {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: -12px;
+  z-index: 20;
+  width: max-content;
+  max-width: 250px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: #09090b;
+  box-shadow: 0 8px 24px rgba(9, 9, 11, 0.18);
+  font: 400 13px/1.45 Cosmica, Arial, sans-serif;
+  letter-spacing: 0;
+  text-align: left;
+  white-space: normal;
+  color: rgba(255, 255, 255, 0.9);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4px);
+  transition: opacity 0.15s ease, transform 0.15s ease, visibility 0.15s;
+  pointer-events: none;
+}
+
+.hd3n-tip-text::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  right: 16px;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  background: #09090b;
+  transform: rotate(45deg);
+}
+
+.hd3n-tip.is-open .hd3n-tip-text,
+.hd3n-tip:has(.hd3n-tip-btn:focus-visible) .hd3n-tip-text {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
+
+@media (hover: hover) {
+  .hd3n-tip:hover .hd3n-tip-text {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+}
+
+.hd3n-billed {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.hd3n-billed .hd3n-tip-text {
+  right: auto;
+  left: -12px;
+  max-width: 220px;
+}
+
+.hd3n-billed .hd3n-tip-text::before {
+  right: auto;
+  left: 16px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hd3n-tip-text {
+    transition: none;
+  }
+}
+
+/* 29 Oct (option 1): "− 0 +" on each expert card, where the radio was;
+   0 means not picked. A tap on the card adds the first expert. */
+.hd3n-row-stepper {
+  flex: none;
+}
+
+/* The counter takes width from the copy, so the chosen line breaks in
+   the plan text no longer fit; let it wrap on its own. */
+.hd3n-row--count .hd3n-br {
+  display: none;
+}
+
+.hd3n-row--count.is-on {
+  cursor: default;
+}
+
+/* Dedicated keeps a radio (no counter): the slot keeps the counter's width
+   so the three cards line up. */
+.hd3n-row-pick {
+  display: flex;
+  flex: none;
+  justify-content: center;
+  width: 106px;
+}
+
+/* Phones: the counters sit on their own line above the copy, so the radio
+   sits on the left instead of floating in the middle of the slot. */
+@media (max-width: 767px) {
+  .hd3n-row-pick {
+    justify-content: flex-start;
+    width: auto;
+    padding: 0 0 0 8px;
+  }
+}
+
+.hd3n-row--count.hd3n-row--single.is-on {
+  cursor: pointer;
+}
+
+/* ===== scenes-v6.css: the homepage grass behind the summary card ===== */
+.hd3-page--v6 .hd3n-summary {
+  background-image: url('../../images-static/pricing/hero-cards-grass-v6.jpg');
+  background-image: image-set(
+    url('../../images-static/pricing/hero-cards-grass-v6.jpg') 1x,
+    url('../../images-static/pricing/hero-cards-grass-v6-2x.webp') 2x
+  );
+}
+
+/* ===== /pricing page tweaks (pricing.css), scoped to #hire-pricing ===== */
+#hire-pricing #pricing-experts {
+  scroll-margin-top: 96px;
+}
+
+/* Phones: the pricing block's heading (eyebrow, title, intro) centred on this
+   page only; the homepage keeps its left-aligned heading. */
+@media (max-width: 767px) {
+  #hire-pricing .hd3n-section .hd3k-heading {
+    align-items: center;
+    text-align: center;
+  }
+
+  #hire-pricing .hd3n-section .hd3k-intro {
+    margin: 0 auto;
+  }
+}
+
+/* Phones: step heads in the pricing block (approved 21 Oct). The step number
+   sits above the title, and the title, copy and billing switch run the full
+   width of the card instead of indenting beside the number. This page only;
+   the homepage keeps its own layout. */
+@media (max-width: 767px) {
+  #hire-pricing .hd3n-step-head {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  #hire-pricing .hd3n-num {
+    align-self: flex-start;
+  }
+
+  #hire-pricing .hd3n-step-copy {
+    flex-basis: auto;
+  }
+
+  #hire-pricing .hd3n-step-copy p {
+    margin-top: 8px;
+  }
+
+  #hire-pricing .hd3n-billing {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin: 6px 0 0;
+  }
+
+  #hire-pricing .hd3n-billing .hd3k-switch {
+    flex: 1;
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+
+  #hire-pricing .hd3n-billing .hd3k-switch button,
+  #hire-pricing .hd3k-save {
+    justify-content: center;
+    white-space: nowrap;
+  }
+}
+
+/* No sticky Total / Continue bar on phones on this page (21 Oct); the summary
+   card under the plans is enough. The homepage keeps its bar. */
+#hire-pricing .hd3n-bar {
+  display: none;
+}
+
+/* /hire: the block sits on the grey rounded section (SectionPricing.tsx)
+   instead of /pricing's white page, with room above the heading. */
+#hire-pricing .hd3k-section {
+  padding-top: 96px;
+  background: transparent;
+}
+
+@media (max-width: 767px) {
+  #hire-pricing .hd3k-section {
+    padding-top: 56px;
+  }
+}
