@@ -12,6 +12,7 @@ export default function HireLayout({
             <link rel="stylesheet" href="/webflow-static/css/normalize.css" precedence="default" />
             <link rel="stylesheet" href="/webflow-static/css/webflow.css" precedence="default" />
             <link rel="stylesheet" href="/webflow-static/css/awesomic-2025-new.webflow.css" precedence="default" />
+            <link rel="stylesheet" href="/webflow-static/css/hire-pricing.css" precedence="default" />
             <link
                 rel="stylesheet"
                 href="https://assets.calendly.com/assets/external/widget.css"
