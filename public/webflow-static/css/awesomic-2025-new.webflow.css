@@ -25076,8 +25076,8 @@ figure {
 .hd3z-download-title { display: block; font-size: 20px; font-weight: 500; line-height: 130%; color: rgb(9, 9, 11); }
 .hd3z-download-copy p { margin: 4px 0px 0px; font-size: 14px; line-height: 150%; color: rgb(63, 63, 70); }
 .hd3z-download-grid { display: grid; grid-template-columns: repeat(4, minmax(0px, 1fr)); gap: 8px; }
-.hd3z-download-card { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 16px; background: rgba(255, 255, 255, 0.66); border: 1px solid rgb(228, 228, 231); text-decoration: none; transition: background-color 0.2s, border-color 0.2s; }
-.hd3z-download-card:hover { background: rgb(255, 255, 255); border-color: rgb(212, 212, 216); }
+.hd3z-download-card { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 16px; background: transparent; border: 1px solid rgb(228, 228, 231); text-decoration: none; transition: background-color 0.2s, border-color 0.2s; }
+.hd3z-download-card:hover { background: transparent; border-color: rgb(212, 212, 216); }
 .hd3z-download-card i { flex: 0 0 auto; display: grid; place-items: center; width: 32px; height: 32px; border-radius: 10px; background: rgb(9, 9, 11); color: rgb(255, 255, 255); }
 .hd3z-download-card b { display: block; font-size: 13px; font-weight: 500; color: rgb(9, 9, 11); white-space: nowrap; }
 .hd3z-download-card small { display: block; font-size: 12px; color: rgb(113, 113, 122); white-space: nowrap; }
