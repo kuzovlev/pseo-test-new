@@ -24992,3 +24992,19 @@ figure {
   font-style: italic;
   font-display: swap;
 }
+
+/* Grass visuals — matched to awesomic.com/agencies (2026-10) */
+.why-awesomic_block._w-hills {
+  background: radial-gradient(60% 55% at 50% 50%, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(rgb(168, 203, 236) 0%, rgb(199, 221, 242) 30%, rgba(231, 240, 248, 0) 92%), image-set(url("../../images-static/card-grass-880.webp") 1x, url("../../images-static/card-grass-1760.webp") 2x) 50% 30% / cover no-repeat, rgb(231, 240, 248) !important;
+}
+.why-awesomic_block._w-hills .text-white { color: rgb(9, 9, 11); }
+.why-awesomic_block._w-hills .accelerator_text-icon { background: rgb(9, 9, 11); -webkit-mask: var(--mm-icon) 50% / 28px 28px no-repeat; mask: var(--mm-icon) 50% / 28px 28px no-repeat; }
+.why-awesomic_block._w-hills .accelerator_text-icon.is-pause { --mm-icon: url("../../images-static/pause-icon.svg"); }
+.why-awesomic_block._w-hills .accelerator_text-icon.is-scale { --mm-icon: url("../../images-static/scale-icon.svg"); }
+
+#cta-block.section_cta:has(.mm-cta-path) { padding-bottom: clamp(220px, 27vw, 460px); background: rgb(255, 255, 255) !important; }
+#cta-block.section_cta:has(.mm-cta-path) .moving-circle { display: none; }
+#cta-block.section_cta:has(.mm-cta-path) .cta_form { border-color: rgb(228, 228, 231); }
+#cta-block .mm-cta-path { position: absolute; left: 0; right: 0; bottom: 0; width: 100%; max-width: none; height: clamp(220px, 27vw, 460px); object-fit: cover; object-position: 50% 80%; -webkit-mask-image: linear-gradient(transparent 0%, rgb(0, 0, 0) 45%); mask-image: linear-gradient(transparent 0%, rgb(0, 0, 0) 45%); pointer-events: none; }
+
+.footer_substract-bg img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; }

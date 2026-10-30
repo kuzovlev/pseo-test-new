@@ -144,9 +144,9 @@ export function CtaSection(_props: { data?: PseoPageData }) {
     `
                 }}/>
             </div>
-            <img alt="decorative image in cta block" className="cta-bg-image"
-                 data-src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/Home page images/CTA img.jpg"
-                 id="cta-dec-image" loading="lazy"/>
+            <img alt="" className="mm-cta-path" loading="lazy" sizes="100vw"
+                 src={asset("/images-static/steps-path-1584.webp")}
+                 srcSet={`${asset("/images-static/steps-path-960.webp")} 960w, ${asset("/images-static/steps-path-1584.webp")} 1584w, ${asset("/images-static/steps-path-3168.webp")} 3168w`}/>
             {/* script → useEffect */}
         </section>
     );

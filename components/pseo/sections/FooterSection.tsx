@@ -351,7 +351,7 @@ export function FooterSection(_props: { data?: PseoPageData }) {
                                                                     className="z-index-1"
                                                                     src="https://cdn.prod.website-files.com/6818a97ae905afeb08eff668/684870d153cf3a37baf98e64_Subtract_png-footer.avif"/>
                         <div className="footer_substract-bg w-embed"><img alt="decorative image" loading="lazy"
-                                                                          src="https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/Home%20page%20images/Footer%20image.jpg"/>
+                                                                          src={asset("/images-static/footer-grass-v6b-loop-poster.jpg")}/>
                         </div>
                     </div>
                 </div>

@@ -224,7 +224,9 @@ export function WhyAwesomic({data}: sectionProps) {
                                     monthly fee
                                 </div>
                                 <img alt="" className="why-rock-image" height="182" loading="lazy"
-                                     src={asset("/images-static/logo-on-rock_1logo on rock.avif")} width="190.5"/>
+                                     src={asset("/images-static/rock-grass-200.webp")}
+                                     srcSet={`${asset("/images-static/rock-grass-200.webp")} 1x, ${asset("/images-static/rock-grass-400.webp")} 2x`}
+                                     width="190.5"/>
                             </div>
                         </div>
                         <div className="why-awesomic_big" id="w-node-a488271d-2586-c5f6-c1af-585df5446862-dba9761c">
@@ -365,7 +367,8 @@ export function WhyAwesomic({data}: sectionProps) {
                                                                                            className="face-banner-image"
                                                                                            loading="lazy"
                                                                                            sizes="(max-width: 479px) 100vw, 440px"
-                                                                                           src={asset("/images-static/background-bigger-for-card_1background-bigger-for card.avif")}
+                                                                                           src={asset("/images-static/card-sky-fade-440.webp")}
+                                                                                           srcSet={`${asset("/images-static/card-sky-fade-440.webp")} 440w, ${asset("/images-static/card-sky-fade-880.webp")} 880w`}
                                                                                            width="440"/>
                                     <div className="max-width-151 z-index-1 align-center">
                                         <div

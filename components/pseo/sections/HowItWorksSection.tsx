@@ -132,7 +132,7 @@ export function HowItWorksSection(_props: { data?: PseoPageData }) {
                         const style = document.createElement('style');
                         style.innerHTML = `
             .how-tabs_content {
-              background-image: url("https://awesomic-prod.nyc3.cdn.digitaloceanspaces.com/site/Home%20page%20images/How%20it%20work%20img.jpg");
+              background-image: url("${asset("/images-static/how-it-works-bg-v6.webp")}");
             }
           `;
                         document.head.appendChild(style);
